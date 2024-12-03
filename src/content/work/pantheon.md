@@ -1,6 +1,6 @@
 ---
 title: Pantheon
-publish"Date: 2024-03-01 00:00:00
+publishDate: 2024-03-01 00:00:00
 image: "https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
 img_alt: "pantheon-img"
 label: "Data Management Tool"

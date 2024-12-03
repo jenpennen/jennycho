@@ -7,7 +7,7 @@ type Props = CollectionEntry<"blog">['data'];
 const {title, description, image, author} = Astro.props;
 ---
 <html lang="eng">
-	<head >
+	<head>
 		<BaseHead title={title} description={description || 'N/A'}/>
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
