@@ -1,14 +1,14 @@
 ---
 title: Pantheon
-publishDate: 2024-03-01 00:00:00
-image: https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png
-img_alt: pantheon-img
-label: Data Management Tool
+publish"Date: 2024-03-01 00:00:00
+image: "https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
+img_alt: "pantheon-img"
+label: "Data Management Tool"
 description: |
-  Powering nonprofit volunteer management with seamless tech integration.
-org: Develop For Good
-timeline: September 2023 - Ongoing
-role: Product Designer & Frontend Engineer
+  "Powering nonprofit volunteer management with seamless tech integration."
+org: "Develop For Good"
+timeline: "September 2023 - Ongoing"
+role: "Product Designer & Frontend Engineer"
 ---
 
 # Context

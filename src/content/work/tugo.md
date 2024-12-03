@@ -8,7 +8,7 @@ description: |
   Transforming music discovery by connecting you to the beats around you.
 org: UCLA
 role: Product Designer & Developer
-timeline: October 2021 - Ongoing
+timeline: "October 2021 - Ongoing"
 ---
 
 # CONTEXT

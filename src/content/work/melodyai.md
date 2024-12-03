@@ -2,13 +2,13 @@
 title: PantheonAI
 publishDate: 2023-03-02 00:00:00
 image: https://storage.googleapis.com/jennyencho-website/landing-img/pantheonai-landing.png
-img_alt: perspective-img
+img_alt: "perspective-img"
 label: AI Tool
 description: |
   Driving project deliverable success with AI integration.
 org: Develop For Good
 role: Product Designer
-timeline: January 2024 - Ongoing
+timeline: "January 2024 - Ongoing"
 ---
 
 # CONTEXT

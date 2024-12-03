@@ -8,7 +8,7 @@ description: |
   Taking steps - both big and small - towards a sustainable and greener future.
 org: Dandilyonn
 role: Product Designer & Mobile Developer Intern
-timeline: June 2021 - August 2021
+timeline: "June 2021 - August 2021"
 ---
 
 # CONTEXT
