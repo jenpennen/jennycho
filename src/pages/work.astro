@@ -1,0 +1,43 @@
+---
+import Card from '../components/Card.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import '../styles/global.css';
+
+const projects = (await getCollection('work'))
+    .filter((item:any) => !['perspective', 'perspectiveai'].includes(item.slug)) //exclude incomplete case studies
+	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+---
+
+<BaseLayout>
+    <div>
+        <h1 class="mb-3 text-2xl">My Works</h1>
+        <p class="mb-10">Check out my case studies below.</p>
+        <div role="list" class="grid">
+            {
+                projects.map((project:any) => (
+                    <Card project={project} />
+                ))
+            }
+        </div>
+    </div> 
+    
+</BaseLayout>
+
+<style>
+    main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: black;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+    .grid {
+       display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+    }
+</style>

@@ -1,0 +1,28 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import CaseStudy from "../../layouts/CaseStudy.astro";
+import ProjectDetails from "../../components/ProjectDetails.astro";
+import '../../styles/global.css';
+interface Props {
+  entry: CollectionEntry<'work'>;
+}
+export async function getStaticPaths() {
+	const work = await getCollection('work');
+	return (
+		work.map((entry:any) => ({
+		params: { slug: entry.slug, collection: entry.collection },
+		props: { entry },
+		}))
+		);
+
+}
+
+
+const { entry  } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<CaseStudy title={entry.data.title} description={entry.data.description} image={entry.data.image} publishDate={entry.data.publishDate}>
+	<ProjectDetails org={entry.data.org} label={entry.data.label} role={entry.data.role} timeline={entry.data.timeline} />
+	<Content />
+</CaseStudy>

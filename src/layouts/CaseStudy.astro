@@ -1,0 +1,168 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css"
+type Props = CollectionEntry<"work">['data'];
+
+const {title, description, image} = Astro.props;
+---
+<html lang="eng">
+	<head >
+		<BaseHead title={title} description={description || 'N/A'}/>
+	</head>
+	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+	<Header />
+	<main>
+	
+		<article class="max-w-prose ms-auto me-auto">
+			<div class="pt-16">
+					<a href="/work" class="hover:text-primary">
+						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; Check Out Other Works</span>
+					</a>
+			</div>
+			<div class="flex gap-2 mb-4 w-full text-center">
+	
+				<div class="flex flex-col w-full">
+					<!-- <h1 class="text-3xl font-bold">{title}</h1>
+					<p>{description}</p> -->
+					<div class="pt-10">
+						<img class="rounded-xl"src={image} />
+					</div>
+					<h1 class="text-5xl pt-10 font-bold pb-5">{title}</h1>
+					<p>{description}</p>
+					<div class="text-left content">
+						<slot/>
+					</div>
+					
+				</div>
+			</div>
+		</article>
+	</main>
+	<Footer />
+	</body>
+</html>
+<script>
+
+</script>
+<style>
+	header {
+		padding-bottom: 2.5rem;
+		font-weight:700;
+		border-bottom: 1px solid var(--gray-800);
+	}
+
+	.back-link {
+		display: none;
+	}
+	.content {
+		max-width: 65ch;
+		margin-inline: auto;
+	}
+	.content :global(.gallery){
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(3ch, 1fr));
+		gap: 2rem;
+	}
+	/* .content > :global(* + *) {
+		margin: 1rem;
+	} */
+	.content :global(i) {
+		color: var(--accent-regular);
+	}
+	.content :global(strong) {
+		color: var(--accent-regular);
+	}
+	.content :global(h1),
+	.content :global(h2),
+	.content :global(h3),
+	.content :global(h4)
+	 {
+		margin-top: 1rem;
+		font-weight:600;
+
+	}
+	.content :global(h1) {
+		font-family: "PT Serif", serif;
+		font-weight: 700;
+		font-size:4rem;
+		padding-bottom: 1rem;
+		text-transform: uppercase;
+	}
+	.content :global(h2)  {
+		font-size: 2.25rem;
+
+	}
+	.content :global(h3) {
+		font-size: 1.5rem;
+	}
+	.content :global(h4) {
+		font-size: 1.15rem;
+	}
+	.content :global(h5) {
+		font-size: 1rem;
+	}
+	.content :global(h6) {
+		font-size: 0.75rem;
+	}
+	.content :global(a) {
+		font-style: bold;
+		font-size: 1.5rem;
+	}
+
+	.content :global(img) {
+		border-radius: 0.5rem;
+		width: 100%;
+		margin:2rem;
+		box-shadow: var(--medium-shadow);
+		/* background: var(--gradient-subtle); */
+		/* border: 1px solid var(--gray-500); */
+	}
+	.content :global(img):hover {
+		scale:calc(1.05);
+	}
+
+	.content :global(blockquote) {
+		font-size: var(--text-lg);
+		font-family: var(--font-brand);
+		font-weight: 600;
+		line-height: 1.1;
+		padding-inline-start: 1.5rem;
+		border-inline-start: 0.25rem solid var(--accent-dark);
+		color: var(--gray-0);
+	}
+
+	.back-link,
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.back-link:hover,
+	.back-link:focus,
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.back-link {
+			display: block;
+			align-self: flex-start;
+		}
+
+		.details {
+			flex-direction: row;
+			gap: 2.5rem;
+		}
+
+		.content :global(blockquote) {
+			margin: 2.5rem 1rem;
+			padding: 0.5rem;
+			font-size: var(--text-xl);
+
+		}
+	}
+</style>

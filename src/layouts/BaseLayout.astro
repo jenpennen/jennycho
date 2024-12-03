@@ -1,0 +1,29 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BaseHead from '../components/BaseHead.astro';
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title || 'N/A'} description={description || 'N/A'}/>
+
+	</head>
+	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
+		<Header />
+		<main class="min-h-screen flex flex-col xs:w-[90%] sm:w-[80%] md:w-[75%] lg:w-[62.5%] xl:w-[57.5%] mx-auto">
+			<slot/>
+		</main>
+    </body>
+	<Footer />
+    <script>
+		// Add “loaded” class once the document has completely loaded.
+		addEventListener('load', () => document.documentElement.classList.add('loaded'));
+	</script>
+</html>

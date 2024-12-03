@@ -1,0 +1,172 @@
+:root {
+  --gray-0: #090b11;
+  --gray-50: #141925;
+  --gray-100: #283044;
+  --gray-200: #3d4663;
+  --gray-300: #505d84;
+  --gray-400: #6474a2;
+  --gray-450: #777;
+  --gray-500: #8490b5;
+  --gray-600: #a3acc8;
+  --gray-700: #c3cadb;
+  --gray-800: #e3e6ee;
+  --gray-900: #f3f4f7;
+  --gray-999-basis: 0, 0%, 100%;
+  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
+  --gray-999: #f6f7f8;
+
+  --accent-regular: #3d6df4;
+  --accent-dark: #1f3ad6;
+  --accent-overlay: #1f3ad654;
+  --accent-subtle-overlay: var(--accent-overlay);
+  /* --accent-text-over: var(--gray-999); */
+
+  --link-color: var(--accent-regular);
+  /* Text Sizes */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.625rem;
+  --text-2xl: 2.125rem;
+  --text-3xl: 2.625rem;
+  --text-4xl: 3.5rem;
+  --text-5xl: 4.5rem;
+
+  /* Fonts */
+  --font-system: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --font-body: "Public Sans", var(--font-system);
+  --font-brand: Rubik, var(--font-system);
+
+  --shadow: #0e2f3924;
+  --small-shadow: 0px 0px 5px var(--shadow), 0px 10px 20px var(--shadow);
+  --medium-shadow: 0px 5px 20px -5px var(--shadow);
+  --large-shadow: 0px 5px 15px var(--shadow), 0px 10px 25px var(--shadow),
+    0px 20px 50px var(--shadow);
+
+  --ease-slower: 1s ease;
+  --ease-slow: 0.5s ease;
+  --ease-fast: 0.25s ease;
+  --bouncy: 0.5s cubic-bezier(0.5, 1.5, 0.5, 0.7);
+  --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
+
+  --background-color: #ebf0ff;
+  --text-color: #1d1d1a;
+}
+
+:root.dark {
+  --background-color: #1d1d1a;
+  --text-color: var(--gray-700);
+  --gray-100: #ebf0ff;
+  --text-color: #ebf0ff;
+
+  --accent-regular: #f28ca1;
+  --accent-overlay: #181e53;
+  --accent-subtle-overlay: var(--accent-overlay);
+  --accent-text-over: var(--gray-999);
+
+  --link-color: var(--accent-regular);
+}
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+main {
+  margin: auto;
+  padding: 1rem;
+  width: 800px;
+  max-width: calc(100% - 2rem);
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 1.5rem;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 5rem;
+}
+h2 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+li > a {
+  text-decoration: dotted;
+}
+@keyframes text-highlight {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* svg:hover,
+a:hover {
+  background: linear-gradient(
+    to right,
+    var(--accent-regular),
+    var(--accent-regular)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 200% 200%;
+  animation: text-highlight 2s linear infinite;
+} */
+
+.link-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  gap: 1.25rem;
+  padding: 0;
+}
+.link-card {
+  transition: var(--bouncy);
+  box-shadow: var(--medium-shadow);
+}
+img {
+  transition: var(--bouncy);
+}
+.link-card:hover {
+  scale: calc(1.05);
+  transition: var(--bouncy);
+  background-repeat: no-repeat;
+  box-shadow: var(--medium-shadow);
+}
+@keyframes highlight-animate {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.highlight {
+  background: linear-gradient(
+    to right,
+    var(--accent-overlay),
+    var(--accent-overlay)
+  );
+  /* color: var(--gray-0); */
+  font-weight: 400;
+
+  /* Initial background state */
+  background-size: 30% 100%;
+  background-repeat: no-repeat;
+
+  /* Apply animation */
+  animation: highlight-animate 2s ease-in-out forwards;
+}
+blockquote p {
+  margin: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  color: var(--accent-regular);
+}
