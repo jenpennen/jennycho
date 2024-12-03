@@ -6,10 +6,8 @@ img_alt: pantheon-img
 label: Data Management Tool
 description: |
   Powering nonprofit volunteer management with seamless tech integration.
-org: |
-  Develop For Good
-timeline: |
-  September 2023 - Ongoing
+org: Develop For Good
+timeline: September 2023 - Ongoing
 role: Product Designer & Frontend Engineer
 ---
 
