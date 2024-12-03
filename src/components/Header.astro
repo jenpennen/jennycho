@@ -1,8 +1,8 @@
 ---
-import '~/styles/global.css';
+import '../styles/global.css';
 import ThemeToggle from './ThemeToggle.astro';
 ---
-<head class="w-full">
+<header class="w-full">
   <nav
     class="flex fixed z-50 gap-2 items-center p-4 w-full text-base font-semibold shadow-md dark:bg-transparent bg-offwhite backdrop-blur-md dark:shadow-black"
   >
@@ -19,7 +19,7 @@ import ThemeToggle from './ThemeToggle.astro';
       <ThemeToggle />
     </div>
   </nav>
-</head>
+</header>
 <style>
   a:hover {
     color: var(--accent-regular);

@@ -1,9 +1,9 @@
 ---
-import '~/styles/global.css'
+import '../styles/global.css';
 interface Props {
   title: string;
-  description: string;
-  image?: string;
+  description?: string | undefined;
+  image?: string | undefined;
 }
 const { title, description, image = "/favicon.svg" } = Astro.props;
 ---
