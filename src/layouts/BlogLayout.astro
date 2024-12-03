@@ -3,7 +3,12 @@ import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-type Props = CollectionEntry<"blog">['data'];
+interface Props {
+	title: string;
+	description?: string | undefined;
+	image ?: string | undefined;
+	author ?: string | undefined;
+}
 const {title, description, image, author} = Astro.props;
 ---
 <html lang="eng">
