@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import WorkPreview from '../components/WorkPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
-import type { InferEntrySchema } from "astro:content";
 const title = "Hi! I'm Jenny."
 const projects = (await getCollection('work'))
 	.filter((item) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
