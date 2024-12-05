@@ -17,7 +17,7 @@ const {title, description, image} = Astro.props;
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
 	<Header />
-	<main>
+	<main class="min-h-screen flex flex-col xs:w-[90%] sm:w-[80%] md:w-[75%] lg:w-[62.5%] xl:w-[57.5%] mx-auto">
 	
 		<article class="max-w-prose ms-auto me-auto">
 			<div class="pt-16">
@@ -150,7 +150,10 @@ const {title, description, image} = Astro.props;
 		text-decoration-color: currentColor;
 	}
 
-	@media (min-width: 50em) {
+	@media (min-width: 45em) {
+		h1 {
+			font-size: 1.5rem;
+		}
 		.back-link {
 			display: block;
 			align-self: flex-start;
