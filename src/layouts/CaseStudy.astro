@@ -17,10 +17,10 @@ const {title, description, image} = Astro.props;
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
 	<Header />
-	<main class="min-h-screen flex flex-col xs:w-[90%] sm:w-[80%] md:w-[75%] lg:w-[62.5%] xl:w-[57.5%] mx-auto">
+	<main class="xs:w-[90%] sm:w-[80%] md:w-[75%] lg:w-[62.5%] xl:w-[57.5%]">
 	
-		<article class="max-w-prose ms-auto me-auto">
-			<div class="pt-16">
+		<article class="flex flex-col gap-2 justify-center p-2 text-base sm:text-base">
+			<div class="pt-20 prose">
 					<a href="/work" class="hover:text-primary">
 						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; Check Out Other Works</span>
 					</a>
@@ -89,12 +89,12 @@ const {title, description, image} = Astro.props;
 	.content :global(h1) {
 		font-family: "PT Serif", serif;
 		font-weight: 700;
-		font-size:4rem;
+		font-size:3rem;
 		padding-bottom: 1rem;
 		text-transform: uppercase;
 	}
 	.content :global(h2)  {
-		font-size: 2.25rem;
+		font-size: 2.35rem;
 
 	}
 	.content :global(h3) {

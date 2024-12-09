@@ -8,7 +8,7 @@ description: |
 ---
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In recent years, Develop For Good (DFG),
-has faced a growing interest from many students and nonprofit partners seeking
+has faced a growing interest from many students and nonprofit organizations seeking
 technical opportunities and digital services. However, the possibility of
 scaling the organization was nonexistent. Since DFG was first established, the
 organization has relied on a manual onboarding/offboarding process, where DFG
@@ -74,6 +74,7 @@ example of an application that can be integrated with Keycloak in the future.
 <div class="gallery">
 <img src="https://storage.googleapis.com/jennyencho-website/dichromatic-img/penpotui.png">
 </div>
+
 ## Key Takeaways
 
 ### Identity Management
@@ -101,7 +102,6 @@ allows for novel ways to serve their clients and student volunteers.
 Accordingly, it makes the most sense for DFG to provide these services with the
 most optimal environment possible.
 
-Following this demo, Anish and I joined Develop For Good as founding software
-engineers, focusing on internal tools, notable Pantheon and PantheonAI. DFG has
+Following this demo, I stayed at Develop For Good, focusing on the frontend engineering and user experience design of internal tools, notably <a href="/work/pantheon"><strong>Pantheon</strong></a> and <a href="/work/melodyai"><strong>PantheonAI</strong></a>. DFG has
 since evolved into a nonprofit tech startup, being the first nonprofit
 organization to be accepted to Stanford's startup accelerator StartX.
