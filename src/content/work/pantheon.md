@@ -19,7 +19,7 @@ role: "Product Designer & Frontend Engineer"
 
 ## My Work
 
-I joined Develop For Good as a software engineer in March 2023. Alongside fellow engineer Anish Sinha, we identified a critical need for a dedicated cloud infrastructure to support DFG's growing demand among students and nonprofits. In August 2023, we proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon. As a founding designer and engineer, I spearheaded the design strategy and frontend engineering for DFG's internal services, and continue to work on Pantheon to this date.
+I joined Develop For Good as a software engineer in March 2023. Alongside fellow engineer Anish Sinha, we identified a critical need for a dedicated cloud infrastructure to support DFG's growing demand among students and nonprofits. In August 2023, we proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon (learn more about it [here](https://jennycho.web.app/blog/securing-and-scaling-identity-management)). As a founding designer and engineer, I spearheaded the design strategy and frontend engineering for DFG's internal services, and continue to work on Pantheon to this date.
 
 ## Observation
 
