@@ -17,7 +17,7 @@ const {title, description, image} = Astro.props;
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
 	<Header />
-	<main class="xs:w-[90%] sm:w-[80%] md:w-[75%] lg:w-[62.5%] xl:w-[57.5%]">
+	<main>
 	
 		<article class="flex flex-col gap-2 justify-center p-2 text-base sm:text-base">
 			<div class="pt-20 prose">
@@ -25,9 +25,9 @@ const {title, description, image} = Astro.props;
 						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; Check Out Other Works</span>
 					</a>
 			</div>
-			<div class="flex gap-2 mb-4 w-full text-center">
+			<div class="flex gap-2 mb-4 w-full">
 	
-				<div class="flex flex-col w-full">
+				<div class="flex flex-col w-full text-center">
 					<!-- <h1 class="text-3xl font-bold">{title}</h1>
 					<p>{description}</p> -->
 					<div class="pt-10">
