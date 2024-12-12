@@ -19,7 +19,7 @@ const {title, description, image} = Astro.props;
 	<Header />
 	<main>
 	
-		<article class="flex flex-col gap-2 justify-center p-2 text-base sm:text-base">
+		<article class="flex flex-col gap-2 justify-center p-2">
 			<div class="pt-20 prose">
 					<a href="/work" class="hover:text-primary">
 						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; Check Out Other Works</span>
@@ -33,7 +33,7 @@ const {title, description, image} = Astro.props;
 					<div class="pt-10">
 						<img class="rounded-xl"src={image} />
 					</div>
-					<h1 class="text-5xl pt-10 font-bold pb-5">{title}</h1>
+					<h1 class="text-4xl pt-10 font-bold pb-5">{title}</h1>
 					<p>{description}</p>
 					<div class="text-left content">
 						<slot/>
@@ -117,7 +117,7 @@ const {title, description, image} = Astro.props;
 	.content :global(img) {
 		border-radius: 0.5rem;
 		width: 100%;
-		margin:2rem;
+		margin: 2rem 0 2rem 0;
 		box-shadow: var(--medium-shadow);
 		/* background: var(--gradient-subtle); */
 		/* border: 1px solid var(--gray-500); */
@@ -151,9 +151,9 @@ const {title, description, image} = Astro.props;
 	}
 
 	@media (min-width: 45em) {
-		h1 {
-			font-size: 1.5rem;
-		}
+		/* h1 {
+			font-size: 3rem;
+		} */
 		.back-link {
 			display: block;
 			align-self: flex-start;

@@ -6,16 +6,13 @@ import ThemeToggle from './ThemeToggle.astro';
   <nav
     class="flex fixed z-50 gap-2 items-center p-4 w-full text-base font-semibold shadow-md dark:bg-transparent bg-offwhite backdrop-blur-md dark:shadow-black"
   >
-    <div class="flex gap-4 items-center">
-      <!-- <a href="/"><img class="w-10 font-bold" src="/public/favicon.svg" alt=""></a> -->
-      <a href="/"><i class="fa-solid fa-cloud"></i></a>
-      <a href="/">Jenny Cho</a>
+    <div class="flex gap-4 items-center text-base sm:text-sm pr-5">
+      <a class="mr-auto" href="/">Home</a>
+      <a href="/work">Works</a>
+      <a href="/about">About</a>
+
     </div>
-    <div class="flex gap-5 ml-auto pr-5">
-        <a href="/work">Works</a>
-        <a href="/about">About</a>
-    </div>
-    <div class="bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText">
+    <div class="flex ml-auto">
       <ThemeToggle />
     </div>
   </nav>

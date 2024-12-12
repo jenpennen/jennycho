@@ -3,26 +3,25 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE } from "../consts";
 const pageTitle = "About Me";
 
-const identity = {
-  city: "Los Angeles",
-  state: "California",
-  occupation: "Product Designer & Software Engineer",
+const about = {
+  intro: "Hi! I'm Jenny. I'm a product designer and tech lead at Develop for Good. ",
+  background: "I was first drawn to design through my engineering projects at UCLA. I was fascinated by how design shapes our interactions with the world and how technology offers endless possibilities to innovate and create. It makes me wonder: how can I blend design and tech to create authentic and nostalgic experiences in a digital world?",
+  mission: "My goal as a user-centered engineer is to combine my design and technical backgrounds to make online interactions feel natural and enjoyable with a focus on clean design and thoughtful engineering.",
 };
 
 const darkImage = "https://storage.googleapis.com/jennyencho-website/landing-img/melody-darkmode.png"
 const lightImage = "https://storage.googleapis.com/jennyencho-website/landing-img/melody.png"
 ---
-
-
 <html lang="en">
   <BaseLayout>
     <body>
-    <h1 class="text-2xl pb-4">{pageTitle}</h1>
-    <h2 class="text-2xl md:text-xl sm:text-md w-5/6 pb-10">{SITE.oneline}</h2>
+    <h1 class="text-base pb-2 uppercase">{pageTitle}</h1>
+    <!-- <h2 class="text-2xl md:text-xl sm:text-md w-5/6 pb-10">{identity.oneline}</h2> -->
     <span class="text-base md:text-base flex flex-col md:flex-row w-full gap-4">
-      <div class="pb-3 lg:w-full md:w-4/5">
-      <p>{SITE.background}</p>
-      <p class="pt-4">{SITE.mission}</p>
+      <div class="pt-4 pb-4 lg:w-full md:w-4/5">
+      <p class="pb-4">{about.intro}</p>
+      <p class="pb-4">{about.background}</p>
+      <p>{about.mission}</p>
       </div>
       <div class="w-full md:w-3/5 sm:w-2/5">
         <img src='/melody.svg' alt="Melody" />

@@ -10,7 +10,7 @@ export default {
         lightText: "#1d1d1a",
         darkText: "#eae9fc",
         darkSecondaryBg: "#323234",
-        lightSecondaryBg: "#ced5e8",
+        lightSecondaryBg: "#d1d1d1",
         lightprimary: "#3d6df4",
         darkPrimary: "#fad1d8",
         accentOverlay: "#c0d4fd",

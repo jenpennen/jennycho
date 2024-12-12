@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import WorkPreview from '../components/WorkPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
-const title = "Hi! I'm Jenny."
+const title = "Hi, I'm Jenny."
 const projects = (await getCollection('work'))
 	.filter((item:any) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
@@ -14,15 +14,15 @@ const entry =(await getCollection('blog'))
 	.slice(0,2); 
 ---
 
-<BaseLayout title="Welcome to My Blog">
+<BaseLayout title="Welcome to Jenny's Home">
 		
-	<div class="flex flex-col gap-4 h-full sm:text-base md:text-base xs:text-base">
-		<h1 class="text-3xl md:text-xl sm:text-lg">{title}</h1>
-		<p class="w-5/6 text-base sm:w-full">
-			I'm a product designer and software engineer. 
+	<div class="flex flex-col gap-4 h-full">
+		<h1 class="text-3xl">{title}</h1>
+		<p class="w-5/6 sm:w-full">
+			I'm a designer working on internal services at Develop For Good. 
 		</p>
-		<div class="text-md sm:text-base md:text-base xs:text-base">
-			<h2 class="text-lg">My Recent Works</h2>
+		<div>
+			<h2 class="text-md">My Recent Works</h2>
 			<div class="underline decoration-dotted underline-offset-4">
       			<h3><li><a  href="/work/pantheon/">Pantheon: Powering nonprofit volunteer management through seamless tech integration</a></li></h3>
 	  			<h3><li><a href="/work/melodyai">PantheonAI: Driving project deliverable success with AI integration</a></li></h3>
@@ -31,16 +31,16 @@ const entry =(await getCollection('blog'))
 			<p>Check out more of my works <a class="hover:text-lightprimary font-bold underline decoration-dotted dark:text-darkPrimary dark:hover:text-pink-500" href="/work/">here</a></p>
 		</div>
 
-		<div class="text-md sm:text-base md:text-base xs:text-base">
-			<h2 class="text-lg">Featured Works</h2>
+		<div>
+			<h2 class="text-md">Featured Works</h2>
 			<div class="underline decoration-dotted underline-offset-4">
       			<h3><li><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/">Okta's Nonprofit Technology Fellowship: Empowering nonprofit technology leaders across the globe</a></li></h3>
 	  			<h3><li><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9">Develop For Good: Streamlining Volunteer Management for Nonprofits with Pantheon</a></li></h3>
     		</div>
 		</div>
 
-		<div class="text-md sm:text-base md:text-base xs:text-base">
-			<h2 class="text-lg">Let's Connect</h2>
+		<div>
+			<h2 class="text-md">Let's Connect</h2>
 			<div class="underline-offset-4">
       			<h3><li>Email: jennycho35@gmail.com</li></h3>
 				<h3><li><a href="https://www.linkedin.com/in/jennyecho/" target=_blank>LinkedIn</a></li></h3>

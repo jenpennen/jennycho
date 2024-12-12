@@ -6,7 +6,7 @@ interface Props {
 }
 const {data, slug, collection} = Astro.props.project;
 ---
-<li class="link-card w-full list-none border rounded-lg shadow-md overflow-hidden border-lightSecondaryBg bg-lightSecondaryBg border-solid dark:border-darkSecondaryBg dark:bg-darkSecondaryBg">
+<li class="link-card w-full list-none border rounded-lg shadow-md overflow-hidden dark:bg-darkSecondaryBg mt-5 mb-5">
   <a href={`/${collection}/${slug}`} class="flex flex-col md:flex-row w-full gap-4 p-4">
     <!-- image section -->
     <div class="flex-grow w-full md:w-1/3">
