@@ -13,7 +13,7 @@ const {title, description, image, author} = Astro.props;
 ---
 <html lang="eng">
 	<head>
-		<BaseHead title={title} description={description || 'N/A'}/>
+		<BaseHead title={title} description={description || 'N/A'} image="/favicon.svg"/>
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
 	<Header />
@@ -21,8 +21,8 @@ const {title, description, image, author} = Astro.props;
 	
 		<article class="max-w-prose ms-auto me-auto">
 			<div class="pt-16">
-					<a href="/work" class="hover:text-primary">
-						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; Check Out Other Works</span>
+					<a href="/" class="hover:text-primary">
+						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; Back To Home</span>
 					</a>
 			</div>
 			<div class="flex gap-2 mb-4 w-full text-center">
@@ -117,7 +117,7 @@ const {title, description, image, author} = Astro.props;
 	.content :global(img) {
 		border-radius: 0.5rem;
 		width: 100%;
-		margin:2rem;
+		margin:2rem 0;
 		box-shadow: var(--medium-shadow);
 		/* background: var(--gradient-subtle); */
 		/* border: 1px solid var(--gray-500); */

@@ -15,7 +15,7 @@ role: "Product Designer & Frontend Engineer"
 
 ## Background
 
-<a href="https://www.developforgood.org/"><strong>Develop For Good (DFG)</strong></a> is a 501(c)(3) nonprofit organization dedicated to empowering underserved and underrepresented college students. Founded in March 2020 by Stanford students Mary Zhu and Amay Aggarwal, DFG was established to support nonprofits struggling with digital access during the COVID-19 pandemic. By providing opportunities to work on real-world technical projects for nonprofits, DFG aims to bridge the digital divide and promote meaningful volunteer experiences.
+[**Develop For Good**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to empowering underserved and underrepresented college students. Founded in March 2020 by Stanford students Mary Zhu and Amay Aggarwal, DFG was established to support nonprofits struggling with digital access during the COVID-19 pandemic. By providing opportunities to work on real-world technical projects for nonprofits, DFG aims to bridge the digital divide and promote meaningful volunteer experiences.
 
 ## My Work
 

@@ -5,9 +5,9 @@ image: "https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_la
 img_alt: ecowalk
 label: Mobile App
 description: |
-  Taking steps - both big and small - towards a sustainable and greener future.
+  Taking steps toward a greener future.
 org: Dandilyonn
-role: Product Designer & Mobile Developer Intern
+role: UX Designer & Mobile Developer Intern
 timeline: "June 2021 - August 2021"
 ---
 

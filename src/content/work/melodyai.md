@@ -1,6 +1,6 @@
 ---
 title: PantheonAI
-publishDate: 2023-03-02 00:00:00
+publishDate: 2024-01-02 00:00:00
 image: https://storage.googleapis.com/jennyencho-website/landing-img/pantheonai-landing.png
 img_alt: "perspective-img"
 label: AI Tool

@@ -5,7 +5,7 @@ image: https://storage.googleapis.com/jennyencho-website/landing-img/scootly-lan
 img_alt: scootly
 label: Mobile App
 description: |
-  Reimagining urban mobility by turning personal scooters into a shared resource for everyone.
+  Turning personal scooters into a shared urban mobility resource.
 org: UCLA
 role: Developer & UI/UX Designer
 timeline: September 2022 - December 2022

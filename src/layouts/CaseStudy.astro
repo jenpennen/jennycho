@@ -13,7 +13,7 @@ const {title, description, image} = Astro.props;
 ---
 <html lang="eng">
 	<head >
-		<BaseHead title={title} description={description || 'N/A'}/>
+		<BaseHead title={title} description={description || 'N/A'} image="/favicon.svg"/>
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">
 	<Header />
@@ -33,7 +33,7 @@ const {title, description, image} = Astro.props;
 					<div class="pt-10">
 						<img class="rounded-xl"src={image} />
 					</div>
-					<h1 class="text-4xl pt-10 font-bold pb-5">{title}</h1>
+					<h1 class="text-4xl pt-10 font-brand tracking-wide pb-5">{title}</h1>
 					<p>{description}</p>
 					<div class="text-left content">
 						<slot/>

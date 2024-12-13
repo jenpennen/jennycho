@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import WorkPreview from '../components/WorkPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
-const title = "Hi, I'm Jenny."
+const title = "Hi! I'm Jenny."
 const projects = (await getCollection('work'))
 	.filter((item:any) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
@@ -17,9 +17,9 @@ const entry =(await getCollection('blog'))
 <BaseLayout title="Welcome to Jenny's Home">
 		
 	<div class="flex flex-col gap-4 h-full">
-		<h1 class="text-3xl">{title}</h1>
+		<h1 class="text-3xl font-brand tracking-wide">{title}</h1>
 		<p class="w-5/6 sm:w-full">
-			I'm a designer working on internal services at Develop For Good. 
+			I'm a UX designer working on internal tools at Develop For Good. 
 		</p>
 		<div>
 			<h2 class="text-md">My Recent Works</h2>
@@ -28,7 +28,7 @@ const entry =(await getCollection('blog'))
 	  			<h3><li><a href="/work/melodyai">PantheonAI: Driving project deliverable success with AI integration</a></li></h3>
 				<h3><li><a href="/blog/securing-and-scaling-identity-management">Identity Management with Keycloak and Kubernetes</a></li></h3>	
     		</div>	
-			<p>Check out more of my works <a class="hover:text-lightprimary font-bold underline decoration-dotted dark:text-darkPrimary dark:hover:text-pink-500" href="/work/">here</a></p>
+			<p>Check out more of my works <a class="hover:text-lightprimary font-bold underline decoration-dotted dark:text-gray-300 dark:hover:text-pink-500" href="/work/">here</a></p>
 		</div>
 
 		<div>
@@ -39,13 +39,13 @@ const entry =(await getCollection('blog'))
     		</div>
 		</div>
 
-		<div>
+		<!-- <div>
 			<h2 class="text-md">Let's Connect</h2>
 			<div class="underline-offset-4">
       			<h3><li>Email: jennycho35@gmail.com</li></h3>
 				<h3><li><a href="https://www.linkedin.com/in/jennyecho/" target=_blank>LinkedIn</a></li></h3>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <h2>Check Out My Recent Works</h2>
 		
@@ -61,8 +61,5 @@ const entry =(await getCollection('blog'))
 <style>
 	li a:hover {
 		color: var(--accent-regular);
-	}
-	h1 {
-		/* color:  #e4b715; */
 	}
 </style>

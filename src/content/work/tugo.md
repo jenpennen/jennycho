@@ -1,13 +1,13 @@
 ---
 title: Tugo
-publishDate: 2022-10-01 00:00:00
+publishDate: 2023-05-01 00:00:00
 image: https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landing.png
 img_alt: tugo
 label: Mobile App
 description: |
-  Transforming music discovery by connecting you to the beats around you.
+  Connecting you to the beats that surround you.
 org: UCLA
-role: Product Designer & Developer
+role: UX Designer & Developer
 timeline: "October 2021 - Ongoing"
 ---
 

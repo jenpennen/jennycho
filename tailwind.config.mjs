@@ -17,7 +17,7 @@ export default {
       },
       fontFamily: {
         body: ['"Nunito"', '"Poppins"', "system-ui", "sans-serif"],
-        brand: ['"Rubik"', '"Poppins"', "system-ui", "sans-serif"],
+        brand: ['"PT Serif"', '"Poppins"', "system-ui", "sans-serif"],
         system: ['"Poppins"', "system-ui", "sans-serif"],
       },
       fontSize: {
