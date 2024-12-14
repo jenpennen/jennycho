@@ -19,7 +19,7 @@ role: "Product Designer & Frontend Engineer"
 
 ## My Work
 
-I joined Develop For Good as a software engineer in March 2023. Alongside fellow engineer Anish Sinha, we identified a critical need for a dedicated cloud infrastructure to support DFG's growing demand among students and nonprofits. In August 2023, we proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon (learn more about it [here](https://jennycho.web.app/blog/securing-and-scaling-identity-management)). As a founding designer and engineer, I spearheaded the design strategy and frontend engineering for DFG's internal services, and continue to work on Pantheon to this date.
+I joined Develop For Good as a software engineer in March 2023. Alongside fellow engineer Anish Sinha, we identified a critical need for a dedicated cloud infrastructure to support DFG's growing demand among students and nonprofits. **In August 2023, we proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon** (learn more about it [here](https://jennycho.web.app/blog/securing-and-scaling-identity-management)). As a founding designer and engineer, I spearheaded the design strategy and frontend engineering for DFG's internal services, and continue to work on Pantheon to this date.
 
 ## Observation
 
@@ -57,7 +57,7 @@ The management team also relies on other lifecycle tasks to ensure that each cyc
 
 ## Existing Solutions
 
-Nonprofits have already been using a variety of platforms for volunteer management, with popular solutions including VolunteerHub, Bloomerang, and Point. However, none of these out-of-the-box products had the specific app integrations and project management features we need for our unique program, as they integrated poorly with our existing and working infrastructure.
+Nonprofits have already been using a variety of platforms for volunteer management, with popular solutions including VolunteerHub, Bloomerang, and Point. However, **none of these out-of-the-box products had the specific app integrations and project management features we need for our unique program**, as they integrated poorly with our existing and working infrastructure.
 
 ## DFG's Approach
 
@@ -77,11 +77,11 @@ As a starting tool, our top priority, as of now, is functionality.
 
 &nbsp;&nbsp;&nbsp;&nbsp; Our partnership with Okta for Good was instrumental in facilitating access to a potent tool: **Okta Workforce Federation**. This workflow was straightforward. Upon a volunteer’s acceptance to a project cycle, they are added to an Airtable sheet. Afterwards, a lambda is triggered to create all volunteers in our Okta tenant’s universal directory.
 
-&nbsp;&nbsp;&nbsp;&nbsp; However, this plan fell short when we discovered that Single Sign-On (SSO) integration was an enterprise feature in platforms like Slack, Figma, and Notion. Despite our paid business and pro plans, we lack the resources for enterprise-level subscriptions, rendering our Okta-based solutions unviable. We were back at square one.
+&nbsp;&nbsp;&nbsp;&nbsp; However, **this plan fell short when we discovered that Single Sign-On (SSO) integration was an enterprise feature in platforms like Slack, Figma, and Notion**. Despite our paid business and pro plans, we lack the resources for enterprise-level subscriptions, rendering our Okta-based solutions unviable. We were back at square one.
 
 ## Square One: Google For Nonprofits
 
-&nbsp;&nbsp;&nbsp;&nbsp; Currently, the only volunteers issued Develop for Good handles (@developforgood.org) are product leads and management team members. However, the Google for Nonprofits plan allows up to 2,000 users. Although it can’t scale forever, we are hardly using a fifth of its total capacity. When we eventually reach this threshold, we could potentially pay for SSO capabilities for the essential services we rely on. Until then, we decided to build Pantheon around Google Workspace. This concept is simple: accept students, upload their information to Workspace (and issue them @developforgood.org emails), monitor the email allocations, and delete them at the end of each cycle to free up space in Workspace.
+&nbsp;&nbsp;&nbsp;&nbsp; Currently, the only volunteers issued Develop for Good handles (@developforgood.org) are product leads and management team members. However, the Google for Nonprofits plan allows up to 2,000 users. Although it can’t scale forever, we are hardly using a fifth of its total capacity. When we eventually reach this threshold, we could potentially pay for SSO capabilities for the essential services we rely on. Until then, we decided to build Pantheon around Google Workspace. **This concept is simple: accept students, upload their information to Workspace (and issue them @developforgood.org emails), monitor the email allocations, and delete them at the end of each cycle to free up space in Workspace**.
 
 &nbsp;&nbsp;&nbsp;&nbsp; This streamlined approach not only manages user accounts and their life cycles, but also ensures controlled access to services since every service we rely on has complimentary SSO for Google. With this plan in motion, we started building.
 
@@ -97,13 +97,13 @@ Our foundation was Airtable. To facilitate executive access and data management,
 
 ## Backend
 
-We used Rust for our backend. Our goal was to build a maintainable codebase which would compile to a small binary that could be easily deployed on a server or Kubernetes cluster, and horizontally scaled. Drawing from past experiences, we ruled out Go (over Rust) due to previous challenges. We used Axum as our backend web framework because it is lightweight and had excellent mechanisms for dependency injection. In selecting our database and cache solutions, we settled on PostgreSQL and Redis respectively as they are battle-tested technologies that were well-suited for our requirements. PostgreSQL is used to store views, keep track of exported users, and manage data regarding asynchronous jobs, such as export and import tasks. During development, we utilize Docker to spin up a database, while for production, we use an RDS t1.medium instance on AWS that fits our needs nicely.
+We used Rust for our backend. **Our goal was to build a maintainable codebase which would compile to a small binary that could be easily deployed on a server or Kubernetes cluster, and horizontally scaled**. Drawing from past experiences, we ruled out Go (over Rust) due to previous challenges. We used Axum as our backend web framework because it is lightweight and had excellent mechanisms for dependency injection. In selecting our database and cache solutions, we settled on PostgreSQL and Redis respectively as they are battle-tested technologies that were well-suited for our requirements. PostgreSQL is used to store views, keep track of exported users, and manage data regarding asynchronous jobs, such as export and import tasks. During development, we utilize Docker to spin up a database, while for production, we use an RDS t1.medium instance on AWS that fits our needs nicely.
 
 ## Challenges
 
 ### <i class="fa-solid fa-chart-simple"></i> Rate Limits
 
-&nbsp;&nbsp;&nbsp;&nbsp; Airtable’s API imposes a maximum of 5 requests per second and returns only 100 records per request when fetching data. To circumvent these limitations without causing our API endpoint to block, we did three things. Firstly, we built a framework for asynchronous, cancellable tasks. Upon receiving a request, we return and initiate an asynchronous job. Job metadata is stored in PostgreSQL, and in the Pantheon UI, a window displays information about jobs associated with the view, categorized as complete, pending, error, or canceled.
+&nbsp;&nbsp;&nbsp;&nbsp; Airtable’s API imposes a maximum of 5 requests per second and returns only 100 records per request when fetching data. **To circumvent these limitations without causing our API endpoint to block, we did three things**. Firstly, we built a framework for asynchronous, cancellable tasks. Upon receiving a request, we return and initiate an asynchronous job. Job metadata is stored in PostgreSQL, and in the Pantheon UI, a window displays information about jobs associated with the view, categorized as complete, pending, error, or canceled.
 
 &nbsp;&nbsp;&nbsp;&nbsp; This approach was powered by Tokio’s task functionality. Tokio is the asynchronous runtime we chose for our API and has the capability to run blocking tasks on a separate thread pool so as to not block the API. This solution ensures our API remains non-blocking while managing rate limits by launching tasks with artificial delays and retry mechanisms as needed.
 
@@ -111,7 +111,7 @@ We used Rust for our backend. Our goal was to build a maintainable codebase whic
 
 ### <i class="fa-solid fa-brush"></i> Caching
 
-&nbsp;&nbsp;&nbsp;&nbsp; Requests to Airtable often took considerable time (5 - 15 seconds), causing the UI to feel sluggish. Moreover, concerns about stale data persisted as new volunteers were added and accepted at DFG over time, which would invalidate the cache. To address this, we used our asynchronous job framework to schedule periodic data refreshes every few hours, with a manual refresh button in the UI for immediate updates.
+&nbsp;&nbsp;&nbsp;&nbsp; Requests to Airtable often took considerable time (5 - 15 seconds), causing the UI to feel sluggish. Moreover, concerns about stale data persisted as new volunteers were added and accepted at DFG over time, which would invalidate the cache. **To address this, we used our asynchronous job framework to schedule periodic data refreshes every few hours, with a manual refresh button in the UI for immediate updates**.
 
 &nbsp;&nbsp;&nbsp;&nbsp; This solution, although not perfect, allows our management team to ensure data accuracy by triggering a refetch when necessary, with a cooldown mechanism in place to prevent hitting rate limits. Thus far, this approach has proven effective, given our modest management team size and infrequent data synchronization issues.
 
@@ -145,7 +145,7 @@ As Pantheon's tech architecture and constraints evolved, so did the design. One 
 
 ### Wireframing
 
-The initial wireframe sketches assumed that dashboards would display a single internal classification. To optimize efficiency and functionality, I sketched out a multi-classification approach for a comprehensive look within a single dashboard.
+The initial wireframe sketches assumed that dashboards would display a single internal classification. To optimize efficiency and functionality, **I sketched out a multi-classification approach for a comprehensive look within a single dashboard**.
 
 ![Low-fi Wireframe 2](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-2.png)
 
@@ -159,13 +159,13 @@ I created mid-fidelity wireframes based on the multi-classification approach, wo
 
 ## Dashboard Creation
 
-DFG management can create dashboards that provide a comprehensive overview of project cycles. These dashboards, powered by Airtable, offer insights into volunteer and client data, data fetching status, and key performance metrics.
+DFG management can create dashboards that provide a comprehensive overview of individual project cycles. These dashboards, powered by Airtable, offer insights into volunteer and client data, data fetching status, and key performance metrics.
 
 ![Dashboard View](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-overview.png)
 
 ## Smartviews
 
-Each smartview is tailored to specific internal classifications - volunteers, mentors, and nonprofit partners. With these smartviews, built with TypeScript and React, DFG executives can generate custom views pulling data from Airtable, export and import users, analyze key metrics, and seamlessly manage user information.
+Each smartview is tailored to specific internal classifications - volunteers, mentors, and nonprofit partners. With these smartviews, built with TypeScript and React, DFG executives can generate custom views pulling data from Airtable, export and import users, analyze key metrics, and seamlessly manage volunteer and client information.
 
 ![Volunteer Smartview](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-volunteer.png)
 
@@ -194,7 +194,7 @@ We created a server-less function on AWS Lambda which is called by an Airtable a
 
 ## Outcomes
 
-Since the inception of this project, Develop For Good has recieved over $1 million in funding in support of Pantheon's development through key partnerships with Stanford's StartX and Okta. In November of 2023, Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. As of October 2024, Pantheon's work is featured on Okta's tech blog community and has officially launched for every team in the Winter 2025 cycle and beyond!
+Since the inception of this project, Develop For Good has recieved **over $1 million in funding in support of Pantheon's development** through key partnerships with Stanford's StartX and Okta. In November of 2023, **Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX**, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. As of October 2024, **Pantheon's work is featured on Okta's tech blog community and has officially launched for every team in the Winter 2025 cycle and beyond!**
 
 ## Next Steps
 
@@ -210,8 +210,8 @@ We hope this key piece of software will help make it possible for DFG to scale o
 
 ### <i class="fa-solid fa-list"></i> Design isn’t just aesthetics—it’s the backbone of making technology usable and scalable.
 
-Pantheon stands out as the most intricate technical architecture I’ve worked on to date (as of October 2024). Its evolution through multiple architectural changes has given me invaluable lessons on the importance of functional design to make complex technical systems accessible to everyday users. Combining my background in both tech and design to bring a scalable product to life has been an excited challenge and reinforced my commitment to continuously update my technical skills alongside design skills.
+Pantheon has been the most intricate technical architecture I’ve worked on to date (as of October 2024). Its evolution through multiple architectural changes has given me invaluable lessons on the importance of functional design to make complex technical systems accessible to everyday users. Combining my background in both tech and design to bring a scalable product to life has been an exciting challenge and **reinforced my commitment to continuously update my technical skills alongside design skills**.
 
 ### <i class="fa-solid fa-list"></i> Understand the big picture first.
 
-Pantheon required an extensive discussions of abstract concepts and potential tech stacks before initiating the UI design process. Along the way, I gained a deeper understanding of how clean code design directly influences effective user interface design. These discussions pushed me thoughtfully conceptualize how data should be presented to users in a clear, uncomplicated manner. Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.
+Pantheon required an extensive discussions of abstract concepts and potential tech stacks before initiating the UX/UI design process. Along the way, I gained a deeper understanding of how clean code design directly influences effective user interface design. These discussions pushed me thoughtfully **conceptualize how data should be presented to users in a clear, uncomplicated manner**. Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.

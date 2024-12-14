@@ -15,11 +15,11 @@ timeline: "January 2024 - Ongoing"
 
 ## Background
 
-<a href="https://www.developforgood.org/"><strong>Develop For Good (DFG)</strong></a> is a 501(c)(3) nonprofit organization dedicated to empowering underserved and underrepresented college students. Founded in March 2020 by Stanford students Mary Zhu and Amay Aggarwal, DFG was established to support nonprofits struggling with digital access during the COVID-19 pandemic. By providing opportunities to work on real-world technical projects for nonprofits, DFG aims to bridge the digital divide and promote meaningful volunteer experiences.
+[**Develop For Good**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to empowering underserved and underrepresented college students. Founded in March 2020 by Stanford students Mary Zhu and Amay Aggarwal, DFG was established to support nonprofits struggling with digital access during the COVID-19 pandemic. By providing opportunities to work on real-world technical projects for nonprofits, DFG aims to bridge the digital divide and promote meaningful volunteer experiences.
 
 ## Problem
 
-During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To contribute, I focused on a critical area where AI was frequently applied: project deliverable success. This focus was driven by an unexpected trend I identified in survey responses from the previous project cycle, Summer 2023.
+During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, **I focused on a critical area where AI was frequently applied: project deliverable success**. This focus was driven by an unexpected trend I identified in survey responses from the previous project cycle, Summer 2023.
 
 ## Survey Findings
 
@@ -37,7 +37,7 @@ Students using AI tools reported using Ai to build their problem-solving and tec
 
 ## Student Surveys
 
-To understand how students use AI, I analyzed weekly check-in surveys from past and present DFG cycles. By examining student responses, I aimed to assess the extent of Ai usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
+To understand how students use AI, I analyzed weekly check-in surveys from past and present DFG cycles. By examining student responses, I aimed to assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
 
 ## Nonprofit Clients
 
@@ -121,8 +121,8 @@ As of October 2024, PantheonAI has officially been approved by Develop For Good'
 
 ### <i class="fa-solid fa-pen"></i> Refine Develop For Good's design system.
 
-To support the expansion of Pantheon and PantheonAI, we're developing a unified design system to ensure visual consistency across all internal services.
+To support the expansion of Pantheon and PantheonAI, we're developing a unified design system to ensure visual consistency across all internal services built under Develop For Good.
 
 ### <i class="fa-solid fa-magnifying-glass-chart"></i> Conduct further user and product research.
 
-Since January 2024, Develop For Good has collaborated with organizations like Okta For Good, StartX, and SahajAI to explore the potential of AI within our organization These partnerships have alllowed DFG to strengthen their research efforts and ideate on innovative AI solutions. Moving forward, we plan to expand these collaborations and introduce cutting-edge AI products that will empower project deliverable success for thousands of students at DFG!
+Since January 2024, Develop For Good has collaborated with organizations like Okta For Good, StartX, and SahajAI to explore the potential of AI within the organization. These partnerships have helped DFG strengthen their research efforts and ideate on innovative AI solutions. Moving forward, we plan to expand these collaborations and introduce cutting-edge AI products that will empower project deliverable success for thousands of students at DFG!

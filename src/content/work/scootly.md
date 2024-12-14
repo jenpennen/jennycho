@@ -15,7 +15,7 @@ timeline: September 2022 - December 2022
 
 ## Background
 
-**Scootly** is a mobile app that allows users to rent out their personal scooters across Los Angeles. Driven by the urgent need to combat climate change, Scootly targets one of the most significant contributors: transportation. By offering a rideshare platform exclusively for eco-friendly micromobility vehicles, Scootly is redefining how we travel, making it greener, smarter, and more connected than ever before.
+Scootly is a mobile app that allows users to rent out their personal scooters across Los Angeles. Driven by the urgent need to combat climate change, Scootly targets one of the most significant contributors: transportation. By offering a rideshare platform exclusively for eco-friendly micromobility vehicles, Scootly is redefining how we travel, making it greener, smarter, and more connected than ever before.
 
 ## Team
 
@@ -47,14 +47,12 @@ The hurdles of owning a personal scooter often deter many from making the invest
 
 ## Guiding Principles
 
-Creating an app centered around scooter rentals was not our first choice. We brainstormed solutions to everyday challenges faced by Angelenos. Our decision-making process for Scootly were guided by four key principles.
+Creating an app centered around scooter rentals was not our first choice. We brainstormed solutions to everyday challenges faced by Angelenos. Our decision-making process for Scootly were guided by four key principles: **environmentalism, convenience, initiative, and consistency**.
 ![Scootly Landing](https://storage.googleapis.com/jennyencho-website/scootly-img/scootly-guiding-principles.png)
 
 ## Proposal
 
-At UCLA, one thing is clear: scooters are a campus staple and offer an unbeatable convenience for getting around. For many students, scooters even outshine other eco-friendly transportation options like buses and carpools.
-
-This observation begged the question: **_what if the environmental benefits of personal scooters could merge with the convenience of ridesharing?_** With this concept in mind, we laid the groundwork for Scootly. We identified key features needed for an eco-friendly rideshare experience and initiated the design process.
+At UCLA, one thing is clear: scooters are a campus staple and offer an unbeatable convenience for getting around. For many students, scooters even outshine other eco-friendly transportation options like buses and carpools. This observation begged the question: **_what if the environmental benefits of personal scooters could merge with the convenience of ridesharing?_** With this concept in mind, we laid the groundwork for Scootly. We identified key features needed for an eco-friendly rideshare experience and initiated the design process.
 
 # DESIGN PROCESS
 
@@ -69,7 +67,7 @@ Drawing from our core principles, I crafted a style guide that embodied Scootly�
 
 Jeff, our fellow dev-signer, created a style guide that he believed best captured our guiding principles.
 ![Jeff's Style Guide](https://storage.googleapis.com/jennyencho-website/scootly-img/jeff-scootly-style-guide.png)
-Ultimately, our team unanimously agreed that Jeff’s design better aligned with our vision for Scootly — simple, chic, and urban, making it the ideal style to resonate with Los Angeles residents.
+Ultimately, our team ultimately agreed that Jeff’s design better aligned with our vision for Scootly — **simple, chic, and urban**, making it the ideal style to resonate with Los Angeles residents.
 
 ## Wireframes
 
@@ -121,6 +119,4 @@ Scootly's in-app messaging platform ensures secure transactions and communicatio
 
 ## Outcome
 
-In the beginning of the course, our professor noted to a room of over 300 students that no capstone project has ever achieved commercial success. This revelation ignited a drive in my team and me to become the first.
-
-Even after the quarter ended and we earned a perfect score on our project, we continued to refine Scootly with the goal of publishing it on the iOS App Store. As we continue to put in the final touches, we’re excited to see how Scootly will resonate with users and contribute to a more convenient and sustainable future!
+In the beginning of the course, our professor noted to a room of over 300 students that no capstone project has ever achieved commercial success. This revelation ignited a drive in my team and me to become the first. Even after the quarter ended and we earned a perfect score on our project, we continued to refine Scootly with the goal of publishing it on the iOS App Store. As we continue to put in the final touches, we’re excited to see how Scootly will resonate with users and contribute to a more convenient and sustainable future!

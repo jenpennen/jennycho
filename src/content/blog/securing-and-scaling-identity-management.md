@@ -9,11 +9,11 @@ description: |
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In recent years, Develop For Good (DFG),
 has faced a growing interest from many students and nonprofit organizations seeking
-technical opportunities and digital services. However, the possibility of
-scaling the organization was nonexistent. Since DFG was first established, the
-organization has relied on a manual onboarding/offboarding process, where DFG
+technical opportunities and digital services. However, **the possibility of
+scaling the organization was nonexistent**. **Since DFG was first established, the
+organization has relied on a manual onboarding/offboarding process**, where DFG
 Program Director Amanda Lo personally invites each accepted volunteer and
-nonprofit to the organization’s social platforms. This is a labor-intensive
+nonprofit partner to the organization’s social platforms. This is a labor-intensive
 process that takes hours to complete, with each project cycle consisting of over
 250 volunteers and roughly 40 nonprofit partners. In addition to this
 time-consuming process, there were other technical issues within DFG that had to
@@ -22,10 +22,10 @@ be considered at scale.
 ## User Fragmentation and Data Confidentiality
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ensuring the secure removal of volunteers
-from DFG's social platforms after each project cycle is nearly impossible. Many
+from DFG's social platforms after each project cycle is nearly impossible. **Many
 student volunteers use personal or university email accounts to work on client
 projects, leaving any private client data shared during the cycle stored in
-those personal accounts. This creates significant risks for nonprofit partners,
+those personal accounts**. This creates significant risks for nonprofit partners,
 as such sensitive information could remain accessible to volunteers long after
 their involvement with them ends. Consequently, all DFG-specific project files
 are vulnerable to unauthorized access and sharing, jeopardizing the
@@ -38,7 +38,7 @@ services.
 
 To combat these existng issues, Anish and I provided a demo to DFG founder Mary
 Zhu on the promising potential of a modern identity and access management
-solution that can be integrated with many services used at DFG. In this demo, we
+solution that can be integrated with many services used at DFG. We
 used Penpot as an example application that can be integrated with Keycloak. The
 purpose of the demo was twofold:
 
@@ -102,6 +102,6 @@ allows for novel ways to serve their clients and student volunteers.
 Accordingly, it makes the most sense for DFG to provide these services with the
 most optimal environment possible.
 
-Following this demo, I stayed at Develop For Good, focusing on the frontend engineering and user experience design of internal tools, notably <a href="/work/pantheon"><strong>Pantheon</strong></a> and <a href="/work/melodyai"><strong>PantheonAI</strong></a>. DFG has
+This demo was also shown and endorsed by Kevin Gibbs, co-inventor of the Google App Search Engine. Following this demo, I stayed at Develop For Good, focusing on the frontend engineering and user experience design of internal tools, notably [Pantheon](/work/pantheon) and [PantheonAI (formerly MelodyAI)](/work/melodyai). DFG has
 since evolved into a nonprofit tech startup, being the first nonprofit
 organization to be accepted to Stanford's startup accelerator StartX.

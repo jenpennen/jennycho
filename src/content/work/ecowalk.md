@@ -5,7 +5,7 @@ image: "https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_la
 img_alt: ecowalk
 label: Mobile App
 description: |
-  Taking steps toward a greener future.
+  Taking steps toward a green future.
 org: Dandilyonn
 role: UX Designer & Mobile Developer Intern
 timeline: "June 2021 - August 2021"
@@ -58,7 +58,7 @@ With these new insights, my team and I ultimately decided on EcoWalk, with the m
 
 ### <i class="fa-solid fa-heart-pulse"></i> Embrace one less convenient activity daily.
 
-We understand that daily tasks often require convenience, but _some activities can be approached with less urgency_. By choosing to forgo one convenience-driven habit each day, people can make small and meaningful contributions to the environment.
+We understand that daily tasks often require convenience, but **_some activities can be approached with less urgency_**. By choosing to forgo one convenience-driven habit each day, people can make small and meaningful contributions to the environment.
 
 ### <i class="fa-solid fa-shoe-prints"></i> Commit to practicing a healthy habit weekly.
 
@@ -115,7 +115,7 @@ At the end of the 10 weeks, my team and I presented EcoWalk to a group of engine
 
 ### <i class="fa-solid fa-map"></i> Account for the geographical constraints of the user's location.
 
-During the ideation process, we overlooked the fact that not everyone lives in a walkable area, which significantly influences the reliance on cars. Dandilyonn engineers suggested that, rather than focusing solely on physical activity, we should expand the app to include other eco-friendly transportation options like scooters and trains.
+During the ideation process, we overlooked the fact that **not everyone lives in a walkable area**, which significantly influences the reliance on cars. Dandilyonn engineers suggested that, rather than focusing solely on physical activity, we should expand the app to include other eco-friendly transportation options like scooters and trains.
 
 ## Next Steps
 
@@ -131,8 +131,8 @@ Given the ten week timeline of this internship, my team and I focused on Ecowalk
 
 ### <i class="fa-solid fa-swatchbook"></i> Embrace new challenges.
 
-During the ten weeks, our team faced an unexpected setback. Our team's designer had to leave the internship due to unforeseen circumstances, leaving us uncertain about how to handle the design work. This marked my first exposure to UI/UX design, and I took extra time during the internship to learn about best practices in the field. Although this wasn't how I had envisioned my summer, I thoroughly enjoyed the experience, and it ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
+During the ten weeks, our team faced an unexpected setback. Our team's designer had to leave the internship due to unforeseen circumstances, leaving us uncertain about how to handle the design work. **This marked my first exposure to UI/UX design**, and I took extra time during the internship to learn about best practices in the field. Although this wasn't how I had envisioned my summer, I thoroughly enjoyed the experience, and it ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
 
 ### <i class="fa-solid fa-comments"></i> Communicate consistently with your team.
 
-One challenge I encountered during this internship was effectively communicating my ideas and work to my team members. When we found ourselves facing a tight deadline midway through the internship, we made it a priority to regularly update each other on our progress in both code and design. This open communication was crucial in bringing EcoWalk to life. This experience taught me that without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition.
+One challenge I encountered during this internship was effectively communicating my ideas and work to my team members. When we found ourselves facing a tight deadline midway through the internship, we made it a priority to regularly update each other on our progress in both code and design. This open communication was crucial in bringing EcoWalk to life. This experience taught me that **without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition**.
