@@ -7,7 +7,8 @@ label: Mobile App
 description: |
   Taking steps toward a green future.
 org: Dandilyonn
-role: UX Designer & Mobile Developer Intern
+role: UX Designer Intern
+second_role: Mobile Developer Intern
 timeline: "June 2021 - August 2021"
 ---
 

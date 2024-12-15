@@ -7,7 +7,8 @@ label: Mobile App
 description: |
   Connecting you to the beats that surround you.
 org: UCLA
-role: UX Designer & Developer
+role: UX Designer
+second_role: Frontend Engineer
 timeline: "October 2021 - Ongoing"
 ---
 

@@ -7,7 +7,7 @@ import ThemeToggle from './ThemeToggle.astro';
     class="flex fixed z-50 gap-2 items-center p-4 w-full text-base font-semibold shadow-md dark:bg-transparent bg-offwhite backdrop-blur-md dark:shadow-black"
   >
     <div class="flex gap-4 items-center text-base sm:text-sm pr-5">
-      <a class="mr-auto" href="/"><img src="/favicon.svg" alt=""></a>
+      <a class="mr-auto" href="/"><img id="favicon" src="/favicon.svg" alt=""></a>
       <a class="mr-auto" href="/">Home</a>
       <a href="/work">Works</a>
       <a href="/about">About</a>
@@ -23,3 +23,16 @@ import ThemeToggle from './ThemeToggle.astro';
     color: var(--accent-regular);
   }
 </style>
+<script>
+  const favicon = document.getElementById("favicon") as HTMLImageElement;
+  const updateFavicon = (theme: "light" | "dark" | any): void => {
+      if (theme === "dark") {
+        favicon.src = "/favicon-dark.svg";
+      }
+      else {
+        favicon.src= "/favicon.svg"
+      }
+      console.log(favicon);
+    };   
+  updateFavicon(favicon);
+</script>

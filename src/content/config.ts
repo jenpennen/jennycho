@@ -12,6 +12,7 @@ export const collections = {
       img_alt: z.string().optional(),
       org: z.string().optional(),
       role: z.string().optional(),
+      second_role: z.string().optional(),
       timeline: z.string().optional(),
     }),
   }),

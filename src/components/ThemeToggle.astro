@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
+
+const favicon = "/favicon.svg";
 ---
-  
+
 <div id="theme-toggle" class="cursor-pointer">
   <!--moon -->
   <svg id="light-icon" class="w-6 h-6 hidden text-white dark:text-darkText dark:bg-darkBackground" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff"  viewBox="0 0 24 24">
@@ -26,7 +28,6 @@ import "../styles/global.css";
 const lightIcon = document.getElementById('light-icon') as SVGElement | null;
 const darkIcon = document.getElementById('dark-icon') as SVGElement | null;
 const themeToggle = document.getElementById('theme-toggle') as HTMLDivElement | null;
-
 const isDarkMode = (): boolean => {
   return (
     localStorage.getItem('theme') === 'dark' ||
@@ -45,11 +46,15 @@ const updateIcons = (): void => {
 const toggleTheme = (): void => {
   if (document.documentElement.classList.contains('dark')) {
     document.documentElement.classList.remove('dark');
+    document.documentElement.classList.add('light');
     localStorage.setItem('theme', 'light');
+    // console.log(localStorage.getItem('theme'));
   } else {
     document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
+    document.documentElement.classList.remove('light');  
+    // console.log(localStorage.getItem('theme'));
   }
+  // console.log(localStorage.getItem('theme'));
   updateIcons();
 };
 if (isDarkMode()) {

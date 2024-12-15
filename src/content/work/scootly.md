@@ -7,7 +7,8 @@ label: Mobile App
 description: |
   Turning personal scooters into a shared urban mobility resource.
 org: UCLA
-role: Developer & UI/UX Designer
+role: UI/UX Designer
+second_role: Frontend Developer
 timeline: September 2022 - December 2022
 ---
 

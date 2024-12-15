@@ -8,7 +8,8 @@ description: |
   Powering nonprofit volunteer management with seamless tech integration.
 org: "Develop For Good"
 timeline: "September 2023 - Ongoing"
-role: "Product Designer & Frontend Engineer"
+role: Product Designer
+second_role: Frontend Engineer
 ---
 
 # Context
@@ -194,7 +195,7 @@ We created a server-less function on AWS Lambda which is called by an Airtable a
 
 ## Outcomes
 
-Since the inception of this project, Develop For Good has recieved **over $1 million in funding in support of Pantheon's development** through key partnerships with Stanford's StartX and Okta. In November of 2023, **Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX**, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. As of October 2024, **Pantheon's work is featured on Okta's tech blog community and has officially launched for every team in the Winter 2025 cycle and beyond!**
+Since the inception of this project, Develop For Good has recieved **over $1 million in funding in support of Pantheon's development** through key partnerships with Stanford's StartX and Okta. In November of 2023, **Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX**, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. **As of October 2024, Pantheon's work is featured on [Okta's tech blog](https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/) and has officially launched for every team in the Winter 2025 cycle and beyond!**
 
 ## Next Steps
 
@@ -214,4 +215,4 @@ Pantheon has been the most intricate technical architecture I’ve worked on to 
 
 ### <i class="fa-solid fa-list"></i> Understand the big picture first.
 
-Pantheon required an extensive discussions of abstract concepts and potential tech stacks before initiating the UX/UI design process. Along the way, I gained a deeper understanding of how clean code design directly influences effective user interface design. These discussions pushed me thoughtfully **conceptualize how data should be presented to users in a clear, uncomplicated manner**. Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.
+Pantheon required extensive discussions of abstract concepts and potential tech stacks before initiating the UX/UI design process. Along the way, I gained a deeper understanding of how clean code design directly influences effective user interface design. These discussions pushed me to thoughtfully **conceptualize how data should be presented to users in a clear, uncomplicated manner**. Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.
