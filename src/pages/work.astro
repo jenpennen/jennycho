@@ -1,6 +1,5 @@
 ---
 import Card from '../components/Card.astro';
-import WorkPreview from '../components/WorkPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import '../styles/global.css';
@@ -10,7 +9,7 @@ const projects = (await getCollection('work'))
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 ---
 
-<BaseLayout>
+<BaseLayout title="My Works" description="Check out Jenny's Case Studies">
     <div>
         <h1 class="mb-3 text-2xl">My Works</h1>
         <p class="mb-10">Check out my case studies below.</p>
