@@ -22,27 +22,29 @@ Ecowalk is a mobile app inspired by the question: **_how does my choice of trans
 
 As part of Dandilyonn's 2021 SEEDS internship cohort, I worked with an iOS team of two other developer interns, Stephanie and Remi. Each team was assigned the task of developing an app that aligned with Dandilyonn’s mission to raise environmental awareness by addressing a specific sector that contributes to climate change.
 
-## Problem
+## Observation
 
 ### <i class="fa-solid fa-forward-fast"></i> The hidden cost of convenience.
 
 Many people prioritize convenience in their daily tasks. Whether it's reaching a destination or something as simple as turning on the lights, they often overlook the environmental impact of their actions, focusing instead on what is easy and efficient.
 
-### <i class="fa-solid fa-heart-pulse"></i> Convenience is impacting both health and the climate.
+### <i class="fa-solid fa-heart-pulse"></i> Convenience is impacting both health and the environment.
 
-America is grappling with a widespread obesity epidemic. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks. This shift is not only harming their health but also intensifying climate change.
+America is grappling with a widespread obesity epidemic. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks.
 
-> How can we combat the threat of climate change with the benefits of physical activity?
-
-## Opportunity
+## Problem
 
 In many American cities, relying on cars for travel is often unavoidable and an essential part of people’s daily routines. This raises an important question: **how can we foster new, positive habits through our transportation choices?** To address this challenge effectively, we needed to delve deeper into people's needs and frustrations with their current transportation options.
+
+## Define
+
+> How can we foster new, positive habits through our transportation choices?
 
 # RESEARCH
 
 ## Guiding Principles
 
-Creating a walking-first application wasn't our initial choice. My team and I explored various environmental issues - food waste, deforestation, water pollution - and the challenges posed by daily human activities before settling on EcoWalk. Our decision was guided by the following key principles:
+My team and I explored various environmental issues - food waste, deforestation, water pollution - and the challenges posed by daily human activities before settling on EcoWalk. Our decision was guided by the following key principles:
 ![Remove Close Friends](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-guiding-principles.png)
 
 ## Contextual Inquiry
@@ -53,7 +55,6 @@ My next focus was to gather perspectives on transportation needs from those arou
 
 Given the responses of 60+ interviewees, I used an empathy map to distinguish frustration patterns. This approach revealed several key points of frustration: **_convenience, time, and personal motivation_**.
 ![Empathy Mapping](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-empathy-map.png)
-With these new insights, my team and I ultimately decided on EcoWalk, with the mission to accomplish the following goals.
 
 ## Goals
 
@@ -110,7 +111,7 @@ Users can view the activities that others in their community are committing to, 
 
 ## Outcome
 
-At the end of the 10 weeks, my team and I presented EcoWalk to a group of engineers and technology professionals in collaboration with Dandilyonn. The idea was met with great enthusiasm, and we also received valuable feedback.
+At the end of the 10 weeks, my team and I presented EcoWalk to a group of engineers and executive members at Dandilyonn. The idea was met with great enthusiasm, and we also received valuable feedback.
 
 ## Feedback
 
@@ -132,8 +133,8 @@ Given the ten week timeline of this internship, my team and I focused on Ecowalk
 
 ### <i class="fa-solid fa-swatchbook"></i> Embrace new challenges.
 
-During the ten weeks, our team faced an unexpected setback. Our team's designer had to leave the internship due to unforeseen circumstances, leaving us uncertain about how to handle the design work. **This marked my first exposure to UI/UX design**, and I took extra time during the internship to learn about best practices in the field. Although this wasn't how I had envisioned my summer, I thoroughly enjoyed the experience, and it ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
+During the ten weeks, my team faced an unexpected setback. Our team's designer left the internship due to unforeseen circumstances, leaving us uncertain about how to handle the design work. **This marked my first exposure to UI/UX design**, and I took extra time during the internship to learn about best practices in the field. This experience ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
 
 ### <i class="fa-solid fa-comments"></i> Communicate consistently with your team.
 
-One challenge I encountered during this internship was effectively communicating my ideas and work to my team members. When we found ourselves facing a tight deadline midway through the internship, we made it a priority to regularly update each other on our progress in both code and design. This open communication was crucial in bringing EcoWalk to life. This experience taught me that **without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition**.
+When we found ourselves facing a tight deadline, we made it a priority to regularly update each other on our progress in both code and design. This open communication was crucial in bringing EcoWalk to life. This experience taught me that **without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition**.

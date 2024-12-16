@@ -32,6 +32,8 @@ Like many American cities, LA’s public transportation system falls short, leav
 
 Budget-conscious people, especially college students, often face a tough choice: should they purchase their own scooter or keep paying for rentals? Neither option seems ideal—owning and maintaining a personal scooter is too time-consuming, while constantly paying for short-term rentals from companies like Bird and Uber quickly becomes expensive.
 
+## Define
+
 > How can we motivate LA residents to embrace scooters as a viable transportation option?
 
 ## Goals

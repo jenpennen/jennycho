@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 import '../styles/global.css';
 
 const projects = (await getCollection('work'))
-    .filter((item:any) => !['perspective', 'perspectiveai'].includes(item.slug)) //exclude incomplete case studies
+    .filter((item:any) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 ---
 

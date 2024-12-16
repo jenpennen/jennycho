@@ -16,11 +16,11 @@ second_role: Frontend Engineer
 
 ## Background
 
-[**Develop For Good**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to empowering underserved and underrepresented college students. Founded in March 2020 by Stanford students Mary Zhu and Amay Aggarwal, DFG was established to support nonprofits struggling with digital access during the COVID-19 pandemic. By providing opportunities to work on real-world technical projects for nonprofits, DFG aims to bridge the digital divide and promote meaningful volunteer experiences.
+[**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to bridging the digital divide in the nonprofit sector and volunteerism by providing opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits. Over the past few years, DFG has faced a growing interest from many students and organizations seeking technical opportunities and digital services.
 
 ## My Work
 
-I joined Develop For Good as a software engineer in March 2023. Alongside fellow engineer Anish Sinha, we identified a critical need for a dedicated cloud infrastructure to support DFG's growing demand among students and nonprofits. **In August 2023, we proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon** (learn more about it [here](https://jennycho.web.app/blog/securing-and-scaling-identity-management)). As a founding designer and engineer, I spearheaded the design strategy and frontend engineering for DFG's internal services, and continue to work on Pantheon to this date.
+In August 2023, fellow engineer Anish Sinha and I proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon (learn more about it [**here**](/blog/securing-and-scaling-identity-management)). As a founding designer and engineer, **I spearheaded the design strategy and frontend engineering for DFG's internal services**, and currently lead the UX and frontend team for Pantheon.
 
 ## Observation
 
@@ -41,6 +41,8 @@ Develop For Good currently operates without a dedicated cloud environment for it
 ### <i class="fa-solid fa-square-xmark"></i> DFG's onboarding/offboarding processes limits scalability.
 
 The onboarding and offboarding processes at Develop For Good is labor-intensive, with Program Director Amanda Lo manually managing over 400 volunteers and clients each project cycle on DFG's social platforms. This time-consuming task limits DFG's ability to scale efficiently with its current infrastructure.
+
+## Define
 
 > With the scale of our programs surpassing the manual capacity of our staff, how might we manage program lifecycle tasks seamlessly and securely?
 
@@ -199,7 +201,7 @@ Since the inception of this project, Develop For Good has recieved **over $1 mil
 
 ## Next Steps
 
-### <i class="fa-solid fa-lightbulb"></i> Design additional functionalities.
+### <i class="fa-solid fa-pencil"></i> Design additional functionalities.
 
 We're approaching Pantheon as a central platform to house custom AI models and features to further accelerate and personalize the end-to-end project development experience.
 
@@ -209,10 +211,10 @@ We hope this key piece of software will help make it possible for DFG to scale o
 
 ## Reflections
 
-### <i class="fa-solid fa-list"></i> Design isn’t just aesthetics—it’s the backbone of making technology usable and scalable.
+### <i class="fa-solid fa-lightbulb"></i> Design isn’t just aesthetics.
 
 Pantheon has been the most intricate technical architecture I’ve worked on to date (as of October 2024). Its evolution through multiple architectural changes has given me invaluable lessons on the importance of functional design to make complex technical systems accessible to everyday users. Combining my background in both tech and design to bring a scalable product to life has been an exciting challenge and **reinforced my commitment to continuously update my technical skills alongside design skills**.
 
-### <i class="fa-solid fa-list"></i> Understand the big picture first.
+### <i class="fa-solid fa-cloud"></i> Understand the big picture first.
 
 Pantheon required extensive discussions of abstract concepts and potential tech stacks before initiating the UX/UI design process. Along the way, I gained a deeper understanding of how clean code design directly influences effective user interface design. These discussions pushed me to thoughtfully **conceptualize how data should be presented to users in a clear, uncomplicated manner**. Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.

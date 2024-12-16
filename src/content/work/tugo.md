@@ -34,15 +34,15 @@ Students want to socialize with other students before honing in for the academic
 
 Inspired by a popular tiktok trend, where influencers ask nearby strollers in an area what song they were listening to, I wondered if people around me were also naturally curious about other peoples' whereabouts.
 
-## Opportunity
+## Define
 
-My team and I saw these obersvations as an opportunity to transform the music discovery experience for the UCLA community, where students can easily view the songs other students are currently listening to. However, the team wanted to go beyond a simple music feed.
+> How might we reimagine social connections through an enaging music discovery experience beyond a simple music feed?
 
 # RESEARCH
 
 ## Competitive Analysis
 
-First, I conducted an analysis on four existing music platforms — _Spotify, Apple Music, SoundCloud, and YouTube Music_. This revealed a gap: **_none of these platforms offered an easy way to share music with people nearby_**.
+First, I conducted an analysis on four existing music platforms — **Spotify, Apple Music, SoundCloud, and YouTube Music**. This revealed a gap: **_none of these platforms offered an easy way to share music with people nearby_**.
 
 ![Competitive Analysis](https://storage.googleapis.com/jennyencho-website/tugo-img/competitive-analysis.png)
 
@@ -99,7 +99,7 @@ Creating a style guide was a challenging but essential step before diving into h
 
 ## Usability Testing
 
-Starting with the old Retune designs, I created a working prototype and recruited 20 participants to test it. I decided to use Figma's prototype feature due to the cost of our other option, Maze. While Figma had some limitations compared to Maze, I recieved valuable feedback on our current designs.
+Starting with the old Retune designs, I created a working prototype and recruited 20 participants for user feedback. I decided to use Figma's prototype feature due to the cost of our other option, Maze. While Figma had some limitations compared to Maze, I recieved valuable feedback on the existing designs.
 
 ![Old Retune Designs](https://storage.googleapis.com/jennyencho-website/tugo-img/old-retune-designs.png)
 
@@ -119,7 +119,7 @@ Many participants noted that the follow button felt out of place, making the app
 
 ### <i class="fa-solid fa-brush"></i> Share less on the music tab.
 
-One key feature my Retune team developed was the user music tab, which displays a user’s current song, favorite albums, and artists. However, only 20% of participants fully explored it, and _80% found it too cluttered and hindered their discovery experience_. To address this, I streamlined the music tab to focus on song shuffling and added a profile view for detailed music activity.
+One key feature my Retune team developed was the user music tab, which displays a user’s current song, favorite albums, and artists. However, only 20% of participants fully explored it, and **_80% found it too cluttered and hindered their discovery experience_**. To address this, I streamlined the music tab to focus on song shuffling and added a profile view for detailed music activity.
 
 ![Less Clutter](https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-clutter.png)
 
@@ -167,4 +167,4 @@ This project stressed the importance of staying current in design and tech. Rede
 
 ### <i class="fa-solid fa-compass"></i> It's okay to steer projects in a different direction.
 
-My time at Retune was invaluable. Working on the UI/UX design and frontend development of a project that directly benefited the UCLA community was incredibly fulfilling, and I'm eager to carry this momentum forward with Tugo, a project I've initiated and am developing alongside a team I've built. In this new venture, I'm ensuring design considerations are integrated into every engineering decision and ultimately, foster a learning environment for new technologies and workflows for myself and my Tugo partner Azia.
+Leading the UI/UX design and frontend development of a project made for the UCLA community was incredibly fulfilling, and I'm eager to carry this momentum forward with Tugo. In this new venture, I'm ensuring design considerations are integrated into every engineering decision and ultimately, foster a learning environment for new technologies and workflows for myself and my Tugo partner Azia.

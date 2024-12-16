@@ -15,7 +15,7 @@ timeline: "January 2024 - Ongoing"
 
 ## Background
 
-[**Develop For Good**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to empowering underserved and underrepresented college students. Founded in March 2020 by Stanford students Mary Zhu and Amay Aggarwal, DFG was established to support nonprofits struggling with digital access during the COVID-19 pandemic. By providing opportunities to work on real-world technical projects for nonprofits, DFG aims to bridge the digital divide and promote meaningful volunteer experiences.
+[**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to bridging the digital divide in the nonprofit sector and volunteerism by providing opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits.
 
 ## Problem
 
@@ -30,6 +30,8 @@ Over 75% of student volunteers reported using AI to aid their technical developm
 ### <i class="fa-solid fa-magnifying-glass"></i> 81% of students reported that AI significantly contributed to successful project outcomes by the end of the cycle.
 
 Students using AI tools reported using Ai to build their problem-solving and technical skills through suggestions provided by AI.
+
+## Define
 
 > How can Develop For Good enhance the development experience of student volunteers by leveraging AI tools and resources?
 
