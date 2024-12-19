@@ -22,13 +22,18 @@ const {data, slug, collection} = Astro.props.project;
 	<a href={`/${collection}/${slug}`}>
 		<img src={data.image} alt={data.img_alt || ''}/>
 		<div class="p-3">
-		<h2 class="text-lg md:text-2xl sm:text-3xl font-brand tracking-wider">
+		
+		
+		<h2 class="text-lg md:text-2xl sm:text-3xl font-brand">
 			{data.title}
 			<!-- <span>&rarr;</span> -->
 		</h2>
-		<h3 class="text-xs uppercase font-semibold">
-			{data.label}
+		<h3 class="text-sm font-bold uppercase">
+			{data.org}
 		</h3>
+		<!-- <h3 class="text-xs uppercase font-semibold">
+			{data.org}
+		</h3> -->
 		<p>
 			{data.description}
 		</p>

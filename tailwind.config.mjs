@@ -16,13 +16,13 @@ export default {
         accentOverlay: "#c0d4fd",
       },
       fontFamily: {
-        body: ['"Nunito"', '"Poppins"', "system-ui", "sans-serif"],
-        brand: ['"PT Serif"', '"Poppins"', "system-ui", "sans-serif"],
+        body: ['"Instrument Sans"', '"Poppins"', "system-ui", "sans-serif"],
+        brand: ['"Libre Bodoni"', '"Poppins"', "system-ui", "sans-serif"],
         system: ['"Poppins"', "system-ui", "sans-serif"],
       },
       fontSize: {
         xs: "0.875rem",
-        sm: "1.15rem",
+        sm: "1rem",
         base: "1.35rem",
         md: "1.5rem",
         lg: "1.75rem",

@@ -38,7 +38,7 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   --font-body: "Public Sans", var(--font-system);
-  --font-brand: Rubik, var(--font-system);
+  --font-brand: "Libre Bodoni", var(--font-system);
 
   --shadow: #0e2f3924;
   --small-shadow: 0px 0px 5px var(--shadow), 0px 10px 20px var(--shadow);
@@ -71,7 +71,7 @@
 }
 html,
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-system);
   background-color: var(--background-color);
   color: var(--text-color);
 }
