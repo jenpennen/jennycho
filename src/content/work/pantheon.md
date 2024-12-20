@@ -16,23 +16,13 @@ second_role: Frontend Engineer
 
 ## Background
 
-[**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to bridging the digital divide in the nonprofit sector and volunteerism by providing opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits. Over the past few years, DFG has faced a growing interest from many students and organizations seeking technical opportunities and digital services.
-
-## My Work
-
-In August 2023, fellow engineer Anish Sinha and I proposed a series of Cloud and AI initiatives to DFG Founder Mary Zhu, which ultimately led to the creation of Pantheon (learn more about it [**here**](/blog/securing-and-scaling-identity-management)). As a founding designer and engineer, **I spearheaded the design strategy and frontend engineering for DFG's internal services**, and currently lead the UX and frontend team for Pantheon.
-
-## Observation
-
-### <i class="fa-solid fa-arrows-spin"></i> Develop For Good operates in four-month project cycles twice a year.
-
-Volunteers are placed in teams focusing on technical projects in web/mobile development, data engineering, and UI/UX design, with each team consisting of at least 8 volunteers.
-
-### <i class="fa-solid fa-arrow-trend-up"></i> An increasing number of students and nonprofits are turning to DFG for technical opportunities and services.
-
-An increasing number of students and nonprofits are seeking technical opportunities and services from DFG. Despite this rising demand, DFG can currently support around 35 nonprofit clients per cycle.
+[**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to bridging the digital divide in the nonprofit sector and volunteerism by providing opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits.
 
 ## Problem
+
+Since its establishment, DFG has experienced increasing interest from students and organizations seeking technical opportunities and digital services. However, the organization has struggled to scale its offerings due to a reliance on manual lifecycle tasks. To address this growing demand and improve technical infrastructure, **I spearheaded the UX strategy and frontend development for Pantheon— Develop For Good's first internal data management system**.
+
+## Understanding the Problem
 
 ### <i class="fa-solid fa-square-xmark"></i> Develop For Good does not have the tech infrastructure to protect volunteer and client data.
 
@@ -42,9 +32,7 @@ Develop For Good currently operates without a dedicated cloud environment for it
 
 The onboarding and offboarding processes at Develop For Good is labor-intensive, with Program Director Amanda Lo manually managing over 400 volunteers and clients each project cycle on DFG's social platforms. This time-consuming task limits DFG's ability to scale efficiently with its current infrastructure.
 
-## Define
-
-> With the scale of our programs surpassing the manual capacity of our staff, how might we manage program lifecycle tasks seamlessly and securely?
+> With the scale of Develop For Good's programs surpassing the manual capacity of their staff, how might we manage program lifecycle tasks seamlessly and securely?
 
 ## Goals
 

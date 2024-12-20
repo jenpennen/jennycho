@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import WorkPreview from '../components/WorkPreview.astro';
+import Card from '../components/WorkPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 const title = "Hi! I'm Jenny."
@@ -16,12 +16,12 @@ const entry =(await getCollection('blog'))
 
 <BaseLayout title="Jenny Cho's Home" description="Los Angeles-based UX Designer and Software Engineer">
 		
-	<div class="flex flex-col gap-4 h-full">
-		<h1 class="text-3xl font-brand tracking-wide">{title}</h1>
-		<p class="w-5/6 sm:w-full">
+	<div class="flex flex-col h-full">
+		<h1 class="text-3xl font-brand tracking-wide italic">{title}</h1>
+		<p class="w-5/6 pb-10 sm:w-full">
 			I'm a UX designer working on internal tools at Develop For Good. 
 		</p>
-		<div>
+		<!-- <div>
 			<h2 class="text-md">My Recent Works</h2>
 			<div class="underline decoration-dotted underline-offset-4">
       			<h3><li><a  href="/work/pantheon/">Pantheon: Powering nonprofit volunteer management through seamless tech integration</a></li></h3>
@@ -29,33 +29,25 @@ const entry =(await getCollection('blog'))
 				<h3><li><a href="/blog/securing-and-scaling-identity-management">Identity Management with Keycloak and Kubernetes</a></li></h3>	
     		</div>	
 			<p>Check out more of my works <a class="hover:text-lightprimary font-bold underline decoration-dotted dark:text-gray-300 dark:hover:text-pink-500" href="/work/">here</a></p>
-		</div>
+		</div> -->
 
-		<div>
-			<h2 class="text-md">Featured Works</h2>
+		<div class="pb-10">
+			<h2 class="text-md font-brand tracking-wide">Featured Works</h2>
 			<div class="underline decoration-dotted underline-offset-4">
       			<h3><li><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/" target="_blank">Okta's Nonprofit Technology Fellowship: Empowering nonprofit technology leaders across the globe</a></li></h3>
 	  			<h3><li><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9" target="_blank">Develop For Good: Streamlining Volunteer Management for Nonprofits with Pantheon</a></li></h3>
     		</div>
 		</div>
 
-		<!-- <div>
-			<h2 class="text-md">Let's Connect</h2>
-			<div class="underline-offset-4">
-      			<h3><li>Email: jennycho35@gmail.com</li></h3>
-				<h3><li><a href="https://www.linkedin.com/in/jennyecho/" target=_blank>LinkedIn</a></li></h3>
-			</div>
-		</div> -->
-
-		<!-- <h2>Check Out My Recent Works</h2>
+		<h2 class="text-md font-brand tracking-wide">Recent Works</h2>
 		
-		<li role="list" class="link-card-grid gap-4">
+		<li role="list" class="grid">
 			{
 				projects.map((project:any) => (
-					<WorkPreview project={project}/>
+					<Card project={project}/>
 				))
 			}
-		</li> -->
+		</li>
 	</div>
 </BaseLayout>
 <style>
