@@ -24,7 +24,7 @@ This project began in October 2021 as part of UCLA DevX's 2021 Fall Project Cycl
 
 Ultimately, as Retune came to an end, I decided to continue working on this project, renaming it Tugo. I formed a new team of two alongside fellow developer and colleague Nastazia Coronado.
 
-## Observation
+## Discovery
 
 ### <i class="fa-solid fa-users"></i> Connecting with people in a large space is hard.
 

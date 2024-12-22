@@ -15,23 +15,23 @@ timeline: "January 2024 - Ongoing"
 
 ## Background
 
-[**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit organization dedicated to bridging the digital divide in the nonprofit sector and volunteerism by providing opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits.
+[**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit focused on closing the digital divide in the nonprofit sector and volunteerism. They offer opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits.
 
 ## Problem
 
-During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, **I focused on a critical area where AI was frequently applied: project deliverable success**. This focus was driven by an unexpected trend I identified in survey responses from the previous project cycle, Summer 2023.
+During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, **I focused on a critical area where AI was frequently applied: project deliverable success**. This focus was driven by an unexpected trend I identified in student volunteers' survey responses from the previous project cycle, Summer 2023.
 
 ## Survey Findings
 
 ### <i class="fa-solid fa-magnifying-glass"></i> Over half of student volunteers reported using AI for DFG-related tasks for the Summer 2023 cycle.
 
-Over 75% of student volunteers reported using AI to aid their technical development needs to meet client deliverables.
+Over 70% of student volunteers reported using AI to aid their technical development needs to meet client deliverables.
 
 ### <i class="fa-solid fa-magnifying-glass"></i> 81% of students reported that AI significantly contributed to successful project outcomes by the end of the cycle.
 
-Students using AI tools reported using Ai to build their problem-solving and technical skills through suggestions provided by AI.
+Students using AI tools reported using AI to build their problem-solving and technical skills through suggestions provided by AI.
 
-## Define
+## Defining the Problem
 
 > How can Develop For Good enhance the development experience of student volunteers by leveraging AI tools and resources?
 
@@ -39,7 +39,7 @@ Students using AI tools reported using Ai to build their problem-solving and tec
 
 ## Student Surveys
 
-To understand how students use AI, I analyzed weekly check-in surveys from past and present DFG cycles. By examining student responses, I aimed to assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
+To better understand how students use AI, I analyzed weekly check-in surveys from past and present project cycles. This step had three goals: assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
 
 ## Nonprofit Clients
 
@@ -72,20 +72,34 @@ Use AI to store in-house FAQs, troubleshooting tips, and tutorials to streamline
 
 # Design Process
 
-## Lo-Fi Wireframes
+## Understanding the Audience
 
-Kicking off the design process, I sketched out my vision for an AI platform tailored to DFG’s specific needs and use cases.
+The two primary end users of PantheonAI are student volunteers and client organizations. Both groups work within cross-functional teams, and they share the same goals when faciliating discussions:
+
+### 1. Clarify any confusing technical or design terminology during meetings.
+
+### 2. Optimize workflows by automating user testing and persona scenarios.
+
+### 3. Provide a clear and actional next step to meet deliverables.
+
+## Low Fidelity Brainstorming
+
+I began sketching out my vision for an AI platform tailored to DFG’s specific needs and use cases. The purpose of this phase was to brainstorm how to position DFG's AI feature as the primary resource for technical and design help while also allowing the users the option to connect with product leads or technical mentors when needed on the volunteer-facing interface on Pantheon.
 ![Image](https://storage.googleapis.com/jennyencho-website/pantheonai-img/pantheonai-wireframe-1.png)
 
 ## User Journey
 
-Building on these initial ideas, I developed a user journey outlining the experience of a student volunteer interacting with the AI platform. This step was critical, as it not only defined the user flow but also introduced a new set of feature concepts that served as key iteration points throughout the design process.
+Building on these ideas, I developed a user journey outlining the experience of a student volunteer interacting with the AI feature. This step was critical, as it not only defined the user flow but also introduced a new set of feature concepts that served as key iteration points throughout the design process.
 ![User Journey](https://storage.googleapis.com/jennyencho-website/pantheonai-img/pantheonai-user-journey.png)
 
-## Mid-Fi Wireframes
+## Mid Fidelity Wireframes
 
-The next phase involved refining the product’s overall "look and feel" with input from developers and applying those refinements to the early mockups. To ensure we pursued the best possible options, we created multiple variations of the most important features for evaluation and feedback.
-![Image](https://storage.googleapis.com/jennyencho-website/pantheonai-img/midfi-wireframe.png)
+Next, my team and I refined the product’s overall "look and feel" with input from developers and applying those refinements to the early mockups. To ensure we pursued the best possible options, we created multiple variations of the most important features for evaluation and feedback.
+![Mid Fidelity Wireframe](https://storage.googleapis.com/jennyencho-website/pantheonai-img/midfi-wireframe.png)
+
+<!-- ## First MVP
+
+The first MVP of PantheonAI was sent to DFG's Board of Directors in September 2024. Although this product was in need of more refinements, the intent of MVP was clear: to gain approval to proceed with ongoing development for Develop For Good's first AI model. -->
 
 ## Design Iterations
 
@@ -117,7 +131,7 @@ Students can reach out to DFG’s in-house AI assistant for all technical and lo
 
 ## Outcome
 
-As of October 2024, PantheonAI has officially been approved by Develop For Good's Board of Directors and Advisors, which includes tech luniaries like Kristen Swanson, Scott Forstall, and Mendal Rosenblum. With their endorsement, PantheonAI is expected to undergo further refinement and development!
+As of October 2024, PantheonAI has officially been approved by Develop For Good's Board of Directors and Advisors, which includes tech luniaries like Kristen Swanson, Scott Forstall, and Mendal Rosenblum. With their endorsement, PantheonAI is expected to undergo development starting the following year.
 
 ## Next Steps
 
@@ -127,4 +141,4 @@ To support the expansion of Pantheon and PantheonAI, we're developing a unified 
 
 ### <i class="fa-solid fa-magnifying-glass-chart"></i> Conduct further user and product research.
 
-Since January 2024, Develop For Good has collaborated with organizations like Okta For Good, StartX, and SahajAI to explore the potential of AI within the organization. These partnerships have helped DFG strengthen their research efforts and ideate on innovative AI solutions. Moving forward, we plan to expand these collaborations and introduce cutting-edge AI products that will empower project deliverable success for thousands of students at DFG!
+Since January 2024, Develop For Good has collaborated with organizations like Okta For Good, StartX, and SahajAI to explore the potential of AI within the organization. These partnerships have helped DFG strengthen their research efforts and ideate on innovative AI solutions. Moving forward, we plan to expand these collaborations to introduce our own cutting-edge AI tool that will empower project deliverable success for thousands of students at DFG!

@@ -75,7 +75,8 @@ const {title, description, image} = Astro.props;
 		color: var(--accent-regular);
 	}
 	.content :global(li) {
-		list-style-type:circle;
+		padding: 0.5rem 3rem;
+		list-style-type: circle;
 	}
 	/* .content :global(strong) {
 		color: var(--accent-regular);
@@ -134,6 +135,7 @@ const {title, description, image} = Astro.props;
 		font-family: var(--font-body);
 		font-weight: 600;
 		line-height: 1.1;
+		margin: 2.5rem 1rem;
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-dark);
 		color: var(--gray-0);
@@ -168,7 +170,6 @@ const {title, description, image} = Astro.props;
 		}
 
 		.content :global(blockquote) {
-			margin: 2.5rem 1rem;
 			padding: 0.5rem;
 			font-size: var(--text-xl);
 
