@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import Card from '../components/WorkPreview.astro';
+import Card from '../components/Card.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
-const title = "Hi! I'm Jenny."
+const title = "Jenny Cho"
 const projects = (await getCollection('work'))
 	.filter((item:any) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
@@ -14,13 +14,13 @@ const entry =(await getCollection('blog'))
 	.slice(0,2); 
 ---
 
-<BaseLayout title="Jenny Cho's Home" description="Los Angeles-based UX Designer and Software Engineer">
+<BaseLayout title="Jenny Cho - UX Designer & Engineer" description="Los Angeles-based UX Designer and Software Engineer">
 		
 	<div class="flex flex-col h-full">
-		<h1 class="text-3xl font-brand tracking-wide italic">{title}</h1>
-		<p class="w-5/6 pb-10 sm:w-full">
+		<h1 class="text-3xl font-brand tracking-wide italic pb-10">{title}</h1>
+		<!-- <p class="w-5/6 pb-10 sm:w-full">
 			I'm a UX designer working on internal tools at Develop For Good. 
-		</p>
+		</p> -->
 		<!-- <div>
 			<h2 class="text-md">My Recent Works</h2>
 			<div class="underline decoration-dotted underline-offset-4">
@@ -41,17 +41,23 @@ const entry =(await getCollection('blog'))
 
 		<h2 class="text-md font-brand tracking-wide">Recent Works</h2>
 		
-		<li role="list" class="grid">
-			{
-				projects.map((project:any) => (
-					<Card project={project}/>
-				))
-			}
-		</li>
+		<div role="list" class="grid">
+            {
+                projects.map((project:any) => (
+                    <Card project={project} />
+                ))
+            }
+        </div>
 	</div>
 </BaseLayout>
 <style>
 	li a:hover {
 		color: var(--accent-regular);
 	}
+	.grid {
+       display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+		gap: 2rem;
+		padding: 1rem 0;
+    }
 </style>

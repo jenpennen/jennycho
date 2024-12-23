@@ -58,6 +58,7 @@
 
 :root.dark {
   --background-color: #1d1d1a;
+  --secondary-background: #323232;
   --text-color: var(--gray-700);
   --gray-100: #ebf0ff;
   --text-color: #ebf0ff;
@@ -124,12 +125,12 @@ a:hover {
 .link-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-  gap: 1.25rem;
-  padding: 0;
+  gap: 1rem;
 }
 .link-card {
+  padding: 10px;
   transition: var(--bouncy);
-  box-shadow: var(--medium-shadow);
+  /* box-shadow: var(--medium-shadow); */
 }
 img {
   transition: var(--bouncy);
@@ -169,4 +170,27 @@ blockquote p {
   margin: 0.5rem 0.5rem;
   font-size: 1.5rem;
   color: var(--accent-regular);
+}
+
+@media (min-width: 30em) {
+  p {
+    font-size: 1rem;
+  }
+  /* h1 {
+			font-size: 3rem;
+		} */
+  .back-link {
+    display: block;
+    align-self: flex-start;
+  }
+
+  .details {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .content :global(blockquote) {
+    padding: 0.5rem;
+    font-size: var(--text-xl);
+  }
 }

@@ -11,7 +11,7 @@ export default {
         darkText: "#eae9fc",
         darkSecondaryBg: "#323234",
         lightSecondaryBg: "#d1d1d1",
-        lightprimary: "#3d6df4",
+        lightprimary: "#900c0c",
         darkPrimary: "#fad1d8",
         accentOverlay: "#c0d4fd",
       },
