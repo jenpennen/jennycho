@@ -13,7 +13,7 @@ const { org, label, role, second_role, timeline } = Astro.props;
 	<div class="p-3 gap-4 center">
 		<div class="detail-grid gap-4">
 		<div>
-			<p class="detail-heading font-bold">Organization</p>
+			<p class="detail-heading">Organization</p>
 			<p class="detail-info">{org}</p>
 		</div>
 		<div>
@@ -37,7 +37,7 @@ const { org, label, role, second_role, timeline } = Astro.props;
 	.detail-heading {
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: medium;
+		font-size: 1rem;
 		text-align: center;
 		color: var(--gray-500);
 		letter-spacing: 1px;
@@ -49,7 +49,7 @@ const { org, label, role, second_role, timeline } = Astro.props;
 	}
 	.detail-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 	gap: 1.25rem;
 }
  </style>

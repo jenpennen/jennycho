@@ -1,5 +1,4 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -33,7 +32,7 @@ const {title, description, image} = Astro.props;
 					<div class="pt-10">
 						<img class="rounded-xl"src={image} />
 					</div>
-					<h1 class="text-4xl pt-10 font-brand tracking-wide pb-5">{title}</h1>
+					<h1 class="text-3xl pt-5 font-brand tracking-wide pb-2">{title}</h1>
 					<p>{description}</p>
 					<div class="text-left content">
 						<slot/>
@@ -94,26 +93,25 @@ const {title, description, image} = Astro.props;
 		font-family: "Libre Bodoni", serif;
 		letter-spacing: 2px;
 		font-weight: 700;
-		font-size:3rem;
 		padding-bottom: 1rem;
 		text-transform: uppercase;
 	}
-	.content :global(h2)  {
+	/* .content :global(h2)  {
 		font-size: 1.75rem;
 
-	}
-	.content :global(h3) {
+	} */
+	/* .content :global(h3) {
 		font-size: 1.35rem;
 	}
 	.content :global(h4) {
 		font-size: 1.15rem;
-	}
-	.content :global(h5) {
+	} */
+	/* .content :global(h5) {
 		font-size: 1rem;
 	}
 	.content :global(h6) {
 		font-size: 0.75rem;
-	}
+	} */
 	.content :global(a) {
 		font-style: bold;
 	}
@@ -135,7 +133,7 @@ const {title, description, image} = Astro.props;
 		font-family: var(--font-body);
 		font-weight: 600;
 		line-height: 1.5;
-		margin: 2.5rem 1rem;
+		margin: 2.5rem 0;
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-regular);
 	}
@@ -166,12 +164,6 @@ const {title, description, image} = Astro.props;
 		.details {
 			flex-direction: row;
 			gap: 2.5rem;
-		}
-
-		.content :global(blockquote) {
-			padding: 0.5rem;
-			font-size: var(--text-xl);
-
 		}
 	}
 </style>

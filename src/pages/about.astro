@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE } from "../consts";
+import '../styles/global.css';
 const pageTitle = "Hi, I'm Jenny.";
 
 const about = {
@@ -8,23 +9,20 @@ const about = {
   background: "I was drawn to design through my engineering projects at UCLA. I would constantly ask myself: how can I blend my technical skills with design to engineer authentic and nostalgic experiences in a digital world?",
   mission: "My engineering background plays an integral role in my design workflow and vice versa. Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and enjoyable.",
 };
-
-const darkImage = "https://storage.googleapis.com/jennyencho-website/landing-img/melody-darkmode.png"
-const lightImage = "https://storage.googleapis.com/jennyencho-website/landing-img/melody.png"
 ---
 <html lang="en">
   <BaseLayout title="Jenny Cho - About" description="Hi, I'm Jenny Cho.">
     <body>
     
     <img class="pt-20  w-1/2 center" src='/melody.svg' alt="Melody" />
-    <h1 class="text-3xl mb-3 font-brand italic">{pageTitle}</h1>
+    <h1 class="mb-3 font-brand italic lg:text-2xl sm:text-xl">{pageTitle}</h1>
     <!-- <h2 class="text-2xl md:text-xl sm:text-md w-5/6 pb-10">{identity.oneline}</h2> -->
     <span class="text-base md:text-sm sm:text-sm flex flex-row md:flex-row w-full gap-4">
       <div class="pt-4 pb-4 lg:w-full">
       <p class="pb-4">{about.intro}</p>
       <p class="pb-4">{about.background}</p>
       <p class="pb-4">{about.mission}</p>
-      <p>Outside of work, I bring my wild ideas to life with design and code. I'm a huge fan of all things frontend engineering - with AstroJS (which this website is built on!) being my latest obsession and actively pursue Korean art and graphic design.</p>
+      <p>Outside of work, I enjoy brushing up on frontend engineering - with AstroJS (which this website is built on!) being my latest obsession and making Korean-inspired graphic designs.</p>
       </div>
     </span>
   </body>

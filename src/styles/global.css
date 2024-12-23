@@ -53,6 +53,7 @@
   --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
 
   --background-color: #ebf0ff;
+  --secondary-background: var(--gray-700);
   --text-color: #1d1d1a;
 }
 
@@ -107,21 +108,6 @@ li > a {
   }
 }
 
-/* svg:hover,
-a:hover {
-  background: linear-gradient(
-    to right,
-    var(--accent-regular),
-    var(--accent-regular)
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  background-size: 200% 200%;
-  animation: text-highlight 2s linear infinite;
-} */
-
 .link-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
@@ -130,7 +116,6 @@ a:hover {
 .link-card {
   padding: 10px;
   transition: var(--bouncy);
-  /* box-shadow: var(--medium-shadow); */
 }
 img {
   transition: var(--bouncy);
@@ -156,7 +141,6 @@ img {
     var(--accent-overlay),
     var(--accent-overlay)
   );
-  /* color: var(--gray-0); */
   font-weight: 400;
 
   /* Initial background state */
@@ -167,30 +151,33 @@ img {
   animation: highlight-animate 2s ease-in-out forwards;
 }
 blockquote p {
-  margin: 0.5rem 0.5rem;
+  margin: 0.3rem 0.3rem;
   font-size: 1.5rem;
   color: var(--accent-regular);
 }
 
-@media (min-width: 30em) {
+/* mobile phone */
+@media (max-width: 640px) {
+  /* h1 {
+    font-size: 1.5rem;
+  } */
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3,
   p {
     font-size: 1rem;
   }
-  /* h1 {
-			font-size: 3rem;
-		} */
-  .back-link {
-    display: block;
-    align-self: flex-start;
-  }
-
-  .details {
-    flex-direction: row;
-    gap: 2.5rem;
-  }
-
-  .content :global(blockquote) {
-    padding: 0.5rem;
-    font-size: var(--text-xl);
+  blockquote {
+    font-size: 0.5rem;
   }
 }
+
+/* @media screen (max-width: 480px) {
+  h3 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.65rem;
+  }
+} */

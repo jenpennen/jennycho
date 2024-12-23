@@ -123,7 +123,7 @@ In each dashboard view, DFG management members can export and import volunteer d
 
 ![volunteer dashboard](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-view.jpg)
 
-## Airtable Automation
+### Airtable Automation
 
 We created a server-less function on AWS Lambda which is called by an Airtable automation we set up as a Javascript script. Whenever a record is created, edited, or deleted, that lambda is triggered and notifies our system.
 
