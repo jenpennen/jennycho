@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/global.css"
+// import "../styles/global.css"
 interface Props {
 	title: string;
 	description?: string | undefined;
@@ -77,9 +77,6 @@ const {title, description, image} = Astro.props;
 		padding: 0.5rem 3rem;
 		list-style-type: circle;
 	}
-	/* .content :global(strong) {
-		color: var(--accent-regular);
-	} */
 	.content :global(h1),
 	.content :global(h2),
 	.content :global(h3),
@@ -117,23 +114,22 @@ const {title, description, image} = Astro.props;
 	}
 
 	.content :global(img) {
-		border-radius: 0.5rem;
+		/* border-radius: 0.5rem; */
 		width: 100%;
-		margin: 2rem 0 2rem 0;
-		box-shadow: var(--medium-shadow);
+		margin: 1rem 0 1rem 0;
+		/* box-shadow: var(--medium-shadow); */
 		/* background: var(--gradient-subtle); */
-		/* border: 1px solid var(--gray-500); */
 	}
-	.content :global(img):hover {
+	/* .content :global(img):hover {
 		scale:calc(1.05);
-	}
+	} */
 
 	.content :global(blockquote) {
 		font-size: var(--text-lg);
 		font-family: var(--font-body);
 		font-weight: 600;
 		line-height: 1.5;
-		margin: 2.5rem 0;
+		margin: 1rem 0;
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-regular);
 	}

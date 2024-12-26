@@ -19,7 +19,7 @@ timeline: "January 2024 - Ongoing"
 
 ## Problem
 
-During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, **I focused on a critical area where AI was frequently applied: project deliverable success**. This focus was driven by an unexpected trend I identified in student volunteers' survey responses from the previous project cycle, Summer 2023.
+During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, **_I focused on a critical area where AI was frequently applied: project deliverable success._** This focus was driven by an unexpected trend I identified in student volunteers' survey responses from the previous project cycle, Summer 2023.
 
 ## Survey Findings
 

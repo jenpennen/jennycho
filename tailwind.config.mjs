@@ -5,20 +5,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightBg: "#ebf0ff",
+        lightBg: "#f2f8fc",
         darkBg: "#1d1d1a",
         lightText: "#1d1d1a",
         darkText: "#eae9fc",
         darkSecondaryBg: "#323234",
-        lightSecondaryBg: "#d1d1d1",
-        lightprimary: "#3d6df4",
+        lightSecondaryBg: "#f8f8ff55",
+        lightprimary: "#4b92ff",
         darkPrimary: "#fad1d8",
         accentOverlay: "#c0d4fd",
       },
       fontFamily: {
-        body: ['"Urbanist"', '"Poppins"', "system-ui", "sans-serif"],
+        body: ['"Urbanist"', '"Instrument Sans"', "system-ui", "sans-serif"],
         brand: ['"Libre Bodoni"', '"Poppins"', "system-ui", "sans-serif"],
-        system: ['"Instrument Sans"', "system-ui", "sans-serif"],
+        system: ["Instrument Sans", "system-ui", "sans-serif"],
       },
       fontSize: {
         xs: "0.875rem",

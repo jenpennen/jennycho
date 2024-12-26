@@ -15,13 +15,8 @@
   --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #f6f7f8;
 
-  --accent-regular: #3d6df4;
-  --accent-dark: #1f3ad6;
-  --accent-overlay: #1f3ad654;
-  --accent-subtle-overlay: var(--accent-overlay);
-  /* --accent-text-over: var(--gray-999); */
+  --accent-regular: #4b92ff;
 
-  --link-color: var(--accent-regular);
   /* Text Sizes */
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -52,21 +47,19 @@
   --bouncy: 0.5s cubic-bezier(0.5, 1.5, 0.5, 0.7);
   --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
 
-  --background-color: #ebf0ff;
-  --secondary-background: var(--gray-700);
+  --background-color: #f2f8fc;
+  --secondary-background: #f8f8ffaa;
   --text-color: #1d1d1a;
 }
 
 :root.dark {
   --background-color: #1d1d1a;
-  --secondary-background: #323232;
+  --secondary-background: #323232aa;
   --text-color: var(--gray-700);
   --gray-100: #ebf0ff;
   --text-color: #ebf0ff;
 
-  --accent-regular: #f28ca1;
-  --accent-overlay: #181e53;
-  --accent-subtle-overlay: var(--accent-overlay);
+  --accent-regular: #4b92ff;
   --accent-text-over: var(--gray-999);
 
   --link-color: var(--accent-regular);
@@ -75,7 +68,6 @@ html,
 body {
   font-family: var(--font-system);
   background-color: var(--background-color);
-  color: var(--text-color);
 }
 main {
   margin: auto;
@@ -84,7 +76,6 @@ main {
   max-width: calc(100% - 2rem);
   font-size: 20px;
   line-height: 1.6;
-  padding: 1.5rem;
 }
 h1 {
   font-size: 3rem;
@@ -172,12 +163,3 @@ blockquote p {
     font-size: 0.5rem;
   }
 }
-
-/* @media screen (max-width: 480px) {
-  h3 {
-    font-size: 0.8rem;
-  }
-  p {
-    font-size: 0.65rem;
-  }
-} */

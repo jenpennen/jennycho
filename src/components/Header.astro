@@ -1,10 +1,10 @@
 ---
 import '../styles/global.css';
-import ThemeToggle from './ThemeToggle.astro';
+import { ThemeToggle } from "../components/react/themeToggle"
 ---
 <header class="w-full">
   <nav
-    class="flex fixed z-50 gap-2 items-center p-4 w-full shadow-md dark:bg-transparent bg-offwhite backdrop-blur-md dark:shadow-black"
+    class="flex fixed z-50 gap-2 items-center p-4 w-full dark:bg-transparent bg-offwhite backdrop-blur-lg dark:shadow-black"
   >
     <div class="flex gap-4 items-center text-sm pr-5">
       <a class="mr-auto font-semibold font-brand" href="/">JENNY</a>
@@ -13,7 +13,7 @@ import ThemeToggle from './ThemeToggle.astro';
 
     </div>
     <div class="flex ml-auto">
-      <ThemeToggle />
+      <ThemeToggle client:load/>
     </div>
   </nav>
 </header>
@@ -22,16 +22,3 @@ import ThemeToggle from './ThemeToggle.astro';
     color: var(--accent-regular);
   }
 </style>
-<script>
-  const favicon = document.getElementById("favicon") as HTMLImageElement;
-  const updateFavicon = (theme: "light" | "dark" | any): void => {
-      if (theme === "dark") {
-        favicon.src = "/favicon-dark.svg";
-      }
-      else {
-        favicon.src= "/favicon.svg"
-      }
-      console.log(favicon);
-    };   
-  updateFavicon(favicon);
-</script>

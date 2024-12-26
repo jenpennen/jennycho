@@ -8,21 +8,22 @@ const about = {
   intro: "I'm a ux/product designer currently working on internal tools at Develop For Good.",
   background: "I was drawn to design through my engineering projects at UCLA. I would constantly ask myself: how can I blend my technical skills with design to engineer authentic and nostalgic experiences in a digital world?",
   mission: "My engineering background plays an integral role in my design workflow and vice versa. Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and enjoyable.",
+  extra: "Outside of work, I enjoy brushing up on frontend engineering - with AstroJS (which this website is built on!) being my latest obsession - and making Korean-inspired graphic designs.",
 };
 ---
 <html lang="en">
-  <BaseLayout title="Jenny Cho - About" description="Hi, I'm Jenny Cho.">
+  <BaseLayout title="Jenny Cho - UX Designer" description="Hi, I'm Jenny Cho.">
     <body>
     
-    <img class="pt-20  w-1/2 center" src='/melody.svg' alt="Melody" />
-    <h1 class="mb-3 font-brand italic lg:text-2xl sm:text-xl">{pageTitle}</h1>
-    <!-- <h2 class="text-2xl md:text-xl sm:text-md w-5/6 pb-10">{identity.oneline}</h2> -->
-    <span class="text-base md:text-sm sm:text-sm flex flex-row md:flex-row w-full gap-4">
-      <div class="pt-4 pb-4 lg:w-full">
+    <span class="lg:text-base md:text-base sm:text-sm flex flex-col lg:flex-row">
+      <img class="pt-20 w-full lg:w-1/2 lg:h-1/2" src='/jenny-pic.png' alt="Jenny pic" />
+
+      <div>
+      <h1 class="mb-3 font-brand italic lg:text-2xl">{pageTitle}</h1>
       <p class="pb-4">{about.intro}</p>
       <p class="pb-4">{about.background}</p>
       <p class="pb-4">{about.mission}</p>
-      <p>Outside of work, I enjoy brushing up on frontend engineering - with AstroJS (which this website is built on!) being my latest obsession and making Korean-inspired graphic designs.</p>
+      <!-- <p>{about.extra}</p> -->
       </div>
     </span>
   </body>

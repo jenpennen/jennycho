@@ -20,7 +20,7 @@ second_role: Frontend Engineer
 
 ## Problem
 
-Since its establishment, DFG has experienced increasing interest from students and organizations seeking technical opportunities and digital services. However, the organization has struggled to scale its offerings due to a reliance on manual lifecycle tasks. To address this growing demand and improve technical infrastructure, **I spearheaded the UX strategy and frontend development for Pantheon— Develop For Good's first internal data management system**.
+Since its establishment, DFG has experienced increasing interest from students and organizations seeking technical opportunities and digital services. However, the organization has struggled to scale its offerings due to a reliance on manual lifecycle tasks. To address this growing demand and improve technical infrastructure, **_I spearheaded the UX strategy and frontend development for Pantheon— Develop For Good's first internal data management system_**.
 
 ## Understanding the Problem
 
@@ -32,13 +32,15 @@ Many volunteers use their personal emails for essential client communication. It
 
 The onboarding and offboarding processes at Develop For Good is labor-intensive, with Program Director Amanda Lo manually managing over 400 volunteers and clients each project cycle on DFG's social platforms. This time-consuming task limits DFG's ability to scale efficiently with its current infrastructure.
 
+## Defining the Problem
+
 > With the scale of Develop For Good's programs surpassing the manual capacity of their staff, how might we manage program lifecycle tasks seamlessly and securely?
 
 # Research
 
 ## Existing Solutions
 
-Nonprofits have already been using a variety of platforms for volunteer management, with popular solutions including VolunteerHub, Bloomerang, and Point. However, **none of these out-of-the-box products had the specific app integrations and project management features we need for our unique program**, as they integrated poorly with our existing and working infrastructure.
+Nonprofits have already been using a variety of platforms for volunteer management, with popular solutions including VolunteerHub, Bloomerang, and Point. However, **_none of these out-of-the-box products had the specific app integrations and project management features we need for our unique program_**, as they integrated poorly with our existing and working infrastructure.
 
 ## My Approach
 
@@ -54,7 +56,7 @@ Establish a central hub for hosting and bridging data between disparate apps and
 
 ## Okta Single Sign-On (SSO)
 
-DFG's partnership with Okta for Good provided access to a powerful tool: **Okta Workforce Federation**. The workflow was simple—volunteers accepted into a project cycle were added to an Airtable sheet, triggering a Lambda function to create their profiles in Okta’s universal directory. However, **this approach hit a roadblock when we discovered that Single Sign-On (SSO) integration required enterprise-level subscriptions for platforms like Slack, Figma, and Notion**. Despite having paid business and pro plans, we lacked the resources for enterprise subscriptions, making our Okta-based solution unfeasible and forcing us back to the drawing board.
+DFG's partnership with Okta for Good provided access to a powerful tool: **_Okta Workforce Federation_**. The workflow was simple—volunteers accepted into a project cycle were added to an Airtable sheet, triggering a Lambda function to create their profiles in Okta’s universal directory. However, **_this approach hit a roadblock when we discovered that Single Sign-On (SSO) integration required enterprise-level subscriptions for platforms like Slack, Figma, and Notion_**. Despite having paid business and pro plans, we lacked the resources for enterprise subscriptions, making our Okta-based solution unfeasible and forcing us back to the drawing board.
 
 ## Square One: Google For Nonprofits
 

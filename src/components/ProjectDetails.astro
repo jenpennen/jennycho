@@ -51,5 +51,11 @@ const { org, label, role, second_role, timeline } = Astro.props;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 	gap: 1.25rem;
-}
+	}
+	@media  (max-width:640px) {
+		.detail-heading {
+			font-size: 0.75rem;
+		}
+		
+	}
  </style>
