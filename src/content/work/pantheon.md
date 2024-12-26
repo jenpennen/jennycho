@@ -89,6 +89,8 @@ Requests to Airtable often took 5–15 seconds, causing sluggish UI performance 
 ## Understanding the Target User
 
 The primary end users for Pantheon are DFG's management and executive members. Both groups share the same goal: **automate and visualize the onboarding/offboarding process for volunteers for all project cycles.**
+![Amanda Lo](https://storage.googleapis.com/jennyencho-website/pantheon-img/amanda-lo-persona.png)
+![Mary Zhu](https://storage.googleapis.com/jennyencho-website/pantheon-img/mary-zhu-persona.png)
 
 ## User Journey
 
@@ -108,7 +110,7 @@ I sketched the initial wireframes by hand and explored different layout configur
 ### Mid-Fi Wireframes
 
 Next, I created mid-fidelity wireframes to visualize the overall look of Pantheon. These wireframes served as crucial points for design iterations. During these iterations, I incorporated feedback from Mary, DFG's management needs, and any engineering constraints.
-![Mid-fi Wireframe 1](https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v1.png)
+![Mid-fi Wireframe 1](https://storage.googleapis.com/jennyencho-website/pantheon-img/project-cycle-database-config-midfi.png)
 
 ## Initial MVP
 
@@ -147,7 +149,7 @@ The initial wireframe sketches assumed that dashboards would display a single in
 
 I created mid-fidelity wireframes based on the multi-classification approach, working closely with engineers and management to refine the design and ensure optimal functionality.
 
-![Mid-fi Wireframe 3](https://storage.googleapis.com/jennyencho-website/pantheon-img/midfi-db-creation-v3.png)
+![Mid-fi Wireframe 3](https://storage.googleapis.com/jennyencho-website/pantheon-img/project-cycle-overview-iteration.png)
 
 # FINAL WORK
 
