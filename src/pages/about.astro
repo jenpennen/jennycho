@@ -12,16 +12,19 @@ const about = {
 };
 ---
 <html lang="en">
-  <BaseLayout title="Jenny Cho - UX Designer" description="Hi, I'm Jenny Cho.">
+  <BaseLayout title="Jenny Cho - UX Designer" description="Hi, I'm Jenny Cho." image = "/favicon.svg">
     <body>
     
     <span class="lg:text-base md:text-base sm:text-sm flex flex-col lg:flex-row">
       <img class="pt-20 w-full lg:w-1/2 lg:h-1/2" src='/jenny-pic.png' alt="Jenny pic" />
 
       <div>
-      <h1 class="mb-3 font-brand italic lg:text-2xl">{pageTitle}</h1>
+      <h1 class="mb-3 uppercase font-brand sm:text-2xl"># {pageTitle}</h1>
+      <h2>## Who Am I?</h2>
       <p class="pb-4">{about.intro}</p>
+      <h2>## Why I Design & Code</h2>
       <p class="pb-4">{about.background}</p>
+      <h2>## My Manifesto</h2>
       <p class="pb-4">{about.mission}</p>
       <!-- <p>{about.extra}</p> -->
       </div>

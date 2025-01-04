@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 const title = "Jenny Cho"
+const description = "Los Angeles-based UX designer and frontend engineer"
 const projects = (await getCollection('work'))
 	.filter((item:any) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
@@ -14,10 +15,11 @@ const entry =(await getCollection('blog'))
 	.slice(0,2); 
 ---
 
-<BaseLayout title="Jenny Cho - UX Designer & Engineer" description="Los Angeles-based UX Designer and Software Engineer">
+<BaseLayout title="Jenny Cho - UX Designer & Engineer" description="Los Angeles-based UX Designer and Software Engineer" image="/favicon.svg">
 		
 	<div class="flex flex-col h-full">
-		<h1 class="text-3xl font-brand tracking-wide italic pb-10">{title}</h1>
+		<h1 class="text-3xl font-brand uppercase tracking-wide">{title}</h1>
+		<p class="uppercase pb-10 font-semibold">{description} &#9786;</p>
 		<!-- <p class="w-5/6 pb-10 sm:w-full">
 			I'm a UX designer working on internal tools at Develop For Good. 
 		</p> -->
@@ -32,15 +34,14 @@ const entry =(await getCollection('blog'))
 		</div> -->
 
 		<div class="pb-10">
-			<h2 class="text-md font-brand tracking-wide">Featured Works</h2>
+			<h2 class="text-md uppercase font-brand tracking-wide"># My Work's been noticed by</h2>
 			<div class="underline decoration-dotted underline-offset-4">
-      			<h3><li><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/" target="_blank">Okta's Nonprofit Technology Fellowship: Empowering nonprofit technology leaders across the globe</a></li></h3>
-	  			<h3><li><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9" target="_blank">Develop For Good: Streamlining Volunteer Management for Nonprofits with Pantheon</a></li></h3>
+      			<h3><li><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/" target="_blank">Okta's Nonprofit Technology Fellowship: Empowering nonprofit technology leaders across the globe &#8599;</a></li></h3>
+	  			<h3><li><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9" target="_blank">Develop For Good: Streamlining Volunteer Management for Nonprofits with Pantheon &#8599;</a></li></h3>
     		</div>
 		</div>
 
-		<h2 class="text-md font-brand tracking-wide">Recent Works</h2>
-		
+		<h2 class="text-md uppercase font-brand tracking-wide"># I'm Currently Working On</h2>
 		<div role="list" class="grid">
             {
                 projects.map((project:any) => (

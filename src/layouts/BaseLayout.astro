@@ -5,13 +5,14 @@ import BaseHead from '../components/BaseHead.astro';
 interface Props {
 	title: string;
 	description?: string | undefined;
+	image?: string | undefined;
 }
-const { title, description } = Astro.props;
+const { title, description, image="/jenny-pic.png"} = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description}/>
+		<BaseHead title={title} description={description} image={image}/>
 
 	</head>
 	<body class="bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText">

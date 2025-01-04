@@ -16,8 +16,8 @@ export default {
         accentOverlay: "#c0d4fd",
       },
       fontFamily: {
-        body: ['"Urbanist"', '"Instrument Sans"', "system-ui", "sans-serif"],
-        brand: ['"Libre Bodoni"', '"Poppins"', "system-ui", "sans-serif"],
+        body: ['"Urbanist"', "system-ui", "sans-serif"],
+        brand: ['"DM Sans"', '"Poppins"', "system-ui", "serif"],
         system: ["Instrument Sans", "system-ui", "sans-serif"],
       },
       fontSize: {

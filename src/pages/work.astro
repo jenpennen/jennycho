@@ -9,10 +9,10 @@ const projects = (await getCollection('work'))
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 ---
 
-<BaseLayout title="My Works" description="Check out Jenny's Case Studies">
+<BaseLayout title="My Works" description="Check out Jenny's Case Studies" image="/favicon.svg">
     <div>
-        <h1 class="mb-3 font-brand  text-2xl">My Works</h1>
-        <p class="mb-10">Check out my case studies below.</p>
+        <h1 class="uppercase font-brand text-3xl">My Works</h1>
+        <p class="mb-10 uppercase font-semibold">Check out my case studies below &#8595;</p>
         <div role="list" class="grid">
             {
                 projects.map((project:any) => (

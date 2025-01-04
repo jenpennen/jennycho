@@ -45,7 +45,7 @@ const {data, slug, collection} = Astro.props.project;
 	.link-card img {
 		width: 100%;
 		height: auto;
-		border-radius: 5px 5px 0 0 ;
+		/* border-radius: 5px 5px 0 0 ; */
 	}
 	p {
 		margin-top: 0.25em;
@@ -53,8 +53,8 @@ const {data, slug, collection} = Astro.props.project;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
-		background-color: var(--secondary-background);
-		background-image: var(--accent-gradient);
+		/* background-color: var(--secondary-background); */
+		/* background-image: var(--accent-gradient); */
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
