@@ -3,30 +3,34 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE } from "../consts";
 import '../styles/global.css';
 const pageTitle = "Hi, I'm Jenny.";
-
 const about = {
-  intro: "I'm a ux/product designer currently working on internal tools at Develop For Good.",
+  heading: "A Bit About Me",
+  intro: "I'm a ux/product designer currently working on internal tools at Develop For Good. Formally, I'm a design engineer - I code my designs.",
   background: "I was drawn to design through my engineering projects at UCLA. I would constantly ask myself: how can I blend my technical skills with design to engineer authentic and nostalgic experiences in a digital world?",
   mission: "My engineering background plays an integral role in my design workflow and vice versa. Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and enjoyable.",
-  extra: "Outside of work, I enjoy brushing up on frontend engineering - with AstroJS (which this website is built on!) being my latest obsession - and making Korean-inspired graphic designs.",
+  favorites: "My latest obsession has been AstroJS and tweaking my NeoVim configuration. You might have noticed my love for Markdown - I integrate it to my designs wherever possible. I also actively explore contemporary Japanese and Korean graphic design.",
 };
 ---
 <html lang="en">
   <BaseLayout title="Jenny Cho - UX Designer" description="Hi, I'm Jenny Cho.">
     <body>
+      <h1 class="font-brand uppercase text-3xl">{pageTitle}</h1>
+      <p class="font-brand font-semibold uppercase">Nice to meet you! :)</p>
     
     <span class="lg:text-base md:text-base sm:text-sm flex flex-col lg:flex-row">
-      <img class="pt-20 w-full lg:w-1/2 lg:h-1/2" src='/jenny-pic.png' alt="Jenny pic" />
-
+      
+      <img class="w-full lg:w-1/2 lg:h-1/2" src='/jenny-pic.png' alt="Jenny pic" />
+  
       <div>
-      <h1 class="mb-3 uppercase font-brand sm:text-2xl"># {pageTitle}</h1>
-      <h2>## Who Am I?</h2>
+      <h1 class="mb-3 uppercase font-brand text-xl"># {about.heading}</h1>
+      <h2>## Who Am I</h2>
       <p class="pb-4">{about.intro}</p>
       <h2>## Why I Design & Code</h2>
       <p class="pb-4">{about.background}</p>
       <h2>## My Manifesto</h2>
       <p class="pb-4">{about.mission}</p>
-      <!-- <p>{about.extra}</p> -->
+      <h2>## Favorites</h2>
+      <p>{about.favorites}</p>
       </div>
     </span>
   </body>

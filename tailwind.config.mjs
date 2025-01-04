@@ -5,14 +5,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightBg: "#f2f8fc",
+        lightBg: "#eae9fc",
         darkBg: "#1d1d1a",
         lightText: "#1d1d1a",
         darkText: "#eae9fc",
         darkSecondaryBg: "#323234",
         lightSecondaryBg: "#f8f8ff55",
-        lightprimary: "#4b92ff",
-        darkPrimary: "#fad1d8",
+        lightprimary: "#0045ad",
+        darkPrimary: "#ee964b",
         accentOverlay: "#c0d4fd",
       },
       fontFamily: {

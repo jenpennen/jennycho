@@ -15,7 +15,8 @@
   --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #f6f7f8;
 
-  --accent-regular: #4b92ff;
+  --accent-regular: #0045ad;
+  --link-color: var(--accent-regular);
 
   /* Text Sizes */
   --text-sm: 0.875rem;
@@ -47,7 +48,7 @@
   --bouncy: 0.5s cubic-bezier(0.5, 1.5, 0.5, 0.7);
   --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
 
-  --background-color: #f2f8fc;
+  --background-color: #eae9fc;
   --secondary-background: #f8f8ffaa;
   --text-color: #1d1d1a;
 }
@@ -59,7 +60,7 @@
   --gray-100: #ebf0ff;
   --text-color: #ebf0ff;
 
-  --accent-regular: #4b92ff;
+  --accent-regular: #ee964b;
   --accent-text-over: var(--gray-999);
 
   --link-color: var(--accent-regular);

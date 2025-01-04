@@ -16,7 +16,7 @@ timeline: "June 2021 - August 2021"
 
 ## Background
 
-Ecowalk is a mobile app inspired by the question: **_how does my choice of transportation impact the environment?_** EcoWalk encourages people make environmentally conscious decisions through healthy activities.
+Ecowalk is a mobile app inspired by the question: **_how does my choice of transportation impact the environment?_** Ecowalk encourages people make environmentally conscious decisions through healthy activities.
 
 ## Team & Objective
 
