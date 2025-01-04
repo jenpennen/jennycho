@@ -3,7 +3,7 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string | undefined;
-  image: string;
+  image?: string | undefined;
 }
 const { title, description, image = "/favicon.svg" } = Astro.props;
 ---
