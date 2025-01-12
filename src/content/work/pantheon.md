@@ -20,51 +20,55 @@ second_role: Frontend Engineer
 
 ## Problem
 
-Since its establishment, DFG has experienced increasing interest from students and organizations seeking technical opportunities and digital services. However, the organization has struggled to scale its offerings due to a reliance on manual lifecycle tasks. To address this growing demand and improve technical infrastructure, **_I spearheaded the UX strategy and frontend development for Pantheon— Develop For Good's first internal data management system_**.
+Over the past two years, DFG has experienced a growing demand from students and nonprofit organizations seeking technical opportunities and digital services. However, _the organization has struggled to scale its offerings due to a reliance on manual lifecycle tasks._
 
-## Understanding the Problem
+## Solution
 
-### <i class="fa-solid fa-square-xmark"></i> DFG does not have the tech infrastructure to protect volunteer and client data.
+To address this growing demand and improve technical infrastructure, _I spearheaded the UX strategy and frontend development for Pantheon— Develop For Good’s first internal data management system._
 
-Many volunteers use their personal emails for essential client communication. It is nearly impossible to securely manage and protect data specific to both volunteers and nonprofit clients, causing user fragmentation.
-
-### <i class="fa-solid fa-square-xmark"></i> DFG's manual processes limits scalability.
-
-The onboarding and offboarding processes at Develop For Good is labor-intensive, with Program Director Amanda Lo manually managing over 400 volunteers and clients each project cycle on DFG's social platforms. This time-consuming task limits DFG's ability to scale efficiently with its current infrastructure.
-
-## Defining the Problem
+## Defining Problem
 
 > With the scale of Develop For Good's programs surpassing the manual capacity of their staff, how might we manage program lifecycle tasks seamlessly and securely?
 
 # Research
 
+## Understanding the Problem
+
+### # DFG does not have the tech infrastructure to protect volunteer and client data.
+
+_Many volunteers use their personal emails for essential client communication._ It is nearly impossible to manage and protect data specific to both volunteers and nonprofit clients, causing user fragmentation.
+
+### # DFG’s manual processes limits scalability.
+
+The onboarding and offboarding processes at Develop For Good is labor-intensive, with _Program Director Amanda Lo manually managing over 400 volunteers and clients each project cycle on DFG’s social platforms._ This time-consuming task limits DFG’s ability to scale efficiently with its current infrastructure.
+
 ## Existing Solutions
 
-Nonprofits have already been using a variety of platforms for volunteer management, with popular solutions including VolunteerHub, Bloomerang, and Point. However, **_none of these out-of-the-box products had the specific app integrations and project management features we need for our unique program_**, as they integrated poorly with our existing and working infrastructure.
+Nonprofits have already been using a variety of platforms for volunteer management, with popular solutions including VolunteerHub, Bloomerang, and Point. However, _none of these out-of-the-box products had the specific app integrations and project management features we need for our unique program_, as they integrated poorly with our existing and working infrastructure.
 
 ## My Approach
 
 Working alongside fellow engineer Anish Sinha, we conceptualized Pantheon in January 2024. Our vision was clear:
 
-### <i class="fa-solid fa-layer-group"></i> Unified Management Platform
+### # Unified Management Platform
 
 Build a unified management platform for DFG capable of handling all client lifecycle tasks seamlessly.
 
-### <i class="fa-solid fa-layer-group"></i> Central Data Hub
+### # Central Data Hub
 
 Establish a central hub for hosting and bridging data between disparate apps and services, from user management to custom AI models.
 
 ## Okta Single Sign-On (SSO)
 
-DFG's partnership with Okta for Good provided access to a powerful tool: **_Okta Workforce Federation_**. The workflow was simple—volunteers accepted into a project cycle were added to an Airtable sheet, triggering a Lambda function to create their profiles in Okta’s universal directory. However, **_this approach hit a roadblock when we discovered that Single Sign-On (SSO) integration required enterprise-level subscriptions for platforms like Slack, Figma, and Notion_**. Despite having paid business and pro plans, we lacked the resources for enterprise subscriptions, making our Okta-based solution unfeasible and forcing us back to the drawing board.
+DFG's partnership with Okta for Good provided access to a powerful tool: _Okta Workforce Federation_. The workflow was simple—volunteers accepted into a project cycle were added to an Airtable sheet, triggering a Lambda function to create their profiles in Okta’s universal directory. However, _this approach hit a roadblock when we discovered that Single Sign-On (SSO) integration required enterprise-level subscriptions for platforms like Slack, Figma, and Notion_. Despite having paid business and pro plans, we lacked the resources for enterprise subscriptions, making our Okta-based solution unfeasible and forcing us back to the drawing board.
 
 ## Square One: Google For Nonprofits
 
-Only product leads and management members are issued Develop for Good handles (@developforgood.org). However, the Google for Nonprofits plan allows up to 2,000 users. While this capacity isn’t unlimited, we’re hardly using a fifth of its limit. When we do reach this limit, paying for SSO capabilities for essential services may become feasible. In the meantime, we chose to build Pantheon around Google Workspace. **The process is straightforward: accept students, upload their information to Workspace (issuing them @developforgood.org emails), monitor allocations, and delete accounts at the end of each cycle to free up space.** With this approach defined, we began development.
+Only product leads and management members are issued Develop for Good handles (@developforgood.org). However, the Google for Nonprofits plan allows up to 2,000 users. While this capacity isn’t unlimited, we’re hardly using a fifth of its limit. When we do reach this limit, paying for SSO capabilities for essential services may become feasible. In the meantime, we chose to build Pantheon around Google Workspace. _The process is straightforward: accept students, upload their information to Workspace (issuing them @developforgood.org emails), monitor allocations, and delete accounts at the end of each cycle to free up space._ With this approach defined, we began development.
 
 # TECH PROCESS
 
-<!-- **Note:** This is a highly simplified overview of Pantheon’s technical development. For a more detailed exploration of its technologies, click here. -->
+<!-- _Note:_ This is a highly simplified overview of Pantheon’s technical development. For a more detailed exploration of its technologies, click here. -->
 
 ## Airtable
 
@@ -76,21 +80,24 @@ Our foundation was built on Airtable. To streamline executive acess and data man
 
 ## Technical Design Constraints
 
-### <i class="fa-solid fa-chart-simple"></i> Handling Airtable API Limitations
+### # Handling Airtable API Limitations
 
-Airtable’s API enforces a maximum of 5 requests per second and returns only 100 records per request, which posed challenges when fetching large datasets. To address these limitations without blocking our API, we implemented a four-pronged solution: an asynchronous task framework powered by Tokio to handle non-blocking, cancellable tasks displayed on the UI; lazy loading to fetch data only when requested; and a serverless AWS Lambda function triggered by an Airtable automation script to streamline processing.
+Airtable’s API enforces a maximum of 5 requests per second and returns only 100 records per request, which posed challenges when fetching large datasets. _To address these limitations without blocking our API, we implemented a four-pronged solution_: an asynchronous task framework powered by Tokio to handle non-blocking, cancellable tasks displayed on the UI; lazy loading to fetch data only when requested; and a serverless AWS Lambda function triggered by an Airtable automation script to streamline processing.
 
-### <i class="fa-solid fa-brush"></i> Caching
+### # Caching
 
-Requests to Airtable often took 5–15 seconds, causing sluggish UI performance and raising concerns about stale data as new volunteers joined. To address this, we used our asynchronous job framework to schedule periodic data refreshes every few hours and added a manual refresh button in the UI for immediate updates. This approach, combined with a cooldown mechanism to avoid rate limits has proven effective, given our modest management team size and infrequent data synchronization issues.
+Requests to Airtable often took 5–15 seconds, causing sluggish UI performance and raising concerns about stale data as new volunteers joined. _To address this, we used our asynchronous job framework to schedule periodic data refreshes every few hours and added a manual refresh button in the UI for immediate updates._ This approach, combined with a cooldown mechanism to avoid rate limits has proven effective, given our modest management team size and infrequent data synchronization issues.
 
 # DESIGN PROCESS
 
 ## Understanding the Target User
 
-The primary end users for Pantheon are DFG's management and executive members. Both groups share the same goal: **automate and visualize the onboarding/offboarding process for volunteers for all project cycles.**
-![Amanda Lo](https://storage.googleapis.com/jennyencho-website/pantheon-img/amanda-lo-persona.png)
-![Mary Zhu](https://storage.googleapis.com/jennyencho-website/pantheon-img/mary-zhu-persona.png)
+The primary end users for Pantheon are DFG's management and executive members. Both groups share the same goal: _automate and visualize the onboarding/offboarding process for volunteers for all project cycles._
+
+<div class="gallery">
+<img src="https://storage.googleapis.com/jennyencho-website/pantheon-img/amanda-lo-persona.png">
+<img src="https://storage.googleapis.com/jennyencho-website/pantheon-img/mary-zhu-persona.png">
+</div>
 
 ## User Journey
 
@@ -133,15 +140,13 @@ We created a server-less function on AWS Lambda which is called by an Airtable a
 
 ![Airtable Automation](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-airtable.png)
 
-## Iteration
+## Iteration: Multi-Classification Layout
 
-### Multi-Classification Approach
+As Pantheon's tech architecture and constraints evolved, so did the design. _One notable change was in how Airtable data was extracted to Pantheon._ With these changes, we were back to square one, starting with new dashboard layout sketches.
 
-As Pantheon's tech architecture and constraints evolved, so did the design. One notable change was in how Airtable data was extracted to Pantheon. With these changes, we were back to square one, starting with new dashboard layout sketches.
+### Multi-Classification Brainstorming
 
-### Wireframing
-
-The initial wireframe sketches assumed that dashboards would display a single internal classification. To optimize efficiency and functionality, **I sketched out a multi-classification approach for a comprehensive look within a single dashboard**.
+_The initial wireframe sketches assumed that dashboards would display a single internal classification._ To optimize efficiency and functionality, I sketched out a multi-classification approach for a comprehensive look within a single dashboard.
 
 ![Low-fi Wireframe 2](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-wireframe-2.png)
 
@@ -184,24 +189,24 @@ The dashboard provides a clear overview of data transfer tasks (exports and impo
 
 ## Outcomes
 
-Since the inception of this project, Develop For Good has recieved **over $1 million in funding in support of Pantheon's development** through key partnerships with Stanford's StartX and Okta. In November of 2023, **Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX** in three years, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. **As of October 2024, Pantheon's work is featured on [Okta's tech blog](https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/) and has officially launched for every team in the Winter 2025 cycle and beyond!**
+Since the inception of this project, Develop For Good has recieved _over $1 million in funding in support of Pantheon's development_ through key partnerships with Stanford's StartX and Okta. In November of 2023, _Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX_ in three years, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. _As of October 2024, Pantheon's work is featured on [Okta's tech blog](https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/) and has officially launched for every team in the Winter 2025 cycle and beyond!_
 
 ## Next Steps
 
-### <i class="fa-solid fa-pencil"></i> Design additional functionalities.
+### # Design additional functionalities.
 
 We're approaching Pantheon as a central platform to house custom AI models and features to further accelerate and personalize the end-to-end project development experience.
 
-### <i class="fa-solid fa-handshake"></i> Streamline beneficiary intake.
+### # Streamline beneficiary intake.
 
 We hope this key piece of software will help make it possible for DFG to scale our capacity indefinitely. As a tech nonprofit and startup that develops digital solutions for other nonprofits, we hope to continue contributing to the nonprofit sector with our learnings and insights.
 
 ## Reflections
 
-### <i class="fa-solid fa-lightbulb"></i> Design isn’t just aesthetics.
+### # Design isn’t just aesthetics.
 
-Pantheon has been the most intricate technical architecture I’ve worked on to date (as of October 2024). Its evolution through multiple architectural changes has given me invaluable lessons on the importance of functional design to make complex technical systems accessible to everyday users. Combining my background in both tech and design to bring a scalable product to life has been an exciting challenge and **reinforced my commitment to continuously update my technical skills alongside design skills**.
+Pantheon's technical architecture changed multiple times across iterations. _In each technical iteration, I saw firsthand how crucial functional design is to make complex technical systems accessible to everyday users._ It was a thrill to translate complex data structures into user-friendly layouts, and it's reinforced my commitment to continue building upon both my design and technical skills.
 
-### <i class="fa-solid fa-cloud"></i> Understand the big picture first.
+### # Understand the big picture first.
 
-Pantheon required extensive discussions of abstract concepts and potential tech stacks before initiating the UX/UI design process. Along the way, I gained a deeper understanding of how clean code design directly influences effective user interface design. These discussions pushed me to thoughtfully **conceptualize how data should be presented to users in a clear, uncomplicated manner**. Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.
+Pantheon required extensive discussions of abstract concepts and potential tech stacks before initiating the UX/UI design process. _These discussions pushed me to thoughtfully conceptualize how data should be presented to users, and gained a deeper understanding of how clean code design directly influences good design._ Without this comprehensive approach to analyzing the big picture, Pantheon would not have achieved its current level of usability and impact today.

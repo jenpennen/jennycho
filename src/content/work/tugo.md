@@ -20,23 +20,21 @@ timeline: "October 2021 - Ongoing"
 
 ## Team
 
-This project began in October 2021 as part of UCLA DevX's 2021 Fall Project Cycle. Formerly named Retune, I joined the team as a founding UI/UX designer and developer. I collaborated with 1 fellow designer Emily, 3 frontend developers (Angelina, Leslie, Liah), 2 backend developers (Nathan, Sanya), and product manager (Jake).
+This project began in October 2021 as part of UCLA DevX. Formerly named Retune, I joined a team of 6 engineers as a UI/UX designer and developer. As Retune team came to an end in 2024, I continued working on this project, renaming it Tugo. I formed a new team of two alongside fellow developer and colleague Nastazia Coronado.
 
-Ultimately, as Retune came to an end, I decided to continue working on this project, renaming it Tugo. I formed a new team of two alongside fellow developer and colleague Nastazia Coronado.
+## Problem
 
-## Discovery
-
-### <i class="fa-solid fa-users"></i> Connecting with people in a large space is hard.
+### # Connecting with people in a large space is hard.
 
 Students want to socialize with other students before honing in for the academic year. However, connecting with new people in a large space, like UCLA, can be quite intimidating.
 
-### <i class="fa-solid fa-comments"></i> People like to be in-the-know.
+### # People like to be in-the-know.
 
 Inspired by a popular tiktok trend, where influencers ask nearby strollers in an area what song they were listening to, I wondered if people around me were also naturally curious about other peoples' whereabouts.
 
 ## Define
 
-> How might we reimagine social connections through an enaging music discovery experience beyond a simple music feed?
+> How might we reimagine social connections through an enaging music discovery experience?
 
 # RESEARCH
 
@@ -58,29 +56,29 @@ Given the responses of 200+ interviewees, I used an affinity map to identify com
 
 ## Key Insights
 
-### <i class="fa-solid fa-lock"></i> People worry about sharing personal information on social platforms.
+### # People worry about sharing personal information on social platforms.
 
 Although many people were fond of the idea, they were also concerned with how their personal information would be used/shared on Tugo.
 
-### <i class="fa-solid fa-magnifying-glass"></i> People have an innate curiosity about others around them.
+### # People have an innate curiosity about others around them.
 
 People are curious about what the people around them are doing, including what songs they are listening to.
 
-### <i class="fa-solid fa-music"></i> People want to explore new music genres.
+### # People want to explore new music genres.
 
 People are open to exploring new music genres regardless of their preferences, but do not know where to look.
 
 ## Key Solutions
 
-### <i class="fa-solid fa-lightbulb"></i> Discover new songs privately or publicly.
+### # Discover new songs privately or publicly.
 
 Users will have public and private viewing options to make the music discovery experience accessible for all users with varying preferences.
 
-### <i class="fa-solid fa-lightbulb"></i> Access songs that other Tugo users nearby are listening to.
+### # Access songs that other Tugo users nearby are listening to.
 
 Users can see what songs other Tugo users are listening to, as well as their recent music activity if they want to share it.
 
-### <i class="fa-solid fa-lightbulb"></i> Allow users to listen to songs for a few seconds.
+### # Allow users to listen to songs for a few seconds.
 
 Users can only listen to up to 30 seconds of a song to maximize the music discovery experience as much as possible for people on the move.
 
@@ -105,19 +103,19 @@ Starting with the old Retune designs, I created a working prototype and recruite
 
 ## Feedback
 
-### <i class="fa-solid fa-trash"></i> Remove the close friends and public viewing maps.
+### # Remove the close friends and public viewing maps.
 
 While participants appreciated the public and private viewing options with the close friends and public maps, I identified a significant UX flaw: **_these options should apply to the user, not the map_**. A striking 60% of the participants chose the close friends map over the public map, and nearly half expressed no preference. **_There was essentially no functional difference between the two maps_**. Instead of two maps, I introduced a feature in the user's profile settings that allows users to selectively share personal information with the public.
 
 ![Remove Close Friends](https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-closefriends.png)
 
-### <i class="fa-solid fa-user-minus"></i> Scrap the followers feature.
+### # Scrap the followers feature.
 
 Many participants noted that the follow button felt out of place, making the app feel more like a social network than a music discovery platform. Moreover, the profile view of other Tugo users, along with their profile handles, made it difficult to access the play button. This led me to conclude that it is better to **_keep all users' information hidden during the song shuffling process_** to preserve the focus on music exploration and discovery.
 
 ![Remove Follow Feature](https://storage.googleapis.com/jennyencho-website/tugo-img/retune-tugo-remove-follower.png)
 
-### <i class="fa-solid fa-brush"></i> Share less on the music tab.
+### # Share less on the music tab.
 
 One key feature my Retune team developed was the user music tab, which displays a user’s current song, favorite albums, and artists. However, only 20% of participants fully explored it, and **_80% found it too cluttered and hindered their discovery experience_**. To address this, I streamlined the music tab to focus on song shuffling and added a profile view for detailed music activity.
 
@@ -161,10 +159,10 @@ As of May 2024, our top priority is to build Tugo with new designs in considerat
 
 ## Reflections
 
-### <i class="fa-solid fa-newspaper"></i> Stay proactive with the latest technology.
+### # Stay proactive with the latest technology.
 
 This project stressed the importance of staying current in design and tech. Redesigning features was challenging, but my background in software development and design helped me quickly adapt. On the design side, I incorporated Figma’s new prototyping and dev tools into my design workflow. On the tech side, I discovered frameworks and libraries that can enhance Tugo’s codebase.
 
-### <i class="fa-solid fa-compass"></i> It's okay to steer projects in a different direction.
+### # It's okay to steer projects in a different direction.
 
 Leading the UI/UX design and frontend development of a project made for the UCLA community was incredibly fulfilling, and I'm eager to carry this momentum forward with Tugo. In this new venture, I'm ensuring design considerations are integrated into every engineering decision and ultimately, foster a learning environment for new technologies and workflows for myself and my Tugo partner Azia.

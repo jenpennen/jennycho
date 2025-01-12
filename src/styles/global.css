@@ -48,7 +48,7 @@
   --bouncy: 0.5s cubic-bezier(0.5, 1.5, 0.5, 0.7);
   --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
 
-  --background-color: #eae9fc;
+  --background-color: #ebf0ff;
   --secondary-background: #f8f8ffaa;
   --text-color: #1d1d1a;
 }
@@ -144,8 +144,7 @@ img {
 }
 blockquote p {
   margin: 0.3rem 0.3rem;
-  font-size: 1.5rem;
-  color: var(--accent-regular);
+  font-size: 2rem;
 }
 
 /* mobile phone */
@@ -161,6 +160,6 @@ blockquote p {
     font-size: 1rem;
   }
   blockquote {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }

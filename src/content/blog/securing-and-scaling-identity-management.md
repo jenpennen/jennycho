@@ -7,7 +7,7 @@ description: |
   A written report of the first Pantheon prototype.
 ---
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In recent years, Develop For Good (DFG),
+In recent years, Develop For Good (DFG),
 has faced a growing interest from many students and nonprofit organizations seeking
 technical opportunities and digital services. However, **the possibility of
 scaling the organization was nonexistent**. **Since DFG was first established, the
