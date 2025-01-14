@@ -16,46 +16,44 @@ timeline: September 2022 - December 2022
 
 ## Background
 
-Scootly is a mobile app that allows users to rent out their personal scooters across Los Angeles. Driven by the urgent need to combat climate change, Scootly targets one of the most significant contributors: transportation. By offering a rideshare platform exclusively for eco-friendly micromobility vehicles, Scootly is redefining how we travel, making it greener, smarter, and more connected than ever before.
+**Scootly** is a mobile app that allows users to rent out their personal scooters across Los Angeles. Driven by the urgent need to combat climate change, Scootly targets one of the most significant contributors: transportation. By offering a rideshare platform exclusively for eco-friendly micromobility vehicles, Scootly is redefining how we travel, making it greener, smarter, and more connected than ever before.
 
 ## Team
 
-This project started in September 2022 as part of UCLA's infamous CS course: CS35L (Software Construction Laboratory). I teamed up with a fellow dev-signer Jeff, and four developers — Dwight, John, Madhavi, and Aparna. Spending many nights coding to bring Scootly to life, we were united by the challenges and rigor of the CS35L course and nurtured memorable and lasting friendships throughout the process!
+This project started in September 2022 as part of UCLA’s infamous CS course: CS35L (Software Construction Laboratory). I teamed up with a fellow dev-signer Jeff, and four developers — Dwight, John, Madhavi, and Aparna.
 
 ## Problem
 
-### <i class="fa-solid fa-car"></i> LA lacks a structured transportation system.
+For many UCLA students, transportation can be a real headache. Here's why:
 
-Like many American cities, LA’s public transportation system falls short, leaving residents with little choice but to rely heavily on cars. This dependence fuels a cycle of greenhouse gas emissions, exacerbating environmental challenges.
+### # LA's public transit options are limited.
 
-### <i class="fa-solid fa-money-bill"></i> The Purchase Dilemma
+The two main public transit options at UCLA are the Metro and Bruin Bus. Although both are great options, they can be subject to delays and infrequent service, which can be frustrating. It pressures many students to rely on cars, which is not ideal for the environment.
 
-Budget-conscious people, especially college students, often face a tough choice: should they purchase their own scooter or keep paying for rentals? Neither option seems ideal—owning and maintaining a personal scooter is too time-consuming, while constantly paying for short-term rentals from companies like Bird and Uber quickly becomes expensive.
+### # Buying a personal scooter is not so simple.
+
+Another popular option for convenient transportation is electric scooters. However, buying your own is a hassel - you have to charge it, maintain it, and worry about where to store when not in use. On the other hand, renting a scooter all the time can get expensive.
 
 ## Define
 
 > How can we motivate LA residents to embrace scooters as a viable transportation option?
 
-## Goals
-
-### <i class="fa-solid fa-bolt"></i> Promote micro-electric mobility
-
-As LA's traffic worsens and intensifies climate change, it's time to embrace a solution that tackles both challenges head-on. We aim to reshape perceptions of scooters, presenting them as a practical, accessible mode of transportation for all.
-
-### <i class="fa-solid fa-users"></i> Cater to every scooter rider.
-
-The hurdles of owning a personal scooter often deter many from making the investment. With this in mind, we set out to make scooter ownership more appealing and rewarding, while also offering a convenient option for those who want to ride but aren’t ready to commit to buying their own.
-
 # Research
 
 ## Guiding Principles
 
-Creating an app centered around scooter rentals was not our first choice. We brainstormed solutions to everyday challenges faced by Angelenos. Our decision-making process for Scootly were guided by four key principles: **environmentalism, convenience, initiative, and consistency**.
+Creating an app centered around scooter rentals was not our first choice. We brainstormed solutions to everyday challenges faced by Angelenos. Our decision-making process for Scootly were guided by four key principles: _environmentalism, convenience, initiative, and consistency_.
 ![Scootly Landing](https://storage.googleapis.com/jennyencho-website/scootly-img/scootly-guiding-principles.png)
 
-## Proposal
+## Goals
 
-At UCLA, one thing is clear: scooters are a campus staple and offer an unbeatable convenience for getting around. For many students, scooters even outshine other eco-friendly transportation options like buses and carpools. This observation begged the question: **_what if the environmental benefits of personal scooters could merge with the convenience of ridesharing?_** With this concept in mind, we laid the groundwork for Scootly. We identified key features needed for an eco-friendly rideshare experience and initiated the design process.
+### # Promote micro-electric mobility
+
+It’s time to embrace a solution that tackles both challenges of convenient transportation and environmental choices head-on. We We can reshape perceptions of scooters and present them as a practical, accessible mode of transportation for all.
+
+### # Incentivize scooter ownership.
+
+The hurdles of owning a personal scooter often deter many from making the investment. With this in mind, we set out to make scooter ownership more appealing and rewarding, while also offering a convenient option for those who want to ride but aren’t ready to commit to buying their own.
 
 # DESIGN PROCESS
 
@@ -70,7 +68,7 @@ Drawing from our core principles, I crafted a style guide that embodied Scootly�
 
 Jeff, our fellow dev-signer, created a style guide that he believed best captured our guiding principles.
 ![Jeff's Style Guide](https://storage.googleapis.com/jennyencho-website/scootly-img/jeff-scootly-style-guide.png)
-Ultimately, our team ultimately agreed that Jeff’s design better aligned with our vision for Scootly — **simple, chic, and urban**, making it the ideal style to resonate with Los Angeles residents.
+Ultimately, our team ultimately agreed that Jeff’s design better aligned with our vision for Scootly — _simple, chic, and urban_, making it the ideal style to resonate with Los Angeles residents.
 
 ## Wireframes
 
@@ -122,4 +120,4 @@ Scootly's in-app messaging platform ensures secure transactions and communicatio
 
 ## Outcome
 
-In the beginning of the course, our professor noted to a room of over 300 students that no capstone project has ever achieved commercial success. This revelation ignited a drive in my team and me to become the first. Even after the quarter ended and we earned a perfect score on our project, we continued to refine Scootly with the goal of publishing it on the iOS App Store. As we continue to put in the final touches, we’re excited to see how Scootly will resonate with users and contribute to a more convenient and sustainable future!
+In the first week of this course, our professor noted to a room of over 300 students that no capstone project has ever achieved commercial success. This revelation ignited a drive in my team and me to become the first. Even after the quarter ended and we earned a perfect score on our project, we continued to refine Scootly with the goal of publishing it on the iOS App Store. As we continue to put in the final touches, we’re excited to see how Scootly will resonate with users and contribute to a more convenient and sustainable future!

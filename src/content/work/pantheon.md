@@ -62,7 +62,7 @@ Establish a central hub for hosting and bridging data between disparate apps and
 
 DFG's partnership with Okta for Good provided access to a powerful tool: _Okta Workforce Federation_. The workflow was simple—volunteers accepted into a project cycle were added to an Airtable sheet, triggering a Lambda function to create their profiles in Okta’s universal directory. However, _this approach hit a roadblock when we discovered that Single Sign-On (SSO) integration required enterprise-level subscriptions for platforms like Slack, Figma, and Notion_. Despite having paid business and pro plans, we lacked the resources for enterprise subscriptions, making our Okta-based solution unfeasible and forcing us back to the drawing board.
 
-## Square One: Google For Nonprofits
+## Google For Nonprofits
 
 Only product leads and management members are issued Develop for Good handles (@developforgood.org). However, the Google for Nonprofits plan allows up to 2,000 users. While this capacity isn’t unlimited, we’re hardly using a fifth of its limit. When we do reach this limit, paying for SSO capabilities for essential services may become feasible. In the meantime, we chose to build Pantheon around Google Workspace. _The process is straightforward: accept students, upload their information to Workspace (issuing them @developforgood.org emails), monitor allocations, and delete accounts at the end of each cycle to free up space._ With this approach defined, we began development.
 
