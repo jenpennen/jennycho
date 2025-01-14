@@ -19,15 +19,15 @@ timeline: "January 2024 - Ongoing"
 
 ## Problem
 
-During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, **_I focused on a critical area where AI was frequently applied: project deliverable success._** This focus was driven by an unexpected trend I identified in student volunteers' survey responses from the previous project cycle, Summer 2023.
+During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, _I focused on a critical area where AI was frequently applied: project deliverable success._ This focus was driven by an unexpected trend I identified in student volunteers' survey responses from the previous project cycle, Summer 2023.
 
 ## Survey Findings
 
-### <i class="fa-solid fa-magnifying-glass"></i> Over half of student volunteers reported using AI for DFG-related tasks for the Summer 2023 cycle.
+### # Over 70% of student volunteers reported using AI for DFG-related tasks for the Summer 2023 cycle.
 
-Over 70% of student volunteers reported using AI to aid their technical development needs to meet client deliverables.
+Student volunteers reported using AI to aid their technical development needs to meet client deliverables.
 
-### <i class="fa-solid fa-magnifying-glass"></i> 81% of students reported that AI significantly contributed to successful project outcomes by the end of the cycle.
+### # 81% of students reported that AI significantly contributed to successful project outcomes by the end of the cycle.
 
 Students using AI tools reported using AI to build their problem-solving and technical skills through suggestions provided by AI.
 
@@ -39,34 +39,34 @@ Students using AI tools reported using AI to build their problem-solving and tec
 
 ## Student Surveys
 
-To better understand how students use AI, I analyzed weekly check-in surveys from past and present project cycles. This step had three goals: assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
+To better understand how students use AI, _I analyzed weekly check-in surveys from past and present project cycles._ This step had three goals: assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
 
 ## Nonprofit Clients
 
-I also reached out to DFG’s nonprofit clients to gather feedback on project deliverables, overall satisfaction with DFG's programs, and their perspectives on AI usage, including whether they leverage AI within their own organizations.
+_I also reached out to DFG’s nonprofit clients to gather feedback on project deliverables_, overall satisfaction with DFG's programs, and their perspectives on AI usage, including whether they leverage AI within their own organizations.
 
 ## Competitive Analysis
 
-To better understand how other organizations integrate AI into their services, I looked into existing platforms that provide technical skill development for both students and non-students, similar to DFG's mission.
+To better understand how other organizations integrate AI into their services, _I looked into existing platforms that provide technical skill development for both students and non-students_, similar to DFG's mission.
 ![Competitive Analysis](https://storage.googleapis.com/jennyencho-website/pantheonai-img/pantheonai-competitive-analysis.png)
 
 ## Key Insights
 
-### <i class="fa-solid fa-headset"></i> Students’ usage of AI tools are rooted in a demand for immediate technical support.
+### # Students’ usage of AI tools are rooted in a demand for immediate technical support.
 
 Common usage of AI tools include optimizing design workflows, generating initial code templates, and addressing technical questions related to clients’ tech stacks.
 
-### <i class="fa-solid fa-comments"></i> Students experienced a smoother collaboration and workflow with AI integration.
+### # Students experienced a smoother collaboration and workflow with AI integration.
 
 AI tools served as a mediator or reference point for decision-making for teams who integrated AI tools into their workflow.
 
 ## Key Solutions
 
-### <i class="fa-solid fa-lightbulb"></i> Develop an AI-based curriculum for new client projects based on past successful client projects.
+### # Develop an AI-based curriculum for new client projects based on past successful client projects.
 
 Suggest week-by-week instructions on how to tackle client needs and deliverables.
 
-### <i class="fa-solid fa-lightbulb"></i> Create a centralized knowledge based for technical assistance, skill development, and program logistics.
+### # Create a centralized knowledge based for technical assistance, skill development, and program logistics.
 
 Use AI to store in-house FAQs, troubleshooting tips, and tutorials to streamline learning curve and immediate guidance for students.
 
@@ -76,11 +76,11 @@ Use AI to store in-house FAQs, troubleshooting tips, and tutorials to streamline
 
 The two primary end users of PantheonAI are student volunteers and client organizations. Both groups work within cross-functional teams, and they share the same goals when faciliating discussions:
 
-### 1. Clarify any confusing technical or design terminology during meetings.
+- Clarify any confusing technical or design terminology during meetings.
 
-### 2. Optimize workflows by automating user testing and persona scenarios.
+- Optimize workflows by automating user testing and persona scenarios.
 
-### 3. Provide a clear and actional next step to meet deliverables.
+- Provide a clear and actional next step to meet deliverables.
 
 ## Low Fidelity Brainstorming
 

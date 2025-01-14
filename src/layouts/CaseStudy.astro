@@ -80,9 +80,12 @@ const {title, description, image} = Astro.props;
 	} */
 
 	.content :global(em) {
-		color: rgb(219 39 119);
+		color: #db2777;
 		font-weight: 400;
 		font-style:normal;
+	}
+	.dark .content :global(em) {
+		color: #ee964b;
 	}
 	.content :global(li) {
 		padding: 0.5rem 3rem;
@@ -110,8 +113,12 @@ const {title, description, image} = Astro.props;
 	}
 	.content :global(p)  {
 		font-size: 1.15rem;
-		
-
+		font-family: var(--font-body);
+	}
+	.content :global(li) {
+		list-style-type:decimal;
+		font-weight:500;
+		list-style-position:inside;
 	}
 	.content :global(a) {
 		font-style: bold;

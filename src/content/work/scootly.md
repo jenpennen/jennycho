@@ -24,7 +24,7 @@ This project started in September 2022 as part of UCLA’s infamous CS course: C
 
 ## Problem
 
-For many UCLA students, transportation can be a real headache. Here's why:
+For many UCLA students, transportation can be frustrating. Here's why:
 
 ### # LA's public transit options are limited.
 
@@ -49,7 +49,7 @@ Creating an app centered around scooter rentals was not our first choice. We bra
 
 ### # Promote micro-electric mobility
 
-It’s time to embrace a solution that tackles both challenges of convenient transportation and environmental choices head-on. We We can reshape perceptions of scooters and present them as a practical, accessible mode of transportation for all.
+It’s time to embrace a solution that tackles both challenges of convenient transportation and environmental choices head-on. We can reshape perceptions of scooters and present them as a practical, accessible mode of transportation for all.
 
 ### # Incentivize scooter ownership.
 

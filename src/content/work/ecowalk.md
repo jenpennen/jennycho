@@ -16,27 +16,17 @@ timeline: "June 2021 - August 2021"
 
 ## Background
 
-Ecowalk is a mobile app inspired by the question: **_how does my choice of transportation impact the environment?_** Ecowalk encourages people make environmentally conscious decisions through healthy activities.
+**Ecowalk** is a mobile app inspired by the question: _how does my choice of transportation impact the environment?_ Ecowalk encourages people make environmentally conscious decisions through healthy activities.
 
 ## Team & Objective
 
-As part of Dandilyonn's 2021 SEEDS internship cohort, I worked with an iOS team of two other developer interns, Stephanie and Remi. Each team was assigned the task of developing an app that aligned with Dandilyonn’s mission to raise environmental awareness by addressing a specific sector that contributes to climate change.
-
-## Observation
-
-### <i class="fa-solid fa-forward-fast"></i> The hidden cost of convenience.
-
-Many people prioritize convenience in their daily tasks. Whether it's reaching a destination or something as simple as turning on the lights, they often overlook the environmental impact of their actions, focusing instead on what is easy and efficient.
-
-### <i class="fa-solid fa-heart-pulse"></i> Convenience is impacting both health and the environment.
-
-America is grappling with a widespread obesity epidemic. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks.
+As part of Dandilyonn's 2021 SEEDS internship cohort, I worked with an iOS team with two other developer interns. We were tasked to develop an app that aligned with Dandilyonn’s mission to raise environmental awareness by addressing a specific sector that contributes to climate change.
 
 ## Problem
 
-In many American cities, relying on cars for travel is often unavoidable and an essential part of people’s daily routines. This raises an important question: **how can we foster new, positive habits through our transportation choices?** To address this challenge effectively, we needed to delve deeper into people's needs and frustrations with their current transportation options.
+_People often overlook the environmental and physical consequences of their actions_, focusing instead on what is easy and efficient. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks.
 
-## Define
+## Defining Problem
 
 > How can we foster new, positive habits through our transportation choices?
 
@@ -44,25 +34,25 @@ In many American cities, relying on cars for travel is often unavoidable and an 
 
 ## Guiding Principles
 
-My team and I explored various environmental issues - food waste, deforestation, water pollution - and the challenges posed by daily human activities before settling on EcoWalk. Our decision was guided by the following key principles:
+My team and I explored various environmental issues - _food waste, deforestation, water pollution_ - and the challenges posed by daily human activities before settling on EcoWalk. Our decision was guided by the following key principles:
 ![Remove Close Friends](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-guiding-principles.png)
 
 ## Contextual Inquiry
 
-My next focus was to gather perspectives on transportation needs from those around me. I reached out to my local community to understand how their daily routines are impacted by transportation. Additionally, with the help of my team members, I extended this outreach to major cities beyond Los Angeles to collect a wide range of insights.
+My next focus was to gather perspectives on transportation needs from those around me. _I reached out to my local community to understand how their daily routines are impacted by transportation._ Additionally, with the help of my team members, I extended this outreach to major cities beyond Los Angeles to collect a wide range of insights.
 
 ## Empathy Mapping
 
-Given the responses of 60+ interviewees, I used an empathy map to distinguish frustration patterns. This approach revealed several key points of frustration: **_convenience, time, and personal motivation_**.
+Given the responses of 60+ interviewees, I used an empathy map to distinguish frustration patterns. This approach revealed several key points of frustration: _convenience, time, and personal motivation_.
 ![Empathy Mapping](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-empathy-map.png)
 
 ## Goals
 
-### <i class="fa-solid fa-heart-pulse"></i> Embrace one less convenient activity daily.
+### # Embrace one less convenient activity daily.
 
-We understand that daily tasks often require convenience, but **_some activities can be approached with less urgency_**. By choosing to forgo one convenience-driven habit each day, people can make small and meaningful contributions to the environment.
+_Some activities can be approached with less urgency_. By choosing to forgo one convenience-driven habit each day, people can make small and meaningful contributions to the environment.
 
-### <i class="fa-solid fa-shoe-prints"></i> Commit to practicing a healthy habit weekly.
+### # Commit to practicing a healthy habit weekly.
 
 By setting incremental goals to incorporate a healthy habit into your routine, starting with just one day a week, you can gradually make it a regular part of your life.
 
@@ -80,12 +70,12 @@ My team and I mapped out a simple user flow. This served as a guide for us to re
 
 ## Wireframes
 
-### Low-Fi Wireframes
+### Low Fidelity Wireframes
 
 Our first priority was to quickly create low-fidelity mockups of the core features. With only two months to develop the app, this step was essential for our team to grasp the application's flow and functionality.
 ![Low-Fi Wireframes](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-lofi.png)
 
-### Hi-Fi Wireframes
+### High Fidelity Wireframes
 
 Next, we developed high-fidelity wireframes to visualize how our core features aligned with our style guide, marking the beginning of our development process.
 ![Mid-Fi](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-hifi.png)
@@ -115,26 +105,24 @@ At the end of the 10 weeks, my team and I presented EcoWalk to a group of engine
 
 ## Feedback
 
-### <i class="fa-solid fa-map"></i> Account for the geographical constraints of the user's location.
-
-During the ideation process, we overlooked the fact that **not everyone lives in a walkable area**, which significantly influences the reliance on cars. Dandilyonn engineers suggested that, rather than focusing solely on physical activity, we should expand the app to include other eco-friendly transportation options like scooters and trains.
+During the ideation process, we overlooked the fact that _not everyone lives in a walkable area_, which significantly influences the reliance on cars. Dandilyonn engineers suggested that, rather than focusing solely on physical activity, _we should expand the app to include other eco-friendly transportation options_ like scooters and trains.
 
 ## Next Steps
 
-### <i class="fa-solid fa-pen"></i> Incorporate feedback in the next design iterations.
+### # Incorporate feedback in the next design iteration.
 
 Given feedback from Dandilyonn's management and engineers, I plan to incorporate this feedback into our next design iteration.
 
-### <i class="fa-solid fa-brush"></i> Refine microinteractions and secondary features.
+### # Refine microinteractions and secondary features.
 
-Given the ten week timeline of this internship, my team and I focused on Ecowalk’s core features, leaving secondary functionalities, such as activity removal, for future consideration. However, as Ecowalk’s development progresses, I plan to delve deeper into refining microinteractions and other minor features essential for maintaining user engagement with the platform.
+Given the ten week timeframe, our team focused on Ecowalk’s core features, leaving secondary functionalities, such as activity removal, for future consideration. Going forward, I plan to explore microinteractions and secondary features to increase user engagement.
 
 ## Reflections
 
-### <i class="fa-solid fa-swatchbook"></i> Embrace new challenges.
+### # Embrace new challenges.
 
-During the ten weeks, my team faced an unexpected setback. Our team's designer left the internship due to unforeseen circumstances, leaving us uncertain about how to handle the design work. **This marked my first exposure to UI/UX design**, and I took extra time during the internship to learn about best practices in the field. This experience ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
+During the ten weeks, my team's designer left the internship due to unforeseen circumstances. _I took extra time during the internship to learn about best practices in the field._ This experience ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
 
-### <i class="fa-solid fa-comments"></i> Communicate consistently with your team.
+### # Communicate consistently with your team.
 
-When we found ourselves facing a tight deadline, we made it a priority to regularly update each other on our progress in both code and design. This open communication was crucial in bringing EcoWalk to life. This experience taught me that **without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition**.
+When my team and I found ourselves facing a tight deadline, we made it a priority to regularly update each other on our progress. This experience taught me that _without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition_.

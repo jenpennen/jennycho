@@ -26,11 +26,11 @@ This project began in October 2021 as part of UCLA DevX. Formerly named Retune, 
 
 ### # Connecting with people in a large space is hard.
 
-Students want to socialize with other students before honing in for the academic year, but _connecting with new people in a large space, like UCLA, can be feel intimidating._
+Students want to socialize with other students before honing in for the academic year, but _connecting with new people in a large space, like UCLA, can feel intimidating._
 
 ### # People like to be in-the-know.
 
-Students at the UCLA campus actively participated to a popular tiktok trend, where influencers ask random people what song they were listening to.
+Students at the UCLA campus actively participated in a popular tiktok trend, where influencers ask random people what song they were listening to.
 
 ## Define
 
