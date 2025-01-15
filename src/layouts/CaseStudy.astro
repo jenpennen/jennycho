@@ -2,13 +2,19 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ProjectDetails from "../components/ProjectDetails.astro";
 // import "../styles/global.css"
 interface Props {
+	org: string;
+	label: string;
+	role: string;
+	second_role: string;
+	timeline: string;
 	title: string;
 	description?: string | undefined;
 	image ?: string | undefined;
 }
-const {title, description, image} = Astro.props;
+const {title, description, image, org, label, role, second_role, timeline} = Astro.props;
 ---
 <html lang="eng">
 	<head >
@@ -27,13 +33,12 @@ const {title, description, image} = Astro.props;
 			<div class="flex gap-2 mb-4 w-full">
 	
 				<div class="flex flex-col w-full text-center">
-					<!-- <h1 class="text-3xl font-bold">{title}</h1>
-					<p>{description}</p> -->
 					<div class="pt-10">
 						<img src={image} />
 					</div>
 					<h1 class="text-3xl pt-5 font-brand tracking-wide pb-2">{title}</h1>
-					<p>{description}</p>
+					<p class="font-brand">{description}</p>
+					<ProjectDetails org={org} label={label} role={role}  second_role={second_role} timeline={timeline} />
 					<div class="text-left content">
 						<slot/>
 					</div>

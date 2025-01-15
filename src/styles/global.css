@@ -114,30 +114,6 @@ img {
   background-repeat: no-repeat;
   box-shadow: var(--medium-shadow);
 }
-@keyframes highlight-animate {
-  0% {
-    background-size: 0% 100%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
-}
-
-.highlight {
-  background: linear-gradient(
-    to right,
-    var(--accent-overlay),
-    var(--accent-overlay)
-  );
-  font-weight: 400;
-
-  /* Initial background state */
-  background-size: 30% 100%;
-  background-repeat: no-repeat;
-
-  /* Apply animation */
-  animation: highlight-animate 2s ease-in-out forwards;
-}
 blockquote p {
   margin: 0.3rem 0.3rem;
   font-size: 2rem;

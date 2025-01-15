@@ -1,31 +1,20 @@
-<footer class="flex flex-col md:flex-row justify-center md:justify-between items-center py-4 px-6 mt-8">
-	<div class="text-center md:text-left">
-		<p class="text-xs font-brand uppercase">
-			&copy; {new Date().getFullYear()} Handcoded and Designed by Jenny Cho. All rights reserved.
-		</p>
-	</div>
-	<div class="font-brand socials mt-4 md:mt-0 text-center md:text-right space-x-4 text-xs">
+<footer class="flex flex-col md:flex-row justify-center md:justify-between items-center py-4 px-6 mt-8 text-black dark:text-gray-300 text-xs">
+	<div class="font-brand socials my-4 text-center space-x-4">
 		<a href="https://linkedin.com/in/jennyecho" target="_blank"> LinkedIn</a>
 		<a href="https://github.com/jenpennen" target="_blank"> GitHub</a>
 		<a href="mailto:jennycho35@gmail.com"> Contact</a>
 	</div>
+	<div class="text-center">
+		<p class="font-brand">
+			&copy; {new Date().getFullYear()} Handcoded and Designed by Jenny Cho. All rights reserved.
+		</p>
+	</div>
 </footer>
 <style>
 	footer {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
 		margin-top: auto;
-		padding: 3rem 2rem 3rem;
+		padding: 5rem 3rem;
 		text-align: center;
-		color: var(--gray-400);
-	}
-
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 2px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
 	}
 
 	footer a:hover,

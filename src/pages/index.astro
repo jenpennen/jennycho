@@ -20,18 +20,7 @@ const entry =(await getCollection('blog'))
 	<div class="flex flex-col h-full">
 		<h1 class="text-3xl font-brand uppercase tracking-wide">{title}</h1>
 		<p class="uppercase pb-10 font-semibold">{description}</p>
-		<!-- <p class="w-5/6 pb-10 sm:w-full">
-			I'm a UX designer working on internal tools at Develop For Good. 
-		</p> -->
-		<!-- <div>
-			<h2 class="text-md">My Recent Works</h2>
-			<div class="underline decoration-dotted underline-offset-4">
-      			<h3><li><a  href="/work/pantheon/">Pantheon: Powering nonprofit volunteer management through seamless tech integration</a></li></h3>
-	  			<h3><li><a href="/work/melodyai">PantheonAI: Driving project deliverable success with AI integration</a></li></h3>
-				<h3><li><a href="/blog/securing-and-scaling-identity-management">Identity Management with Keycloak and Kubernetes</a></li></h3>	
-    		</div>	
-			<p>Check out more of my works <a class="hover:text-lightprimary font-bold underline decoration-dotted dark:text-gray-300 dark:hover:text-pink-500" href="/work/">here</a></p>
-		</div> -->
+		
 
 		<div class="pb-10">
 			<h2 class="uppercase font-brand font-semibold tracking-wide"># My Work Is Featured In</h2>
@@ -41,14 +30,16 @@ const entry =(await getCollection('blog'))
     		</div>
 		</div>
 
-		<h2 class="uppercase font-brand font-semibold tracking-wide"># I'm Currently Working On </h2>
-		<div role="list" class="grid">
+		<div class="mx-auto">
+		<h2 class="uppercase font-brand font-semibold tracking-wide pb-3"># Currently Working On </h2>
+		<div role="list" class="m-auto">
             {
                 projects.map((project:any) => (
                     <Card project={project} />
                 ))
             }
         </div>
+	</div>
 	</div>
 </BaseLayout>
 <style>

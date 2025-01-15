@@ -10,8 +10,8 @@ const { org, label, role, second_role, timeline } = Astro.props;
 
 ---
  <hr class="border-t-2 mt-5 border-gray-300 dark:border-gray-700" />
-	<div class="p-3 gap-4 center">
-		<div class="detail-grid gap-4">
+	
+		<div class="detail-grid gap-4 py-4 justify-center">
 		<div>
 			<p class="detail-heading">Organization</p>
 			<p class="detail-info">{org}</p>
@@ -30,8 +30,8 @@ const { org, label, role, second_role, timeline } = Astro.props;
 			<p class="detail-info">{timeline || 'N/A'}</p>
 		</div>
 		</div>
-	</div>
- <hr class="border-t-2 border-gray-300 dark:border-gray-700" />
+	
+		<hr class="mt-3 border-t-2 border-gray-300 dark:border-gray-700" />
 
  <style>	
 	.detail-heading {
