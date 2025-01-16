@@ -1,10 +1,10 @@
 ---
 interface Props {
-  org: string | undefined;
-  label: string | undefined;
-  role: string | undefined;
-  timeline: string | undefined;
-  second_role: string | undefined;
+  org: string;
+  label: string;
+  role: string;
+  timeline: string;
+  second_role ?: string | undefined;
 }
 const { org, label, role, second_role, timeline } = Astro.props;
 
