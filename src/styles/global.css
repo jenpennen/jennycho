@@ -114,10 +114,6 @@ img {
   background-repeat: no-repeat;
   box-shadow: var(--medium-shadow);
 }
-blockquote p {
-  margin: 0.3rem 0.3rem;
-  font-size: 2rem;
-}
 
 /* mobile phone */
 @media (max-width: 640px) {
@@ -129,9 +125,6 @@ blockquote p {
   }
   h3,
   p {
-    font-size: 1rem;
-  }
-  blockquote {
     font-size: 1rem;
   }
 }

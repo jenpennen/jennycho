@@ -3,13 +3,19 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import ProjectDetails from "../components/ProjectDetails.astro";
+import { OrganizeImportsMode } from "typescript";
 // import "../styles/global.css"
 interface Props {
+	org ?: string | undefined;
+	label ?: string | undefined;
+	role ?: string | undefined;
+	second_role ?: string | undefined;
+	timeline ?: string | undefined;
 	title: string;
 	description?: string | undefined;
 	image ?: string | undefined;
 }
-const {title, description, image} = Astro.props;
+const {title, description, image, org, label, role, second_role, timeline} = Astro.props;
 ---
 <html lang="eng">
 	<head >
@@ -19,7 +25,7 @@ const {title, description, image} = Astro.props;
 	<Header />
 	<main>
 	
-		<article class="flex flex-col gap-2 justify-center p-2">
+		<article class="flex flex-col justify-center">
 			<div class="pt-20 prose">
 					<a href="/work" class="hover:text-primary">
 						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; My Works</span>
@@ -33,6 +39,7 @@ const {title, description, image} = Astro.props;
 					</div>
 					<h1 class="text-3xl pt-5 font-brand tracking-wide pb-2">{title}</h1>
 					<p class="font-brand">{description}</p>
+					<ProjectDetails org={org} label={label} role={role} second_role={second_role} timeline={timeline} />
 					<div class="text-left content">
 						<slot/>
 					</div>
@@ -137,7 +144,7 @@ const {title, description, image} = Astro.props;
 		font-family: var(--font-body);
 		font-weight: 600;
 		line-height: 1.5;
-		padding-inline-start: 1.5rem;
+		/* padding-inline-start: 1.5rem; */
 		/* border-inline-start: 0.25rem solid var(--accent-regular); */
 	}
 

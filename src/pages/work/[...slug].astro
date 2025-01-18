@@ -22,7 +22,7 @@ const { entry  } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<CaseStudy title={entry.data.title} description={entry.data.description} image={entry.data.image}>
-	<ProjectDetails org={entry.data.org} label={entry.data.label} role={entry.data.role}  second_role={entry.data.second_role} timeline={entry.data.timeline} /> 
+<CaseStudy title={entry.data.title} description={entry.data.description} image={entry.data.image} org={entry.data.org} label={entry.data.label} role={entry.data.role}  second_role={entry.data.second_role} timeline={entry.data.timeline} >
+	<!-- <ProjectDetails org={entry.data.org} label={entry.data.label} role={entry.data.role}  second_role={entry.data.second_role} timeline={entry.data.timeline} />  -->
 	<Content />
 </CaseStudy>
