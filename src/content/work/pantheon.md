@@ -18,17 +18,15 @@ second_role: Frontend Engineer
 
 [**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit focused on closing the digital divide in the nonprofit sector and volunteerism. They offer opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits.
 
-## Problem
+## Problem Statement
+
+> With the scale of Develop For Good's programs surpassing the manual capacity of their staff, how might we manage program lifecycle tasks seamlessly and securely?
 
 Over the past two years, DFG has experienced a growing demand from students and nonprofit organizations seeking technical opportunities and digital services. However, _the organization has struggled to scale its offerings due to a reliance on manual lifecycle tasks._
 
 ## Solution
 
 To address this growing demand and improve technical infrastructure, _I spearheaded the UX strategy and frontend development for Pantheon— Develop For Good’s first internal data management system._
-
-## Defining Problem
-
-> With the scale of Develop For Good's programs surpassing the manual capacity of their staff, how might we manage program lifecycle tasks seamlessly and securely?
 
 # Research
 

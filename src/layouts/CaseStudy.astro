@@ -28,7 +28,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 		<article class="flex flex-col justify-center">
 			<div class="pt-20 prose">
 					<a href="/work" class="hover:text-primary">
-						<span class="hover:text-lightprimary dark:hover:text-darkPrimary">&larr; My Works</span>
+						<span class="hover:text-lightPrimary dark:hover:text-darkPrimary">&larr; My Works</span>
 					</a>
 			</div>
 			<div class="flex gap-2 mb-4 w-full">
@@ -138,12 +138,13 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 		/* background: var(--gradient-subtle); */
 	}
 
-	.content :global(blockquote) {
+	.content :global(blockquote > p) {
 		font-size: var(--text-xl);
-		text-transform: uppercase;
+		border-radius: 5px;
 		font-family: var(--font-body);
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 1.5;
+		margin-bottom: 1rem;
 		/* padding-inline-start: 1.5rem; */
 		/* border-inline-start: 0.25rem solid var(--accent-regular); */
 	}

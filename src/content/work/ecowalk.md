@@ -22,13 +22,11 @@ timeline: "June 2021 - August 2021"
 
 As part of Dandilyonn's 2021 SEEDS internship cohort, I worked with an iOS team with two other developer interns. We were tasked to develop an app that aligned with Dandilyonn’s mission to raise environmental awareness by addressing a specific sector that contributes to climate change.
 
-## Problem
-
-_People often overlook the environmental and physical consequences of their actions_, focusing instead on what is easy and efficient. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks.
-
-## Defining Problem
+## Problem Statement
 
 > How can we foster new, positive habits through our transportation choices?
+
+_People often overlook the environmental and physical consequences of their actions_, focusing instead on what is easy and efficient. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks.
 
 # RESEARCH
 

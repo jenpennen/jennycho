@@ -17,7 +17,9 @@ timeline: "January 2024 - Ongoing"
 
 [**Develop For Good (DFG)**](https://www.developforgood.org/) is a 501(c)(3) nonprofit focused on closing the digital divide in the nonprofit sector and volunteerism. They offer opportunities for underserved and underrepresented college students to build real-world technical products for nonprofits.
 
-## Problem
+## Problem Statement
+
+> How can Develop For Good enhance the development experience of student volunteers by leveraging AI tools and resources?
 
 During DFG's Winter 2024 cycle, founder Mary Zhu initiated conversations about integrating AI into the organization’s operations to address the growing demand for AI capabilities. To meet this demand, _I focused on a critical area where AI was frequently applied: project deliverable success._ This focus was driven by an unexpected trend I identified in student volunteers' survey responses from the previous project cycle, Summer 2023.
 
@@ -30,10 +32,6 @@ Student volunteers reported using AI to aid their technical development needs to
 ### # 81% of students reported that AI significantly contributed to successful project outcomes by the end of the cycle.
 
 Students using AI tools reported using AI to build their problem-solving and technical skills through suggestions provided by AI.
-
-## Defining the Problem
-
-> How can Develop For Good enhance the development experience of student volunteers by leveraging AI tools and resources?
 
 # Research
 
