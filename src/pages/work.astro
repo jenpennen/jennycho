@@ -11,8 +11,11 @@ const projects = (await getCollection('work'))
 
 <BaseLayout title="My Works" description="Check out Jenny's Case Studies">
     <div class="self-center">
-        <h1 class="uppercase font-brand text-3xl">My Works</h1>
-        <p class="mb-10 uppercase font-semibold">Check out my case studies below &#8595;</p>
+    <div class="mt-20">
+      <h2 class="mb-1 font-brand text-xl">My Works</h2>
+      <p class="text-sm font-body mb-3">Check out my case studies below!</p>
+	  <!-- <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700"> -->
+      </div>
         <div role="list" class="grid">
             {
                 projects.map((project:any) => (

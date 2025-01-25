@@ -1,34 +1,35 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE } from "../consts";
-import '../styles/global.css';
-const pageTitle = "Hi, I'm Jenny.";
+// import '../styles/global.css';
 const about = {
   heading: "A Bit About Me",
-  intro: "I'm a ux/product designer currently working on internal tools at Develop For Good. Formally, I'm a design engineer - I code my designs.",
-  background: "I was drawn to design through my engineering projects at UCLA. I would constantly ask myself: how can I blend my technical skills with design to engineer authentic and nostalgic experiences in a digital world?",
-  mission: "My engineering background plays an integral role in my design workflow and vice versa. Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and enjoyable.",
-  favorites: "My latest obsession has been AstroJS and tweaking my NeoVim configuration. You might have noticed my love for Markdown - I integrate it to my designs wherever possible. I also actively explore contemporary Japanese and Korean graphic design.",
+  intro: "I studied Computer Science and Linguistics at UCLA. While at university, I actively worked with nonprofit organizations to deliver design and technical products that they otherwise lacked. It was through this work that I would constantly ask myself: ",
+  question: "how can I blend technology with design to engineer authentic and nostalgic experiences in a digital world?",
+  mission: "My engineering background plays an integral role in my design workflow and vice versa. Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions ",
+  keywords: "seamless, natural, and enjoyable.",
 };
 ---
 <html lang="en">
   <BaseLayout title="Jenny Cho - UX Designer" description="Hi, I'm Jenny Cho.">
     <body>
-      <h1 class="font-brand uppercase text-3xl">{pageTitle}</h1>
-      <p class="font-brand font-semibold uppercase">Nice to meet you! :)</p>
-    
-    <span class="lg:text-base md:text-base sm:text-sm flex flex-col lg:flex-row">
+    <span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row mt-20 items-center px-5 gap-5">
       
-      <img class="w-full lg:w-1/2 lg:h-1/2" src='/jenny-pic.png' alt="Jenny pic" />
-  
+      <!-- <img class="h-96 object-contain rounded-tl-lg rounded-tr-lg" src='/headshot.jpg' alt="Jenny pic" /> -->
       <div>
-      <h1 class="mb-3 uppercase font-brand text-xl">{about.heading}</h1>
-      <h2>Who Am I</h2>
-      <p class="pb-4 font-body">{about.intro}</p>
-      <h2>Why I Design & Code</h2>
-      <p class="pb-4 font-body">{about.background}</p>
-      <h2>My Manifesto</h2>
-      <p class="pb-4 font-body">{about.mission}</p>
+      <h2 class="mb-1 font-brand text-xl">Hi! I'm Jenny.</h2>
+      <!-- <p class="text-sm font-body mb-3">UX designer, frontend engineer, and <span class="text-pink-600 italic">linguistic thinker</span>.</p> -->
+      <p class="text-sm font-body">I'm a UX designer and frontend engineer working on internal tools <span class="text-pink-600 dark:text-darkPrimary">@ Develop For Good.</span></p>
+      </div>
+      <img class="h-96 object-contain rounded-tl-lg rounded-tr-lg" src='/headshot.jpg' alt="Jenny pic" />
+
+    </span>
+    <span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row items-center">
+      <div class="mt-3 px-5 py-5">
+      <h2 class="mb-1 font-brand text-lg">My Story</h2>
+      <p class="text-sm font-body mb-3">{about.intro}  <span class="text-pink-600 dark:text-darkPrimary">{about.question}</span></p>
+      <h3 class="font-semibold text-md">Guiding Principle</h3>
+      <p class="text-sm font-body mb-3">{about.mission} <span class="text-pink-600 dark:text-darkPrimary">{about.keywords}</span></p>
       </div>
     </span>
   </body>

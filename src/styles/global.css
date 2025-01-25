@@ -48,7 +48,8 @@
   --bouncy: 0.5s cubic-bezier(0.5, 1.5, 0.5, 0.7);
   --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
 
-  --background-color: #ebf0ff;
+  /* --background-color: #ebf0ff; */
+  --background-color: #f8f8ff;
   --secondary-background: #f8f8ffaa;
   --text-color: #1d1d1a;
 }
@@ -57,7 +58,7 @@
   --background-color: #1d1d1a;
   --secondary-background: #323232aa;
   --text-color: #ebf0ff;
-  --accent-regular: #ee964b;
+  --accent-regular: #85cbdb;
   --link-color: var(--accent-regular);
 }
 html,
