@@ -47,6 +47,19 @@ export default {
         fast: "250ms",
       },
     },
+    screens: {
+      // mobile
+      xs: "350px",
+      //tablet
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+      //laptop
+      md: "1024px",
+      // => @media (min-width: 1024px) { ... }
+      //desktop
+      lg: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
   },
   plugins: [],
 };

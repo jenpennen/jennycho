@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE } from "../consts";
-// import '../styles/global.css';
+import { getCollection } from "astro:content";
 const about = {
   heading: "A Bit About Me",
   intro: "I studied Computer Science and Linguistics at UCLA. While at university, I actively worked with nonprofit organizations to deliver design and technical solutions. Through this work, I often found myself wondering: ",
@@ -9,29 +9,56 @@ const about = {
   mission: "My engineering background plays an integral role in my design workflow and vice versa. Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions ",
   keywords: "seamless, natural, and enjoyable.",
 };
+const entry =(await getCollection('blog'))
+	// .filter((item) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
+	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.slice(0,2); 
 ---
 <html lang="en">
   <BaseLayout title="Jenny Cho - UX Designer" description="Hi, I'm Jenny Cho.">
     <body>
     <span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row mt-20 items-center px-5 gap-5">
-      
-      <!-- <img class="h-96 object-contain rounded-tl-lg rounded-tr-lg" src='/headshot.jpg' alt="Jenny pic" /> -->
-      <div>
+      <img class="h-96 object-contain rounded-lg xs:block sm:block md:hidden lg:hidden" src='/headshot.jpg' alt="Jenny pic" />
+ 
+      <div class="xs:px-1 sm:px-2 md:px-5 lg:px-5">
       <h2 class="mb-1 font-brand text-xl">Hi! I'm Jenny.</h2>
-      <!-- <p class="text-sm font-body mb-3">UX designer, frontend engineer, and <span class="text-pink-600 italic">linguistic thinker</span>.</p> -->
-      <p class="text-sm font-body">I'm a UX designer and frontend engineer working on internal tools <span class="text-pink-600 dark:text-darkPrimary">@ Develop For Good.</span></p>
+      <p class="text-sm font-body mb-3">I'm a UX designer and frontend engineer working on internal tools <span class="text-pink-600 dark:text-darkPrimary">@ Develop For Good.</span></p>
+
+      <div>
+      <p class="text-sm font-body mb-3">{about.intro}  <span class="text-pink-600 dark:text-darkPrimary">{about.question}</span></p>
+      <p class="text-sm font-body mb-3">{about.mission} {about.keywords}</p>
+      <h2 class="mb-1 font-brand text-md xs:text-base">My Work Is Featured In ... </h2>
+      <div class="underline decoration-dotted underline-offset-4 text-sm">
+            <p><li class="hover:text-lightPrimary dark:hover:text-darkPrimary"><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/" target="_blank">Okta: Driving Global Impact Through Nonprofit Tech Leaders  &#8599;</a></li></p>
+            <p><li class="hover:text-lightPrimary dark:hover:text-darkPrimary"><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9" target="_blank">Develop For Good: Streamlining Volunteer Management with Pantheon &#8599;</a></li></p>
+        </div>
       </div>
-      <img class="h-96 object-contain rounded-tl-lg rounded-tr-lg" src='/headshot.jpg' alt="Jenny pic" />
+      </div>
+      <img class="h-96 object-contain rounded-lg xs:hidden sm:hidden md:inline-block lg:inline-block" src='/headshot.jpg' alt="Jenny pic" />
 
     </span>
-    <span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row items-center">
+    <!-- <span class="lg:text-base md:text-base sm:text-sm flex flex-col items-center">
       <div class="mt-3 px-5 py-5">
       <h2 class="mb-1 font-brand text-lg">My Story</h2>
       <p class="text-sm font-body mb-3">{about.intro}  <span class="text-pink-600 dark:text-darkPrimary">{about.question}</span></p>
-      <h3 class="font-semibold text-md">Guiding Principle</h3>
+      <h2 class="mb-1 font-brand text-md">Guiding Principle</h2>
       <p class="text-sm font-body mb-3">{about.mission} <span class="text-pink-600 dark:text-darkPrimary">{about.keywords}</span></p>
+      <h2 class="mb-1 font-brand text-lg">My Work's Been Featured On</h2>
+      <div class="underline decoration-dotted underline-offset-4 text-sm">
+            <p><li class="hover:text-lightPrimary dark:hover:text-darkPrimary"><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/" target="_blank">Okta: Driving Global Impact Through Nonprofit Tech Leaders  &#8599;</a></li></p>
+            <p><li class="hover:text-lightPrimary dark:hover:text-darkPrimary"><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9" target="_blank">Develop For Good: Streamlining Volunteer Management with Pantheon &#8599;</a></li></p>
+        </div>
+      </div> 
+    </span> -->
+    <!-- <span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row items-center">
+      <div class="mt-3 px-5 py-5">
+      <h2 class="mb-1 font-brand text-lg">My Work's Been Featured On</h2>
+      <div class="underline decoration-dotted underline-offset-4 text-sm">
+            <p><li class="hover:text-lightPrimary dark:hover:text-darkPrimary"><a  href="https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/" target="_blank">Okta: Driving Global Impact Through Nonprofit Tech Leaders  &#8599;</a></li></p>
+            <p><li class="hover:text-lightPrimary dark:hover:text-darkPrimary"><a href="https://developforgood.notion.site/Develop-for-Good-s-Pantheon-0df10a08fdf74fa9bc8d596695aac1a9" target="_blank">Develop For Good: Streamlining Volunteer Management with Pantheon &#8599;</a></li></p>
+        </div>
       </div>
-    </span>
+    </span> -->
   </body>
   </BaseLayout>
 </html>
