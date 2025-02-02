@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import '../styles/global.css'
+// import '../styles/global.css'
 interface Props {
 	project: CollectionEntry<'work'>;
 }
@@ -13,13 +13,13 @@ const {data, slug, collection} = Astro.props.project;
 		<div class="pt-3 pb-3">
 		
 		
-		<h2 class="text-lg md:text-2xl sm:text-3xl font-brand">
+		<h2 class="text-xl lg:text-2xl font-brand">
 			{data.title}
 		</h2>
 		<h3 class="text-xs font-semibold uppercase  text-gray-600 dark:text-gray-400">
 			{data.org}
 		</h3>
-		<p class="font-body">
+		<p class="font-body my-1">
 			{data.description}
 		</p>
 		</div>
@@ -46,10 +46,6 @@ const {data, slug, collection} = Astro.props.project;
 		width: 100%;
 		height: auto;
 		/* border-radius: 5px 5px 0 0 ; */
-	}
-	p {
-		margin-top: 0.25em;
-		margin-bottom: 0.5em;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;

@@ -4,10 +4,10 @@ import Card from '../components/Card.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 const projects = (await getCollection('work'))
-	.filter((item:any) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
+	.filter((item:any) => !['melodyai', 'perspective'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 const entry =(await getCollection('blog'))
-	// .filter((item) => !['perspective'].includes(item.slug)) //exclude incomplete case studies
+	// .filter((item) => !['melodyai'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0,2); 
 ---

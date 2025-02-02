@@ -12,7 +12,7 @@ second_role: Frontend Engineer
 timeline: "October 2021 - Ongoing"
 ---
 
-# CONTEXT
+# Context
 
 ## Background
 
@@ -36,7 +36,7 @@ Students at the UCLA campus actively participated in a popular tiktok trend, whe
 
 > How might we reimagine social connections through an enaging music discovery experience?
 
-# RESEARCH
+# Research
 
 ## Competitive Analysis
 
@@ -82,7 +82,7 @@ Users can see what songs other Tugo users are listening to, as well as their rec
 
 Users can only listen to up to 30 seconds of a song to maximize the music discovery experience as much as possible for people on the move.
 
-# DESIGN PROCESS
+# Design Process
 
 ## Low-Fi Wireframes
 
@@ -127,7 +127,7 @@ Given our feedback, I revised Tugo's flow chart and took into consideration new 
 
 ![Tugo Flow Chart](https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-flow-chart.png)
 
-# FINAL WORK
+# Final Work
 
 ## Onboarding
 
@@ -149,7 +149,7 @@ If users like what they find, they can add the song to a playlist! Simply press 
 The close friends and public maps are a thing of the past! Now, all users are placed on a public map, but they can choose what to share with other Tugo users – profile photo, name, playlists, and song history. In return, everyone must share their currently playing song with the public.
 ![Remove Close Friends](https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-visibility.png)
 
-# IMPACT
+# Impact
 
 ## Outcome
 

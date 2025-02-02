@@ -11,7 +11,7 @@ role: Product Designer
 timeline: "January 2024 - Ongoing"
 ---
 
-# CONTEXT
+# Context
 
 ## Background
 
@@ -35,13 +35,9 @@ Students using AI tools reported using AI to build their problem-solving and tec
 
 # Research
 
-## Student Surveys
+## User Surveys
 
-To better understand how students use AI, _I analyzed weekly check-in surveys from past and present project cycles._ This step had three goals: assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI.
-
-## Nonprofit Clients
-
-_I also reached out to DFG’s nonprofit clients to gather feedback on project deliverables_, overall satisfaction with DFG's programs, and their perspectives on AI usage, including whether they leverage AI within their own organizations.
+To better understand how students use AI, _I analyzed weekly check-in surveys from past and present project cycles._ This step had three goals: assess the extent of AI usage, identify potential correlations between AI use and project outcomes, and gain insights into the factors driving student reliance on AI. _I also reached out to DFG’s nonprofit clients to gather feedback on project deliverables_, overall satisfaction with DFG's programs, and their perspectives on AI usage, including whether they leverage AI within their own organizations.
 
 ## Competitive Analysis
 
@@ -74,11 +70,11 @@ Use AI to store in-house FAQs, troubleshooting tips, and tutorials to streamline
 
 The two primary end users of PantheonAI are student volunteers and client organizations. Both groups work within cross-functional teams, and they share the same goals when faciliating discussions:
 
-- Clarify any confusing technical or design terminology during meetings.
+**1. Clarify any confusing technical or design terminology during meetings.**
 
-- Optimize workflows by automating user testing and persona scenarios.
+**2. Optimize workflows by automating user testing and persona scenarios.**
 
-- Provide a clear and actional next step to meet deliverables.
+**3. Provide a clear and actional next step to meet deliverables.**
 
 ## Low Fidelity Brainstorming
 

@@ -11,19 +11,19 @@ const { org, label, role, second_role, timeline } = Astro.props;
 ---	
 <div class="my-5 block">
   <div class="border-y-2 py-2 my-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label">Organization</p>
+    <p class="label text-gray-500 dark:text-gray-400">Organization</p>
     <p class="value dark:text-gray-200">{org}</p>
   </div>
   <div class="border-b-2 pb-2 mb-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label">Platform</p>
+    <p class="label text-gray-500 dark:text-gray-400">Platform</p>
     <p class="value dark:text-gray-200">{label}</p>
   </div>
   <div class="border-b-2 pb-2 mb-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label">Role</p>
+    <p class="label text-gray-500 dark:text-gray-400">Role</p>
     <p class="value dark:text-gray-200">{role}{second_role ? `  •  ${second_role}` : ''}</p>
   </div>
   <div class="border-b-2 pb-2 mb-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label">Timeline</p>
+    <p class="label text-gray-500 dark:text-gray-400">Timeline</p>
     <p class="value dark:text-gray-200">{timeline || 'N/A'}</p>
   </div>
 </div>
@@ -41,7 +41,6 @@ const { org, label, role, second_role, timeline } = Astro.props;
   text-align:left;
   font-weight: 600;
   font-size: 0.75rem; 
-  color: #9ca3af; 
   letter-spacing: 0.05em; 
 }
 

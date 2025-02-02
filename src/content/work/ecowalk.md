@@ -12,7 +12,7 @@ second_role: Mobile Developer Intern
 timeline: "June 2021 - August 2021"
 ---
 
-# CONTEXT
+# Context
 
 ## Background
 
@@ -28,7 +28,7 @@ As part of Dandilyonn's 2021 SEEDS internship cohort, I worked with an iOS team 
 
 _People often overlook the environmental and physical consequences of their actions_, focusing instead on what is easy and efficient. With the growing availability of fast and convenient options, from food to transportation, people have become increasingly sedentary and demand instant gratification in their daily tasks.
 
-# RESEARCH
+# Research
 
 ## Guiding Principles
 
@@ -54,7 +54,7 @@ _Some activities can be approached with less urgency_. By choosing to forgo one 
 
 By setting incremental goals to incorporate a healthy habit into your routine, starting with just one day a week, you can gradually make it a regular part of your life.
 
-# DESIGN PROCESS
+# Design Process
 
 ## Style Guide
 
@@ -78,7 +78,7 @@ Our first priority was to quickly create low-fidelity mockups of the core featur
 Next, we developed high-fidelity wireframes to visualize how our core features aligned with our style guide, marking the beginning of our development process.
 ![Mid-Fi](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-hifi.png)
 
-# FINAL WORK
+# Final Work
 
 ## Onboarding
 
@@ -95,7 +95,7 @@ Users can select specific activities from the planner to commit to once a week. 
 Users can view the activities that others in their community are committing to, along with their profile views. This fosters a sense of belonging, encouraging users to continue adopting healthier and eco-friendly habits inspired by the positive actions of those around them.
 ![Leaderboard](https://storage.googleapis.com/jennyencho-website/ecowalk-img/ecowalk-leaderboard.png)
 
-# IMPACT
+# Impact
 
 ## Outcome
 

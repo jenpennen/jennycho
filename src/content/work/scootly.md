@@ -12,7 +12,7 @@ second_role: Frontend Developer
 timeline: September 2022 - December 2022
 ---
 
-# CONTEXT
+# Context
 
 ## Background
 
@@ -55,7 +55,7 @@ It’s time to embrace a solution that tackles both challenges of convenient tra
 
 The hurdles of owning a personal scooter often deter many from making the investment. With this in mind, we set out to make scooter ownership more appealing and rewarding, while also offering a convenient option for those who want to ride but aren’t ready to commit to buying their own.
 
-# DESIGN PROCESS
+# Design Process
 
 ## Style Guide
 
@@ -82,7 +82,7 @@ Our first priority was to quickly create low-fidelity mockups of the core featur
 Next, we honed in on the app’s overall design while integrating technical feedback. We developed multiple versions of the key features to ensure we were working with the best possible design.
 ![Mid-Fi Wireframes](https://storage.googleapis.com/jennyencho-website/scootly-img/mid-fi-wireframes.png)
 
-# TECH PROCESS
+# Tech Process
 
 ## Web or Mobile?
 
@@ -116,7 +116,7 @@ Scooter owners can now earn some extra cash with their scooters in a simple step
 Scootly's in-app messaging platform ensures secure transactions and communication. With a special notification badge for new messages, users stay updated at all times.
 ![Messaging](https://storage.googleapis.com/jennyencho-website/scootly-img/messaging.png)
 
-# IMPACT
+# Impact
 
 ## Outcome
 

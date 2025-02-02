@@ -64,7 +64,7 @@ DFG's partnership with Okta for Good provided access to a powerful tool: _Okta W
 
 Only product leads and management members are issued Develop for Good handles (@developforgood.org). However, the Google for Nonprofits plan allows up to 2,000 users. While this capacity isn’t unlimited, we’re hardly using a fifth of its limit. When we do reach this limit, paying for SSO capabilities for essential services may become feasible. In the meantime, we chose to build Pantheon around Google Workspace. _The process is straightforward: accept students, upload their information to Workspace (issuing them @developforgood.org emails), monitor allocations, and delete accounts at the end of each cycle to free up space._ With this approach defined, we began development.
 
-# TECH PROCESS
+# Tech Process
 
 <!-- _Note:_ This is a highly simplified overview of Pantheon’s technical development. For a more detailed exploration of its technologies, click here. -->
 
@@ -86,7 +86,7 @@ Airtable’s API enforces a maximum of 5 requests per second and returns only 10
 
 Requests to Airtable often took 5–15 seconds, causing sluggish UI performance and raising concerns about stale data as new volunteers joined. _To address this, we used our asynchronous job framework to schedule periodic data refreshes every few hours and added a manual refresh button in the UI for immediate updates._ This approach, combined with a cooldown mechanism to avoid rate limits has proven effective, given our modest management team size and infrequent data synchronization issues.
 
-# DESIGN PROCESS
+# Design process
 
 ## Understanding the Target User
 
@@ -154,40 +154,39 @@ I created mid-fidelity wireframes based on the multi-classification approach, wo
 
 ![Mid-fi Wireframe 3](https://storage.googleapis.com/jennyencho-website/pantheon-img/project-cycle-overview-iteration.png)
 
-# FINAL WORK
-
-## Dashboard Creation
+<!-- # FINAL WORK -->
+<!-- ## Dashboard Creation
 
 DFG management can create dashboards that provide a comprehensive overview of individual project cycles. These dashboards, powered by Airtable, offer insights into volunteer and client data, data fetching status, and key performance metrics.
 
-![Dashboard View](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-overview.png)
+![Dashboard View](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-overview.png) -->
 
-## Smartviews
+<!-- ## Smartviews
 
 Each smartview is tailored to specific internal classifications - volunteers, mentors, and nonprofit partners. With these smartviews, built with TypeScript and React, DFG executives can generate custom views pulling data from Airtable, export and import users, analyze key metrics, and seamlessly manage volunteer and client information.
 
-![Volunteer Smartview](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-volunteer.png)
+![Volunteer Smartview](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-volunteer.png) -->
 
-## Analytics Tools
+<!-- ## Analytics Tools
 
 The Analytics Tools section provides detailed insights into the demographics of DFG's volunteer base, including their university, ethnicity, academic year, age group, and socioeconomic background. This data is crucial for DFG's mission of expanding opportunities to underrepresented and underserved students.
 
 <div class="gallery">
 <img src="https://storage.googleapis.com/jennyencho-website/pantheon-img/tools.png">
 <img src="https://storage.googleapis.com/jennyencho-website/pantheon-img/volunteer-ethnicity.png">
-</div>
+</div> -->
 
-## Job Management
+<!-- ## Job Management
 
 The dashboard provides a clear overview of data transfer tasks (exports and imports) between Airtable and Pantheon. These tasks are categorized by status: complete, pending, error, or canceled. This categorization helps streamlines updates and organization of DFG member data.
 
-![Job Management](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-status.png)
+![Job Management](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-status.png) -->
 
 # IMPACT
 
 ## Outcomes
 
-Since the inception of this project, Develop For Good has recieved _over $1 million in funding in support of Pantheon's development_ through key partnerships with Stanford's StartX and Okta. In November of 2023, _Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX_ in three years, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. _As of October 2024, Pantheon's work is featured on [Okta's tech blog](https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/) and has officially launched for every team in the Winter 2025 cycle and beyond!_
+Since the inception of this project, _Develop For Good has generated over $1 million in revenue_ through key partnerships with Stanford's StartX and Okta. In November of 2023, _Develop For Good became the first nonprofit to be accepted to Stanford's startup accelerator StartX_ in three years, with Pantheon highlighting DFG as a tech nonprofit startup and partnered with Okta For Good to further the development of Pantheon. _As of October 2024, Pantheon's work is featured on [Okta's tech blog](https://www.okta.com/blog/2024/10/oktas-nonprofit-technology-fellowship-empowering-nonprofit-technology-leaders-across/) and has officially launched for every team in the Winter 2025 cycle and beyond!_
 
 ## Next Steps
 
