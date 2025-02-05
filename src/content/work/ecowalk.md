@@ -46,11 +46,11 @@ Given the responses of 60+ interviewees, I used an empathy map to distinguish fr
 
 ## Goals
 
-### # Embrace one less convenient activity daily.
+### <i class="fa-solid fa-person-walking"></i> Embrace one less convenient activity daily.
 
 _Some activities can be approached with less urgency_. By choosing to forgo one convenience-driven habit each day, people can make small and meaningful contributions to the environment.
 
-### # Commit to practicing a healthy habit weekly.
+### <i class="fa-solid fa-heart-pulse"></i> Commit to practicing a healthy habit weekly.
 
 By setting incremental goals to incorporate a healthy habit into your routine, starting with just one day a week, you can gradually make it a regular part of your life.
 
@@ -107,20 +107,20 @@ During the ideation process, we overlooked the fact that _not everyone lives in 
 
 ## Next Steps
 
-### # Incorporate feedback in the next design iteration.
+### <i class="fa-solid fa-pen-nib"></i> Incorporate feedback in the next design iteration.
 
 Given feedback from Dandilyonn's management and engineers, I plan to incorporate this feedback into our next design iteration.
 
-### # Refine microinteractions and secondary features.
+### <i class="fa-solid fa-wand-magic-sparkles"></i> Refine microinteractions and secondary features.
 
 Given the ten week timeframe, our team focused on Ecowalk’s core features, leaving secondary functionalities, such as activity removal, for future consideration. Going forward, I plan to explore microinteractions and secondary features to increase user engagement.
 
 ## Reflections
 
-### # Embrace new challenges.
+### <i class="fa-solid fa-scale-balanced"></i> Embrace new challenges.
 
 During the ten weeks, my team's designer left the internship due to unforeseen circumstances. _I took extra time during the internship to learn about best practices in the field._ This experience ignited a passion that shaped the rest of my college years, driving my focus on design and tech-centered products!
 
-### # Communicate consistently with your team.
+### <i class="fa-solid fa-comments"></i> Communicate consistently with your team.
 
 When my team and I found ourselves facing a tight deadline, we made it a priority to regularly update each other on our progress. This experience taught me that _without consistent and clear communication, tasks can stall, and innovative ideas might never come to fruition_.

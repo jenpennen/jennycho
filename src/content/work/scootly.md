@@ -26,11 +26,11 @@ This project started in September 2022 as part of UCLA’s infamous CS course: C
 
 For many UCLA students, transportation can be frustrating. Here's why:
 
-### # LA's public transit options are limited.
+### <i class="fa-solid fa-car-side"></i> LA's public transit options are limited.
 
 The two main public transit options at UCLA are the Metro and Bruin Bus. Although both are great options, they can be subject to delays and infrequent service, which can be frustrating. It pressures many students to rely on cars, which is not ideal for the environment.
 
-### # Buying a personal scooter is not so simple.
+### <i class="fa-solid fa-money-bill"></i> Buying a personal scooter is not so simple.
 
 Another popular option for convenient transportation is electric scooters. However, buying your own is a hassel - you have to charge it, maintain it, and worry about where to store when not in use. On the other hand, renting a scooter all the time can get expensive.
 
@@ -47,11 +47,11 @@ Creating an app centered around scooter rentals was not our first choice. We bra
 
 ## Goals
 
-### # Promote micro-electric mobility
+### <i class="fa-solid fa-bolt"></i> Promote micro-electric mobility
 
 It’s time to embrace a solution that tackles both challenges of convenient transportation and environmental choices head-on. We can reshape perceptions of scooters and present them as a practical, accessible mode of transportation for all.
 
-### # Incentivize scooter ownership.
+### <i class="fa-solid fa-dollar-sign"></i> Incentivize scooter ownership.
 
 The hurdles of owning a personal scooter often deter many from making the investment. With this in mind, we set out to make scooter ownership more appealing and rewarding, while also offering a convenient option for those who want to ride but aren’t ready to commit to buying their own.
 

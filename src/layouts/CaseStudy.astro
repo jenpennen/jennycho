@@ -74,17 +74,18 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 	.content :global(.gallery){
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(3ch, 1fr));
-		gap: 2rem;
 	}
-
-
-	/* .content > :global(* + *) {
-		margin: 1rem;
-	} */
-	/* .content :global(em) {
-		color: var(--accent-regular);
-	} */
-
+	.content :global(img) {
+		border-radius: 0.5rem;
+		width: 100%;
+		margin:2rem 0;
+		box-shadow: var(--medium-shadow);
+		/* background: var(--gradient-subtle); */
+		/* border: 1px solid var(--gray-500); */
+	}
+	.content :global(.gallery img){
+		box-shadow: none;
+	}
 	.content :global(em) {
 		color: #db2777;
 		font-weight: 400;
@@ -118,6 +119,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 	}
 	.content :global(p)  {
 		margin-bottom: 0.5rem;
+		font-size: 1.05rem;
 		font-family: var(--font-body);
 	}
 	.content :global(li) {
@@ -127,14 +129,6 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 	}
 	.content :global(a) {
 		font-style: bold;
-	}
-
-	.content :global(img) {
-		/* border-radius: 0.5rem; */
-		width: 100%;
-		margin: 1rem 0 1rem 0;
-		/* box-shadow: var(--medium-shadow); */
-		/* background: var(--gradient-subtle); */
 	}
 
 	.content :global(blockquote > p) {
