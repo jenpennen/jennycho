@@ -44,7 +44,7 @@ My next priority was to gather some thoughts about our concept from the students
 
 Given the responses of 200+ interviewees, I used an affinity map to identify common themes and tackle actionable insights. This approach revealed several distinct categories of feedback.
 
-![Affinity Mapping](https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-affinity-map.png)
+![Affinity Mapping](https://storage.googleapis.com/jennyencho-website/tugo-img/affinity-map.png)
 
 ## Key Insights
 
@@ -85,7 +85,7 @@ To kickstart the design process, I created low-fidelity wireframes to provide th
 ## Style Guide
 
 I developed a UI style guide to ensure that components were styled consistently throughout the app. Inspired by the blue summer skies of Los Angeles, this style guide was intended to reflect that aesthetic.
-![Style Guide](https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-style-guide.png)
+![Style Guide](https://storage.googleapis.com/jennyencho-website/tugo-img/style-guide.png)
 
 ## Usability Testing
 
@@ -117,7 +117,7 @@ One key feature my Retune team developed was the user music tab, which displays 
 
 Given our feedback, I revised Tugo's flow chart and took into consideration new features to replace old and obsolete ones. This process further helped to breakdown the essential features and steps of building Tugo, allowing my team and I to set milestones seamlessly.
 
-![Tugo Flow Chart](https://storage.googleapis.com/jennyencho-website/tugo-img/tugo-flow-chart.png)
+![Tugo Flow Chart](https://storage.googleapis.com/jennyencho-website/tugo-img/flow-chart.png)
 
 # Final Work
 
