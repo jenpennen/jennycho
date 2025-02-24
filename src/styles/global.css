@@ -97,11 +97,6 @@ li > a {
   }
 }
 
-.link-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-  gap: 1rem;
-}
 .link-card {
   padding: 10px;
   transition: var(--bouncy);
@@ -109,8 +104,9 @@ li > a {
 img {
   transition: var(--bouncy);
 }
-.link-card:hover {
+.link-card img:hover {
   scale: calc(1.05);
+
   transition: var(--bouncy);
   background-repeat: no-repeat;
   box-shadow: var(--medium-shadow);
