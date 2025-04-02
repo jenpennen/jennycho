@@ -4,7 +4,7 @@ import { SITE } from "../consts";
 import { getCollection } from "astro:content";
 const about = {
   heading: "A Bit About Me",
-  intro: "I studied Computer Science and Linguistics at UCLA. While at university, I actively worked with nonprofit organizations to deliver design and technical solutions. Through this work, I often found myself wondering: ",
+  body: "Previously, I was a design engineer (frontend + ui/ux design) working on internal tools at Develop For Good. Over the past four years, I actively worked with nonprofit organizations to deliver design and technical solutions. Through this work, I often found myself wondering: ",
   question: "how can I blend technology with design to engineer authentic and nostalgic experiences in a digital world?",
   mission: "Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions ",
   keywords: "seamless, natural, and enjoyable.",
@@ -22,10 +22,10 @@ const entry =(await getCollection('blog'))
  
       <div class="xs:px-1 sm:px-2 md:px-5 lg:px-5">
       <h2 class="mb-1 font-brand text-xl">Hi! I'm Jenny.</h2>
-      <p class="text-sm font-body mb-3">I'm a UX designer and frontend engineer working on internal tools <span class="text-pink-600 dark:text-darkPrimary">@ Develop For Good.</span></p>
+      <p class="text-sm font-body mb-3">I'm a data analyst <span class="text-pink-600 dark:text-darkPrimary">@ Neighborshare.</span></p>
 
       <div>
-      <p class="text-sm font-body mb-3">{about.intro}  <span class="text-pink-600 dark:text-darkPrimary">{about.question}</span></p>
+      <p class="text-sm font-body mb-3">{about.body}  <span class="text-pink-600 dark:text-darkPrimary">{about.question}</span></p>
       <p class="text-sm font-body mb-3">{about.mission} {about.keywords}</p>
       <h2 class="mb-1 font-brand text-md xs:text-base">My Work Is Featured In ... </h2>
       <div class="underline decoration-dotted underline-offset-4 text-sm">
