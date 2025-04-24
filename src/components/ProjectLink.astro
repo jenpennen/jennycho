@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+	project: CollectionEntry<'work'>;
+}
+
+const { data, slug, collection } = Astro.props.project;
+---
+
+<div class="hover:text-lightPrimary dark:hover:text-darkPrimary ">
+	<a href={`/${collection}/${slug}`} class="font-brand text-base hover:underline">
+	{data.title} @ {data.org} 
+	</a>
+</div>
+
+<style>
+
+	.image-container {
+		width: 65%; 
+		overflow: hidden; /* scaling stays within the container */
+		border-radius: 5px;
+		transition: var(--bouncy);
+	}
+
+</style>
