@@ -16,38 +16,43 @@ const entry =(await getCollection('blog'))
 const about = {
   heading: "Hey there! I'm Jenny.",
   body: "I'm passionate about working across data, full stack development, and product design to build impactful digital experiences.",
-  mission: "Whether in my professional work or side projects, I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and fun.",
-  outro: "Check out my works below :)"
+  mission: "I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and fun.",
+  outro: "Check out my works below!"
 };
 ---
 
 <BaseLayout title="Jenny Cho" description="Hi! I'm Jenny.">
 	<span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row mt-20 mb-5">
 
-		<div class="xs:px-1 sm:px-2 md:px-5 lg:px-5">
-		<h2 class="mb-1 font-brand text-xl">{about.heading}</h2>
-		<p class="text-sm font-body mb-3">I'm a data analyst <span class="text-pink-600 dark:text-darkPrimary">@ Neighborshare</span>, with a background in product design and frontend development.</p>
 		<div>
-			<p class="text-sm font-body mb-3">{about.body} {about.mission}</p>
-			<p class="text-sm font-body mb-3">{about.outro}</p>
+			<h2 class="mb-1 font-brand text-xl">{about.heading}</h2>
+			<p class="text-sm font-body mb-3">I'm a data analyst with a background in product design and frontend development.</p>
+			<div>
+				<p class="text-sm font-body mb-3">{about.body} {about.outro}</p>
+				<!-- <p class="text-sm font-body mb-3">{about.outro}</p> -->
+			</div>	
 		</div>
-		</div>
-		<img class="h-96 object-contain rounded-lg xs:hidden sm:hidden md:inline-block lg:inline-block" src='/headshot.jpg' alt="Jenny pic" />
+		<!-- <img class="h-96 object-contain rounded-lg xs:hidden sm:hidden md:inline-block lg:inline-block" src='/headshot.jpg' alt="Jenny pic" /> -->
     </span>
-	<div class="lg:text-base md:text-base sm:text-sm flex flex-col mb-10 items-center">
 
+	<span class="text-sm flex flex-col mb-10 items-center">
 		<div class="items-center">
-		<!-- <p class="mb-1 uppercase font-brand font-semibold">Product Design Works</p> -->
-		<div role="list" class="flex flex-wrap">
-            {projects.map((project, i) => (
-				<>
-				<ProjectLink project={project} />
-				{i < projects.length - 1 && <span class="mx-1">/</span>}
-				</>
-			))}
-        </div>
-	</div>
-	</div>
+			<p class="mb-1 uppercase font-brand font-semibold">Product Design/Development</p>
+			<div role="list" class="flex flex-wrap">
+				{projects.map((project, i) => (
+					<>
+					<ProjectLink project={project} />
+					{i < projects.length - 1 && <span class="mx-1 lg:text-base md:text-base sm:text-sm">//</span>}
+					</>
+				))}
+			</div>
+			<div>
+				<p class="pt-5 mb-1 uppercase font-brand font-semibold">Analytics</p>
+				<p class="text-sm">Coming soon...</p>
+			</div>
+		</div>
+		
+	</span>
 </BaseLayout>
 <style>
 	li a:hover {

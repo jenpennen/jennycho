@@ -9,7 +9,7 @@ const { data, slug, collection } = Astro.props.project;
 ---
 
 <div class="hover:text-lightPrimary dark:hover:text-darkPrimary ">
-	<a href={`/${collection}/${slug}`} class="font-brand text-base hover:underline">
+	<a href={`/${collection}/${slug}`} class="font-brand lg:text-md md:text-base sm:text-base hover:underline">
 	{data.title} @ {data.org} 
 	</a>
 </div>
