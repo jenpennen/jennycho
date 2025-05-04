@@ -9,13 +9,11 @@ const projects = (await getCollection('work'))
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 ---
 
-<BaseLayout title="My Works" description="Check out Jenny's Case Studies">
-    <div class="mt-20">
-        <div class="my-10">
-        <h2 class="mb-1 font-brand text-2xl">Selected Works</h2>
-        <p class="text-sm font-body">Check out my case studies below.</p>
-        <hr class="h-px my-4 bg-gray-300 border-0 dark:bg-gray-700">
-        </div>
+<BaseLayout title="Jenny Cho - Works" description="Case Studies">
+        <span class="mt-20 mb-10">
+        <h2 class="font-brand text-base">My Works</h2>
+        <hr class="h-px bg-gray-300 border-0 dark:bg-gray-700">
+        </span>
 
         <div role="list" class="grid">
             {
@@ -24,7 +22,7 @@ const projects = (await getCollection('work'))
                 ))
             }
         </div>
-    </div> 
+
     
 </BaseLayout>
 

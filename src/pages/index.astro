@@ -6,7 +6,7 @@ import '../styles/global.css';
 
 
 const projects = (await getCollection('work'))
-	.filter((item:any) => !['melodyai', 'perspective'].includes(item.slug)) //exclude incomplete case studies
+	.filter((item:any) => !['melodyai', 'perspective', 'museum'].includes(item.slug)) //exclude incomplete case studies
 	.sort((a:any, b:any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 const entry =(await getCollection('blog'))
 	// .filter((item) => !['melodyai'].includes(item.slug)) //exclude incomplete case studies
@@ -14,30 +14,31 @@ const entry =(await getCollection('blog'))
 	.slice(0,2); 
 
 const about = {
-  heading: "Hey there! I'm Jenny.",
-  body: "I'm passionate about working across data, full stack development, and product design to build impactful digital experiences.",
-  mission: "I strive to combine clean design principles with thoughtful engineering to make online interactions seamless, natural, and fun.",
+  heading: "Hey, I'm Jenny.",
+  current: "I'm a product designer and data analyst focused on strategy, scalability, and accessibility.",
+  body: "I have previously designed internal tools, data management systems, and cross-platform experiences for web and mobile products. I enjoy bringing structure and vision to ambiguity by balancing design with analytical thinking to create user-friendly, scalable systems. In my experience, I thrive in environments where design, engineering, and product come together to solve real-world problems.",
+//   personal:"Feel free to check out my works below.",
   outro: "Check out my works below!"
 };
 ---
 
-<BaseLayout title="Jenny Cho" description="Hi! I'm Jenny.">
+<BaseLayout title="Jenny Cho - Home" description="Hi! I'm Jenny.">
 	<span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row mt-20 mb-5">
 
 		<div>
-			<h2 class="mb-1 font-brand text-xl">{about.heading}</h2>
-			<p class="text-sm font-body mb-3">I'm a data analyst with a background in product design and frontend development.</p>
+			<h2 class="mb-1 font-brand text-base">{about.heading}</h2>
+			<p class="text-base font-brand mb-1">{about.current}</p>
 			<div>
-				<p class="text-sm font-body mb-3">{about.body} {about.outro}</p>
+				<!-- <p class="text-sm font-body mb-3">{about.body}</p> -->
+				<!-- <p class="text-sm font-body mb-3">{about.personal}</p> -->
 				<!-- <p class="text-sm font-body mb-3">{about.outro}</p> -->
 			</div>	
 		</div>
-		<!-- <img class="h-96 object-contain rounded-lg xs:hidden sm:hidden md:inline-block lg:inline-block" src='/headshot.jpg' alt="Jenny pic" /> -->
     </span>
 
 	<span class="text-sm flex flex-col mb-10 items-center">
 		<div class="items-center">
-			<p class="mb-1 uppercase font-brand font-semibold">Product Design/Development</p>
+			<p class="mb-1 uppercase font-brand font-semibold">Product Design/Engineering</p>
 			<div role="list" class="flex flex-wrap">
 				{projects.map((project, i) => (
 					<>
