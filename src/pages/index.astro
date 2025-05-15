@@ -16,9 +16,7 @@ const entry =(await getCollection('blog'))
 const about = {
   heading: "Hey, I'm Jenny.",
   current: "I'm a product designer and data analyst focused on strategy, scalability, and accessibility.",
-  body: "I have previously designed internal tools, data management systems, and cross-platform experiences for web and mobile products. I enjoy bringing structure and vision to ambiguity by balancing design with analytical thinking to create user-friendly, scalable systems. In my experience, I thrive in environments where design, engineering, and product come together to solve real-world problems.",
-//   personal:"Feel free to check out my works below.",
-  outro: "Check out my works below!"
+  outro: "Check out my works below."
 };
 ---
 
@@ -30,8 +28,7 @@ const about = {
 			<p class="text-base font-brand mb-1">{about.current}</p>
 			<div>
 				<!-- <p class="text-sm font-body mb-3">{about.body}</p> -->
-				<!-- <p class="text-sm font-body mb-3">{about.personal}</p> -->
-				<!-- <p class="text-sm font-body mb-3">{about.outro}</p> -->
+				<p class="text-sm font-body mb-3">{about.outro}</p>
 			</div>	
 		</div>
     </span>
@@ -61,7 +58,6 @@ const about = {
 	}
 	.grid {
        display: grid;
-		/* grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr)); */
 		gap: 2rem;
 		padding: 1rem 0;
     }
