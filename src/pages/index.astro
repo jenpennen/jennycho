@@ -14,39 +14,36 @@ const entry =(await getCollection('blog'))
 	.slice(0,2); 
 
 const about = {
-  heading: "Hey, I'm Jenny.",
-  current: "I'm a product designer and data analyst focused on strategy, scalability, and accessibility.",
-  outro: "Check out my works below."
+  heading: "Jenny Cho",
+  current: "Data Analyst & Product Designer",
+  intro: "Hey there! I'm an analyst with a background in software development, analytics, and product design.",
 };
 ---
 
 <BaseLayout title="Jenny Cho - Home" description="Hi! I'm Jenny.">
-	<span class="lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row mt-20 mb-5">
+	<span class="font-body lg:text-base md:text-base sm:text-sm flex flex-col md:flex-row lg:flex-row mt-20 mb-5">
 
 		<div>
-			<h2 class="mb-1 font-brand text-base">{about.heading}</h2>
-			<p class="text-base font-brand mb-1">{about.current}</p>
-			<div>
-				<!-- <p class="text-sm font-body mb-3">{about.body}</p> -->
-				<p class="text-sm font-body mb-3">{about.outro}</p>
-			</div>	
+			<h2 class="font-brand text-4xl text-lightPrimary custom-text-stroke dark:text-darkPrimary">{about.heading}</h2>
+			<p class="text-md mb-1 font-brand font-bold text-gray-800 dark:text-gray-400">{about.current}</p>
+			<p class="text-sm font-body">{about.intro}</p>
 		</div>
     </span>
 
-	<span class="text-sm flex flex-col mb-10 items-center">
-		<div class="items-center">
-			<p class="mb-1 uppercase font-brand font-semibold">Product Design/Engineering</p>
-			<div role="list" class="flex flex-wrap">
+	<span class="flex flex-col mb-10">
+		<h2 class="mb-1 text-lightHeading dark:text-darkHeading uppercase font-body text-md">My Works</h2>
+		<div>
+			<p class="mb-1 text-lightHeading dark:text-darkHeading font-semibold text-sm">Product Design/Engineering</p>
+			<div role="list">
 				{projects.map((project, i) => (
 					<>
 					<ProjectLink project={project} />
-					{i < projects.length - 1 && <span class="mx-1 lg:text-base md:text-base sm:text-sm">//</span>}
 					</>
 				))}
 			</div>
-			<div>
-				<p class="pt-5 mb-1 uppercase font-brand font-semibold">Analytics</p>
-				<p class="text-sm">Coming soon...</p>
+			<div class="font-body">
+				<p class="pt-5 mb-1 text-lightHeading dark:text-darkHeading font-body font-semibold text-sm">Analytics</p>
+				<p class="text-sm font-body">Coming soon...</p>
 			</div>
 		</div>
 		

@@ -15,9 +15,6 @@
   --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #f6f7f8;
 
-  --accent-regular: #db2777;
-  --link-color: var(--accent-regular);
-
   /* Text Sizes */
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -33,8 +30,8 @@
   --font-system: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
-  --font-body: "Instrument Sans", var(--font-system);
-  --font-brand: "DM Sans", var(--font-system);
+  --font-body: "DM Sans", var(--font-system);
+  --font-brand: "Instrument Sans", var(--font-system);
 
   --shadow: #0e2f3924;
   --small-shadow: 0px 0px 5px var(--shadow), 0px 10px 20px var(--shadow);
@@ -49,21 +46,32 @@
   --bouncy-timeless: cubic-bezier(0.5, 1.5, 0.5, 0.7);
 
   /* --background-color: #ebf0ff; */
-  --background-color: #f8f8ff;
-  --secondary-background: #f8f8ffaa;
-  --text-color: #1d1d1a;
+  --background-color: #f7f4f2;
+  --secondary-background: #f7f4f2aa;
+  --text-color: #161214;
+  --link-color: #a7333f;
+
+  .custom-text-stroke {
+    -webkit-text-stroke: 0px black;
+  }
 }
 
 :root.dark {
-  --background-color: #1d1d1a;
+  --background-color: #161214;
   --secondary-background: #323232aa;
   --text-color: #ebf0ff;
-  --accent-regular: #85cbdb;
+  --accent-regular: #e5b3fe;
   --link-color: var(--accent-regular);
+
+  .custom-text-stroke {
+    -webkit-text-stroke: 0px #e5b3fe;
+  }
 }
 html,
 body {
-  font-family: var(--font-brand);
+  font-family: Roboto Mono, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }

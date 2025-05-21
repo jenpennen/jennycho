@@ -5,20 +5,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightBg: "#f8f8ff",
-        darkBg: "#1d1d1a",
+        lightBg: "#F7F4F2",
+        darkBg: "#161214",
         lightText: "#1d1d1a",
-        darkText: "#ebf0ff",
-        darkSecondaryBg: "#323234",
+        darkText: "#F7F4F2",
+        darkSecondaryBg: "#a7333f",
         lightSecondaryBg: "#f8f8ff55",
-        lightPrimary: "#db2777",
-        darkPrimary: "#85cbdb",
+        lightPrimary: "#a7333f",
+        darkPrimary: "#e5b3fe",
         accentOverlay: "#c0d4fd",
+        lightOutline: "#161214",
+        darkOutline: "#E1D65A",
+        lightHeading: "#352208",
+        darkHeading: "#BA9678",
       },
       fontFamily: {
-        body: ["Instrument Sans", "system-ui", "sans-serif"],
-        brand: ['"DM Sans"', '"Poppins"', "system-ui", "serif"],
-        system: ["Instrument Sans", "system-ui", "sans-serif"],
+        body: ["Roboto Mono", "system-ui", "sans-serif"],
+        brand: ['"Xanh Mono"', '"Poppins"', "system-ui", "serif"],
+        system: ["DM Sans", "system-ui", "sans-serif"],
       },
       fontSize: {
         xs: "0.875rem",

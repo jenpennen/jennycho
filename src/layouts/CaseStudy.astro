@@ -27,7 +27,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 	
 		<article class="flex flex-col justify-center">
 			<div class="pt-20 prose">
-					<a href="/work" class="hover:text-primary">
+					<a href="/" class="hover:text-primary">
 						<span class="hover:text-lightPrimary dark:hover:text-darkPrimary text-sm">&larr; My Works</span>
 					</a>
 			</div>
@@ -38,7 +38,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 						<img src={image} />
 					</div>
 					<h1 class="text-3xl pt-5 font-brand tracking-wide pb-2">{title}</h1>
-					<p class="font-brand">{description}</p>
+					<p class="font-body text-sm">{description}</p>
 					<ProjectDetails org={org} label={label} role={role} second_role={second_role} timeline={timeline} />
 					<div class="text-left content">
 						<slot/>
@@ -55,9 +55,9 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 
 </script>
 <style>
-	* {
+	/* * {
 		font-family: 'DM Sans', sans-serif;
-	}
+	} */
 	header {
 		padding-bottom: 2.5rem;
 		font-weight:700;
@@ -87,12 +87,12 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 		box-shadow: none;
 	}
 	.content :global(em) {
-		color: #db2777;
+		color: #a7333f;
 		font-weight: 400;
 		font-style:normal;
 	}
 	.dark .content :global(em) {
-		color: #85cbdb;
+		color: #e5b3fe;
 	}
 	.content :global(li) {
 		padding: 0.5rem 3rem;
@@ -100,9 +100,9 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 	}
 	
 	.content :global(h1) {
-		font-family: "DM Sans", serif;
+		font-family: Xanh Mono, serif;
 		letter-spacing: 2px;
-		padding: 3em 0 1em 0;
+		padding: 3em 0 0 0;
 		font-weight: 700;
 
 	}

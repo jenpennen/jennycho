@@ -8,9 +8,11 @@ interface Props {
 const { data, slug, collection } = Astro.props.project;
 ---
 
-<div class="hover:text-lightPrimary dark:hover:text-darkPrimary ">
-	<a href={`/${collection}/${slug}`} class="font-brand lg:text-md md:text-base sm:text-base hover:underline">
-	{data.title} @ {data.org} 
+<div class="hover:no-underline mb-3">
+	<a href={`/${collection}/${slug}`} class="font-body text-sm">
+	<li class="hover:text-lightPrimary dark:hover:text-darkPrimary">
+		{data.title} @ {data.org} - <span>{data.description}</span>
+	</li>
 	</a>
 </div>
 
