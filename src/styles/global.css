@@ -49,7 +49,7 @@
   --background-color: #f7f4f2;
   --secondary-background: #f7f4f2aa;
   --text-color: #161214;
-  --link-color: #a7333f;
+  --link-color: #1849ca;
 
   .custom-text-stroke {
     -webkit-text-stroke: 0px black;
@@ -60,7 +60,7 @@
   --background-color: #161214;
   --secondary-background: #323232aa;
   --text-color: #ebf0ff;
-  --accent-regular: #e5b3fe;
+  --accent-regular: #00c9b0;
   --link-color: var(--accent-regular);
 
   .custom-text-stroke {

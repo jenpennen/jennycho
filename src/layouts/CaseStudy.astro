@@ -28,7 +28,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 		<article class="flex flex-col justify-center">
 			<div class="pt-20 prose">
 					<a href="/" class="hover:text-primary">
-						<span class="hover:text-lightPrimary dark:hover:text-darkPrimary text-sm">&larr; My Works</span>
+						<span class="hover:text-lightPrimary dark:hover:text-darkHeading text-sm">&larr; Home</span>
 					</a>
 			</div>
 			<div class="flex gap-2 mb-4 w-full">
@@ -38,7 +38,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 						<img src={image} />
 					</div>
 					<h1 class="text-3xl pt-5 font-brand tracking-wide pb-2">{title}</h1>
-					<p class="font-body text-sm">{description}</p>
+					<p class="font-body text-xs">{description}</p>
 					<ProjectDetails org={org} label={label} role={role} second_role={second_role} timeline={timeline} />
 					<div class="text-left content">
 						<slot/>
@@ -87,7 +87,7 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 		box-shadow: none;
 	}
 	.content :global(em) {
-		color: #a7333f;
+		color: #c31d10;
 		font-weight: 400;
 		font-style:normal;
 	}
@@ -113,13 +113,17 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 
 	}
 	.content :global(h3) {
-		font-size: 1.15rem;
+		font-size: 1.05rem;
 		padding: 0.5em 0 0.25rem 0;
-		font-weight: 600;	
+		font-weight: 600;
+		color: var(--link-color);	
+	}
+	.dark :global(h3) {
+		color: #00c9b0;
 	}
 	.content :global(p)  {
 		margin-bottom: 0.5rem;
-		font-size: 1.05rem;
+		font-size: 1rem;
 		font-family: var(--font-body);
 	}
 	.content :global(li) {
@@ -138,8 +142,12 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 		font-weight: 500;
 		line-height: 1.5;
 		margin-bottom: 1rem;
+		color:#1849ca;
 		/* padding-inline-start: 1.5rem; */
 		/* border-inline-start: 0.25rem solid var(--accent-regular); */
+	}
+	.dark :global(blockquote>p) {
+		color:#00c9b0;
 	}
 
 	.back-link,

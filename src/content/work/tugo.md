@@ -5,7 +5,7 @@ image: https://storage.googleapis.com/jennyencho-website/landing-img/tugo-landin
 img_alt: tugo
 label: Mobile App
 description: |
-  Connecting communities through music on the go.
+  Mobile app remixing social connection through real-time music sharing.
 org: UCLA
 role: UX Designer
 second_role: Frontend Engineer

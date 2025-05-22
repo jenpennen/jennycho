@@ -5,7 +5,7 @@ image: https://storage.googleapis.com/jennyencho-website/landing-img/scootly-lan
 img_alt: scootly
 label: Mobile App
 description: |
-  Turning personal scooters into a shared urban mobility resource.
+  Mobility app flipping idle scooters into a shared transit system.
 org: UCLA
 role: UI/UX Designer
 second_role: Frontend Developer
@@ -94,7 +94,7 @@ For our backend, we used Firebase to manage user authentication and securely sto
 
 Once users were authenticated, we stored their information in Firebase Firestore. We set up a Firestore database, creating a document for each user to record essential details like email, display name, user preferences (vendor or renter), and registration date. We also configured Firebase Security Rules, allowing only authenticated users to access their own information.
 
-# FINAL WORK
+# Final Work
 
 ## Onboarding
 

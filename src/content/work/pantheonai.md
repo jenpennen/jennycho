@@ -1,11 +1,11 @@
 ---
 title: PantheonAI
 publishDate: 2024-01-02 00:00:00
-image: https://storage.googleapis.com/jennyencho-website/landing-img/pantheona.png
+# image: https://storage.googleapis.com/jennyencho-website/landing-img/pantheona.png
 img_alt: "Pantheon AI"
 label: AI Interface
 description: |
-  Driving project deliverable success with AI integration.
+  AI-powered dashboard crafting smarter project roadmaps.
 org: Develop For Good
 role: Lead Product Designer
 timeline: "January 2024 - Ongoing"

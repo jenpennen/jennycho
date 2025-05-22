@@ -5,7 +5,7 @@ image: "https://storage.googleapis.com/jennyencho-website/landing-img/ecowalk_la
 img_alt: ecowalk
 label: Mobile App
 description: |
-  Taking steps toward a green future.
+  Eco-conscious app gamifying sustainability to spark daily climate action.
 org: Dandilyonn
 role: UX Designer Intern
 second_role: Mobile Developer Intern

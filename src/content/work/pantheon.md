@@ -5,7 +5,7 @@ image: "https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-l
 img_alt: "pantheon-img"
 label: "Data Management Tool"
 description: |
-  Powering nonprofit volunteer management with seamless tech integration.
+  Internal data platform unifying and scaling nonprofit worflows.
 org: "Develop For Good"
 timeline: "September 2023 - Ongoing"
 role: Product Designer
@@ -84,7 +84,7 @@ Airtable’s API enforces a maximum of 5 requests per second and returns only 10
 
 Requests to Airtable often took 5–15 seconds, causing sluggish UI performance and raising concerns about stale data as new volunteers joined. _To address this, we used our asynchronous job framework to schedule periodic data refreshes every few hours and added a manual refresh button in the UI for immediate updates._ This approach, combined with a cooldown mechanism to avoid rate limits has proven effective, given our modest management team size and infrequent data synchronization issues.
 
-# Design process
+# Design Process
 
 ## Understand the Target User
 
@@ -159,7 +159,7 @@ The dashboard provides a clear overview of data transfer tasks (exports and impo
 
 ![Job Management](https://storage.googleapis.com/jennyencho-website/pantheon-img/pantheon-dashboard-status.png) -->
 
-# IMPACT
+# Impact
 
 ## Outcomes
 

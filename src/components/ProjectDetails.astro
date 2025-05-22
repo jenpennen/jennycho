@@ -11,30 +11,30 @@ const { org, label, role, second_role, timeline } = Astro.props;
 ---	
 <div class="my-5 block">
   <div class="border-y-2 py-2 my-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label text-gray-500 dark:text-gray-400">Organization</p>
-    <p class="value dark:text-gray-200">{org}</p>
+    <p class="label text-gray-500 dark:text-gray-400">Organization: <span class="text-lightHeading dark:text-darkHeading">{org}</span></p>
+    <!-- <p class="value dark:text-gray-200">{org}</p> -->
   </div>
   <div class="border-b-2 pb-2 mb-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label text-gray-500 dark:text-gray-400">Platform</p>
-    <p class="value dark:text-gray-200">{label}</p>
+    <p class="label text-gray-500 dark:text-gray-400">Platform: <span class="text-lightHeading dark:text-darkHeading">{label}</span></p>
+    <!-- <p class="value dark:text-gray-200">{label}</p> -->
   </div>
   <div class="border-b-2 pb-2 mb-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label text-gray-500 dark:text-gray-400">Role</p>
-    <p class="value dark:text-gray-200">{role}{second_role ? `  •  ${second_role}` : ''}</p>
+    <p class="label text-gray-500 dark:text-gray-400">Role: <span class="text-lightHeading dark:text-darkHeading">{role}{second_role ? `  •  ${second_role}` : ''}</span></p>
+    <!-- <p class="value dark:text-gray-200">{role}{second_role ? `  •  ${second_role}` : ''}</p> -->
   </div>
   <div class="border-b-2 pb-2 mb-2 border-gray-300 dark:border-gray-700 flex items-start justify-between">
-    <p class="label text-gray-500 dark:text-gray-400">Timeline</p>
-    <p class="value dark:text-gray-200">{timeline || 'N/A'}</p>
+    <p class="label text-gray-500 dark:text-gray-400">Timeline: <span class="text-lightHeading dark:text-darkHeading">{timeline || 'N/A'}</span></p>
+    <!-- <p class="value dark:text-gray-200">{timeline || 'N/A'}</p> -->
   </div>
 </div>
 
 	
  <style>	
-.my-5 > div {
+/* .my-5 > div {
   display: grid;
-  grid-template-columns: 150px 1fr; /* First column fixed, second column flexible */
-  gap: 1rem; /*Add spacing between columns if needed*/
-}
+  grid-template-columns: 150px 1fr; 
+  gap: 1rem; 
+} */
 
 .label {
   text-transform: uppercase;
@@ -42,6 +42,9 @@ const { org, label, role, second_role, timeline } = Astro.props;
   font-weight: 600;
   font-size: 0.75rem; 
   letter-spacing: 0.05em; 
+}
+.label span {
+  text-transform: capitalize;
 }
 
 .value {
