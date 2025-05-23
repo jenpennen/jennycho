@@ -3,7 +3,7 @@ title: Pantheon
 publishDate: 2024-03-01 00:00:00
 image: "https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-landing.png"
 img_alt: "pantheon-img"
-label: "Data Management Tool"
+label: "Data Management System"
 description: |
   Internal data platform unifying and scaling nonprofit worflows.
 org: "Develop For Good"

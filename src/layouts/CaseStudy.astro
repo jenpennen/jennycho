@@ -33,13 +33,16 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 			</div>
 			<div class="flex gap-2 mb-4 w-full">
 	
-				<div class="flex flex-col w-full text-center">
-					<div class="pt-10">
+				<div class="flex flex-col w-full">
+					<!-- <div class="pt-10">
 						<img src={image} />
-					</div>
-					<h1 class="text-3xl pt-5 font-brand tracking-wide pb-2">{title}</h1>
-					<p class="font-body text-xs">{description}</p>
-					<ProjectDetails org={org} label={label} role={role} second_role={second_role} timeline={timeline} />
+					</div> -->
+					<!-- <h1 class="text-3xl pt-5 font-brand tracking-wide pb-5 text-center">{title}</h1>
+					<p class="font-body text-xs">{description}</p> -->
+					<!-- <div class="pt-10">
+						<img src={image} />
+					</div> -->
+					<ProjectDetails title={title} description={description} image={image} org={org} label={label} role={role} second_role={second_role} timeline={timeline} />
 					<div class="text-left content">
 						<slot/>
 					</div>
@@ -102,20 +105,20 @@ const {title, description, image, org, label, role, second_role, timeline} = Ast
 	.content :global(h1) {
 		font-family: Xanh Mono, serif;
 		letter-spacing: 2px;
-		padding: 3em 0 0 0;
-		font-weight: 700;
+		padding: 1em 0 0 0;
 
 	}
 	.content :global(h2){
 		font-size: 1.25rem;
 		text-transform: uppercase;
-		padding: 3em 0 0.5em 0;
+		font-weight: 400;
+		padding: 2em 0 0.5em 0;
 
 	}
 	.content :global(h3) {
-		font-size: 1.05rem;
+		font-size: 1rem;
 		padding: 0.5em 0 0.25rem 0;
-		font-weight: 600;
+		font-weight: 500;
 		color: var(--link-color);	
 	}
 	.dark :global(h3) {
