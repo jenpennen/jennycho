@@ -5,7 +5,7 @@ image: "https://storage.googleapis.com/jennyencho-website/landing-img/pantheon-l
 img_alt: "pantheon-img"
 label: "Data Management System"
 description: |
-  Internal data platform unifying and scaling nonprofit worflows.
+  Internal data platform unifying and scaling nonprofit workflows.
 org: "Develop For Good"
 timeline: "September 2023 - Ongoing"
 role: Product Designer
