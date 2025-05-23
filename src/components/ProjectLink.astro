@@ -1,17 +1,28 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import Work from "../pages/work.astro";
+import { getCollection } from "astro:content";
 
 interface Props {
 	project: CollectionEntry<'work'>;
+	incompleteSlugs: string[];
 }
 
 const { data, slug, collection } = Astro.props.project;
+// const { incompleteSlugs } = Astro.props;
+const incompleteSlugs = ['perspective', 'museum', 'socialnative'];
+
+const projectLink = incompleteSlugs.includes(slug)
+  ? '/in-progress'
+  : `/${collection}/${slug}`;
 ---
 
 <div class="hover:no-underline mb-3 hover:text-lightPrimary dark:hover:text-darkPrimary hover:italic">
-	<a href={`/${collection}/${slug}`} class="font-body font-normal text-sm">
-	<p class="">
-		&#8599; {data.title} @ {data.org}
+	<a href={projectLink} class="font-body font-normal text-sm">
+	<p>
+		&#8599; {data.title} @ {data.org} {incompleteSlugs.includes(slug) && (
+  <span class="ml-2 text-xs text-lightHeading dark:text-darkHeading">(Coming Soon)</span>
+)}
 	</p>
 	<span class="font-body text-xs">{data.description}</span>
 	</a>

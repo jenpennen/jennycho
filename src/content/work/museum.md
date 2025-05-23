@@ -10,11 +10,12 @@ org: Daily Bruin
 role: Graphic Designer
 second_role: Opinion Journalist
 timeline: "January 2023 - August 2023"
+complete: false
 ---
 
-# Museum Narratives
+## What is Museum Narratives?
 
-**Museum Narratives** is a series of editorial pieces highlighting museum exhibits across Los Angeles. Inspired by the city’s vibrant yet often overlooked art scene, this project aims to shine a light on these cultural gems. As an opinion journalist, I partnered with the **Daily Bruin**, UCLA's student-led newsletter, to write thought-provoking pieces that not only explored the exhibits but also encouraged more students to engage with and visit them.
+**Museum Narratives** is a series of editorial pieces showcasing museum exhibits across Los Angeles. As an opinion journalist, I partnered with the **Daily Bruin**, UCLA's student-led newsletter, to write thought-provoking pieces that not only explored the exhibits but also encouraged more students to engage with and visit them.
 
 ## Mulyana's Modular Utopia
 

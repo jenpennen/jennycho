@@ -10,6 +10,7 @@ org: UCLA ACM Hack
 role: UI/UX Designer
 second_role: Frontend Developer
 timeline: "February 2023 - Ongoing"
+complete: false
 ---
 
 # Context

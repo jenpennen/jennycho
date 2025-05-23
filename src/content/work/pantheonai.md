@@ -9,6 +9,7 @@ description: |
 org: Develop For Good
 role: Lead Product Designer
 timeline: "January 2024 - Ongoing"
+complete: true
 ---
 
 # Context

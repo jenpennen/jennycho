@@ -10,6 +10,7 @@ org: UCLA
 role: UX Designer
 second_role: Frontend Engineer
 timeline: "October 2021 - Ongoing"
+complete: true
 ---
 
 # Context

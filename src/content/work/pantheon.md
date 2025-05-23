@@ -10,6 +10,7 @@ org: "Develop For Good"
 timeline: "September 2023 - Ongoing"
 role: Product Designer
 second_role: Frontend Engineer
+complete: true
 ---
 
 # Context

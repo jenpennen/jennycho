@@ -10,6 +10,7 @@ org: Dandilyonn
 role: UX Designer Intern
 second_role: Mobile Developer Intern
 timeline: "June 2021 - August 2021"
+complete: true
 ---
 
 # Context

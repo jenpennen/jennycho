@@ -10,6 +10,7 @@ org: UCLA
 role: UI/UX Designer
 second_role: Frontend Developer
 timeline: September 2022 - December 2022
+complete: true
 ---
 
 # Context

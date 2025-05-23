@@ -14,6 +14,7 @@ export const collections = {
       role: z.string().optional(),
       second_role: z.string().optional(),
       timeline: z.string().optional(),
+      complete: z.boolean().optional(),
     }),
   }),
   blog: defineCollection({
