@@ -5,7 +5,6 @@ import { getCollection } from "astro:content";
 
 interface Props {
 	project: CollectionEntry<'work'>;
-	incompleteSlugs: string[];
 }
 
 const { data, slug, collection } = Astro.props.project;
