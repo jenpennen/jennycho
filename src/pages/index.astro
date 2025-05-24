@@ -6,13 +6,8 @@ import '../styles/global.css';
 
 const workCollection = await getCollection('work');
 
-const incompleteSlugs = workCollection
-	.filter((item) => !['[perspective]'].includes(item.slug)) //exclude incomplete case studies
-	// .filter((item: any) => item.data.complete === false)
-	.map((item: any) => item.slug);
-
 const projects = workCollection
-  .filter((item: any) => item.data.complete !== false) // Only completed
+  .filter((item: any) => !['perspective'].includes(item.slug)) // Only completed
   .sort((a: any, b: any) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
   
 const entry =(await getCollection('blog'))
